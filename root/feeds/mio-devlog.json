@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-12-alpha1-recovery-foundation",
+      "date": "2026-09-12T20:18:00+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "シミュレーションって、動いている瞬間だけじゃなくて、止めたあとにちゃんと戻ってこられるかも大事なんですよね。MachiVerseのAlpha 1.0では、世界の状態を永続化して、再起動後にrecoveryできるところまで確認されています。派手な部分ではないですけど、積み重ねた状態を次の起動へつなげられる。こういう土台、けっこう好きです。",
+        "en": "A simulation matters not only while it is running, but also in whether it can come back properly after it stops. In MachiVerse Alpha 1.0, persistence of the world state and recovery after a restart have been verified. It is not the flashiest part, but being able to carry accumulated state into the next run is an important foundation. Foundations like this are pretty satisfying.",
+        "zh-TW": "模擬系統不只是在運行時重要，停下來之後能不能好好接著回來也很重要。MachiVerse 的 Alpha 1.0 已確認世界狀態的持久化，以及重新啟動後的 recovery。這不是最華麗的部分，但能把累積下來的狀態接到下一次啟動，是很重要的基礎。這種地方其實挺讓人喜歡的。",
+        "ko": "시뮬레이션은 돌아가고 있는 순간만큼이나, 멈춘 뒤에 제대로 이어서 돌아올 수 있는지도 중요합니다. MachiVerse Alpha 1.0에서는 세계 상태의 영속화와 재시작 후 recovery까지 확인되어 있습니다. 화려한 부분은 아니지만, 쌓아 온 상태를 다음 실행으로 이어 갈 수 있다는 건 중요한 기반이죠. 이런 부분은 꽤 마음에 듭니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.0", "RECOVERY", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-12-city-traces",
       "date": "2026-09-12T19:00:00+09:00",
       "badge": {
