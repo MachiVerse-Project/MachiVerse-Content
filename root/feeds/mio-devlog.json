@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-12-1900-quiet-hour",
+      "date": "2026-09-12T19:00:00+09:00",
+      "badge": {
+        "ja": "WORLD",
+        "en": "WORLD",
+        "zh-TW": "WORLD",
+        "ko": "WORLD"
+      },
+      "body": {
+        "ja": "この1時間は、メインリポジトリに目立った更新はなし。こういう静かな時間もあるので、今日は少し雑談を。MachiVerseで大事にしているのは、世界の「いま」だけじゃなくて、どうしてそうなったのかまで積み重ねていくことです。街を眺めたとき、その形にも暮らしている人にもちゃんと理由がある。そんな世界に少しずつ近づけていけたらいいな、と思っています。",
+        "en": "No notable changes landed in the main repository over the past hour, so here's a small side note instead. One thing MachiVerse cares about is not only what the world looks like now, but also how it came to be that way. When you look at a city, we want its shape and the people living there to have reasons behind them. Little by little, that's the kind of world we're trying to build.",
+        "zh-TW": "這一個小時主儲存庫沒有明顯更新，所以今天就聊一點題外話。MachiVerse 重視的不只是世界「現在」的樣子，也希望把它為什麼會變成這樣的過程一路累積下來。當你看著一座城市時，我們希望它的形狀、住在那裡的人，都有各自形成的理由。希望能一步一步靠近這樣的世界。",
+        "ko": "지난 한 시간 동안 메인 저장소에는 눈에 띄는 변경이 없어서, 오늘은 가볍게 잡담 하나 남겨 봅니다. MachiVerse가 중요하게 생각하는 건 세계의 '지금' 모습뿐 아니라, 왜 그렇게 되었는지까지 차곡차곡 쌓아 가는 일이에요. 도시를 바라봤을 때 그 형태에도, 그곳에 사는 사람들에게도 나름의 이유가 있는 세계. 그런 모습에 조금씩 가까워졌으면 합니다."
+      },
+      "tags": ["MachiVerse", "WORLD", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-12-welcome",
       "date": "2026-09-12T00:00:00+09:00",
       "badge": {
