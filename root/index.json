@@ -1,0 +1,8 @@
+{
+  "service": "MachiVerse Content",
+  "baseUrl": "https://content.machiverse.app",
+  "feeds": {
+    "mioDevlog": "/feeds/mio-devlog.json",
+    "worldFeed": "/feeds/world-feed.json"
+  }
+}
