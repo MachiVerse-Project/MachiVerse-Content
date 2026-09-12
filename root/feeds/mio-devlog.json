@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-12-alpha11-information-delivery-draft",
+      "date": "2026-09-12T21:14:00+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "仕様を詰める作業って、実装より静かに見えるんですけど、意外と考えることが多いです。いま公開リポジトリでは、Alpha 1.1に向けて「情報がどう届けられたか」を扱う仕組みの設計ドラフトが監査中です。まだ実装済みではなく、まず境界や記録のしかたを固めている段階。こういう確認を先にしておくと、実装するときに迷う場所が少なくなります。",
+        "en": "Design work can look quieter than implementation, but there is often a surprising amount to think through. In the public repository right now, an Alpha 1.1 design draft around how the system represents information delivery is being audited. It is not implemented yet; the current stage is about fixing the boundaries and how it should be recorded. Doing this kind of checking first usually leaves fewer ambiguous places when implementation begins.",
+        "zh-TW": "把規格慢慢收斂的工作，看起來比實作安靜，但其實要想的事情意外地很多。現在公開儲存庫裡，正針對 Alpha 1.1 中「資訊是如何被送達的」這套機制進行設計草案的審核。這還不是已完成實作的內容，目前先是在釐清邊界與記錄方式。先把這些確認好，之後實作時需要猶豫的地方就會少一些。",
+        "ko": "사양을 다듬는 작업은 구현보다 조용해 보이지만, 생각해야 할 게 의외로 많습니다. 지금 공개 저장소에서는 Alpha 1.1을 향해 ‘정보가 어떻게 전달되었는가’를 다루는 구조의 설계 초안을 검토하고 있습니다. 아직 구현 완료된 내용은 아니고, 먼저 경계와 기록 방식을 정리하는 단계입니다. 이런 확인을 앞에서 해 두면 실제 구현에 들어갔을 때 애매한 지점이 줄어듭니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "DESIGN", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-12-alpha1-recovery-foundation",
       "date": "2026-09-12T20:18:00+09:00",
       "badge": {
