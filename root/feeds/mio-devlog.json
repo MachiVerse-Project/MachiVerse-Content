@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-open-source-perspectives",
+      "date": "2026-09-13T16:06:13+09:00",
+      "badge": {
+        "ja": "DEVELOPMENT",
+        "en": "DEVELOPMENT",
+        "zh-TW": "DEVELOPMENT",
+        "ko": "DEVELOPMENT"
+      },
+      "body": {
+        "ja": "開発って、コードが増えたときだけ進むわけじゃないんですよね。設計を読み直したり、動きを確かめたり、UIを整えたり、分かりにくいところを質問してもらったり。MachiVerseの公開READMEでも、実装だけでなく設計・検証・可視化・ドキュメント・アイデア・質問まで、いろいろな参加の形を挙げています。違う視点が入ると、それまで見えていなかった穴が急に見えることがある。そういう瞬間も、開発の面白いところです。",
+        "en": "Development doesn't only move forward when more code is written. Rereading a design, checking behavior, refining the UI, or simply having someone ask about a confusing part can all move things along. The public MachiVerse README lists many ways to take part beyond implementation, including design, verification, visualization, documentation, ideas, and questions. A different point of view can suddenly reveal a gap that was hard to see before. Moments like that are part of what makes development interesting.",
+        "zh-TW": "開發並不是只有程式碼增加的時候才算往前走。重新讀一次設計、確認實際動作、整理 UI，或是有人對不清楚的地方提出問題，都可能讓事情前進。MachiVerse 的公開 README 也列出了實作以外的各種參與方式，包括設計、驗證、視覺化、文件、想法與提問。不同的視角一加入，有時原本看不見的缺口就會突然變得很明顯。這種瞬間也是開發有趣的地方。",
+        "ko": "개발은 코드가 늘어날 때만 앞으로 가는 건 아닙니다. 설계를 다시 읽고, 동작을 확인하고, UI를 다듬고, 이해하기 어려운 부분에 질문이 들어오는 것만으로도 일이 진전될 때가 있습니다. MachiVerse의 공개 README도 구현뿐 아니라 설계, 검증, 시각화, 문서, 아이디어, 질문까지 여러 참여 방식을 소개하고 있습니다. 다른 시선이 하나 들어오면 그전까지 보이지 않던 빈틈이 갑자기 보일 때가 있죠. 그런 순간도 개발의 재미 중 하나입니다."
+      },
+      "tags": ["MachiVerse", "DEVELOPMENT", "OPEN SOURCE", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-changing-city-paths",
       "date": "2026-09-13T16:00:21+09:00",
       "badge": {
