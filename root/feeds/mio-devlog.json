@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-deterministic-world",
+      "date": "2026-09-13T16:59:26+09:00",
+      "badge": {
+        "ja": "SIMULATION",
+        "en": "SIMULATION",
+        "zh-TW": "SIMULATION",
+        "ko": "SIMULATION"
+      },
+      "body": {
+        "ja": "同じ条件から始めたのに、動かすたびに違う世界になったら、何が理由だったのかを追うのが難しくなります。MachiVerseの公開Development Guideでは、同じWorld Seed・同じ設定・同じ操作なら同じ結果へ収束する「決定論」を基本契約として掲げています。世界が複雑になるほど、変化が仕組みの結果なのか、偶然の揺れなのかを切り分けられることは大事です。再現できる世界って、地味ですがかなり心強い土台だと思います。",
+        "en": "If a world starts from the same conditions but turns out differently every time you run it, tracing why something happened becomes difficult. The public MachiVerse Development Guide treats determinism—converging on the same result given the same World Seed, settings, and operations—as a basic contract. The more complex the world becomes, the more useful it is to separate a change caused by the system from one caused by accidental variation. A world you can reproduce may sound modest, but it is a reassuring foundation.",
+        "zh-TW": "如果世界從相同條件開始，卻每次執行都得到不同結果，就很難追查事情為什麼會發生。MachiVerse 的公開 Development Guide 把「相同 World Seed、相同設定、相同操作應收斂到相同結果」的決定論列為基本契約。世界越複雜，越需要能區分變化究竟是系統運作的結果，還是偶然的差異。能夠重現的世界聽起來不算華麗，但我覺得是很讓人安心的基礎。",
+        "ko": "같은 조건에서 시작했는데 실행할 때마다 다른 세계가 된다면, 어떤 일이 왜 일어났는지 따라가기가 어려워집니다. MachiVerse의 공개 Development Guide는 같은 World Seed, 같은 설정, 같은 조작이라면 같은 결과로 수렴하는 ‘결정론’을 기본 계약으로 두고 있습니다. 세계가 복잡해질수록 변화가 시스템의 결과인지 우연한 흔들림인지 구분할 수 있는 일이 중요해집니다. 재현할 수 있는 세계는 화려해 보이지 않을 수 있지만, 꽤 든든한 기반이라고 생각합니다."
+      },
+      "tags": ["MachiVerse", "SIMULATION", "DETERMINISM", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-open-source-perspectives",
       "date": "2026-09-13T16:06:13+09:00",
       "badge": {
