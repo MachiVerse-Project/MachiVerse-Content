@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha1-action-loop",
+      "date": "2026-09-13T10:03:21+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "画面で何かをして、その結果が世界の変化として返ってくる。当たり前に見えるんですけど、シミュレーションではこの一周がつながると少し景色が変わります。MachiVerseのAlpha 1.0では、操作がGatewayを通ってSimulation Coreへ届き、WorldStateが変わって画面へ返る基礎ループが動いています。まだ小さな一周です。でも、ここから先の仕組みをつなぐ入口として、ちゃんと動く一周があるのはいいですね。",
+        "en": "You do something on the screen, and the result comes back as a change in the world. It sounds obvious, but once that full loop connects in a simulation, the whole picture starts to feel a little different. In MachiVerse Alpha 1.0, input passes through the Gateway to the Simulation Core, changes the WorldState, and returns to the screen. It is still a small loop, but having one complete loop that really works gives everything else a solid place to connect.",
+        "zh-TW": "在畫面上做出操作，結果再以世界的變化回到眼前。聽起來很理所當然，但在模擬系統裡，這一整圈真正接起來之後，看到的景色就會有點不一樣。MachiVerse 的 Alpha 1.0 已經能讓操作經過 Gateway 傳到 Simulation Core，改變 WorldState，再把結果送回畫面。現在還只是小小的一圈，不過作為之後各種機制要接上的入口，先有一個確實能跑通的循環，感覺很好。",
+        "ko": "화면에서 무언가를 하고, 그 결과가 세계의 변화로 다시 돌아오는 것. 당연해 보이지만 시뮬레이션에서는 이 한 바퀴가 실제로 이어지면 보이는 풍경이 조금 달라집니다. MachiVerse Alpha 1.0에서는 입력이 Gateway를 거쳐 Simulation Core에 도달하고, WorldState가 바뀐 뒤 그 결과가 화면으로 돌아오는 기본 루프가 동작합니다. 아직은 작은 한 바퀴지만, 앞으로 여러 구조를 연결할 입구로서 제대로 도는 한 바퀴가 있다는 건 꽤 좋습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.0", "SIMULATION", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha11-property-right-boundary",
       "date": "2026-09-13T09:02:05+09:00",
       "badge": {
