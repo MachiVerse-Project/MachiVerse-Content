@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha1-view-boundaries",
+      "date": "2026-09-13T18:02:06+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "同じ「画面」でも、世界を見るための入口と、運用するための入口は分けておきたいです。MachiVerseのAlpha 1.0では、世界の状態を見て最小のDiver操作を行うGeneral Viewと、health確認やConfig変更を扱うAdministration Viewが、別のコンポーネントとして実際に接続されています。役割が違うものを最初から分けておくと、どこで何を扱うのかが追いやすい。画面が二つあるというより、責任を混ぜないための境界なんですよね。",
+        "en": "Even when both are called a “view,” I like keeping the entrance for seeing the world separate from the entrance for operating the system. In MachiVerse Alpha 1.0, the General View, which observes world state and supports minimal Diver operations, and the Administration View, which handles health checks and Config changes, are actually connected as separate components. Separating different responsibilities from the start makes it easier to trace what belongs where. It is less about having two screens and more about keeping their responsibilities from getting mixed together.",
+        "zh-TW": "即使都叫做「畫面」，用來觀看世界的入口和用來進行系統運用的入口，還是希望能分開。MachiVerse 的 Alpha 1.0 中，查看世界狀態並進行最小 Diver 操作的 General View，以及處理 health 確認與 Config 變更的 Administration View，已經作為不同元件實際連接起來。從一開始就把不同職責分開，之後就比較容易追查哪一部分該處理什麼。與其說是有兩個畫面，不如說是為了不讓責任混在一起而留下的邊界。",
+        "ko": "같은 ‘화면’이라고 해도 세계를 보기 위한 입구와 시스템을 운영하기 위한 입구는 나누어 두고 싶습니다. MachiVerse Alpha 1.0에서는 세계 상태를 보고 최소한의 Diver 조작을 수행하는 General View와 health 확인 및 Config 변경을 다루는 Administration View가 서로 다른 컴포넌트로 실제 연결되어 있습니다. 역할이 다른 것을 처음부터 나누어 두면 어디에서 무엇을 다루는지 따라가기 쉬워집니다. 화면이 두 개라는 것보다, 책임이 서로 섞이지 않도록 경계를 두는 쪽에 가깝습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.0", "VIEW", "ARCHITECTURE", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-deterministic-world",
       "date": "2026-09-13T16:59:26+09:00",
       "badge": {
