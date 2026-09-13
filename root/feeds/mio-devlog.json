@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha11-history-lineage-review",
+      "date": "2026-09-13T12:02:51+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "出来事を残すなら、何が起点だったのかまで辿れる形にしたくなります。公開リポジトリでは、Alpha 1.1で履歴のつながりをどう記録するか、その次の設計案がレビューに入りました。今回は雇用の記録へ結び付ける案で、まだ承認前・未実装です。履歴って、ただ並べるだけだと記録の山になりやすいんですよね。あとから「ここから始まったんだ」と辿れる形にできるか。そういう線を一本ずつ決めています。",
+        "en": "If we're going to keep a history, it helps if we can trace where it started. In the public repository, the next Alpha 1.1 design proposal for representing historical links has entered review. This proposal connects the history records to employment records, and it is still unapproved and unimplemented. A history can easily become just a pile of records if we only line things up. The interesting part is whether we can later trace it back and say, “This is where it began.” That's the kind of connection being worked out one line at a time.",
+        "zh-TW": "既然要留下歷史，就會希望之後也能追溯它是從哪裡開始的。公開儲存庫目前有一份新的 Alpha 1.1 設計提案進入審查，內容是在整理歷史之間的連結要怎麼記錄。這次提出的是把歷史紀錄連到雇用紀錄的方案，目前仍未獲批准，也尚未實作。歷史如果只是一直把紀錄排下去，很容易變成一座資料堆。能不能在之後回頭追到「原來是從這裡開始的」，這種連結正在一條一條地被整理出來。",
+        "ko": "기록을 남길 거라면, 무엇이 시작점이었는지까지 따라갈 수 있는 형태가 좋습니다. 공개 저장소에서는 Alpha 1.1에서 이력의 연결을 어떻게 기록할지 다루는 다음 설계안이 리뷰에 들어갔습니다. 이번 안은 이력 기록을 고용 기록에 연결하는 방식이며, 아직 승인 전이고 구현되지도 않았습니다. 이력은 그냥 나열하기만 하면 기록 더미가 되기 쉽죠. 나중에 ‘여기서 시작됐구나’ 하고 거슬러 올라갈 수 있는가. 그런 연결을 하나씩 정리하고 있습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "HISTORY", "DESIGN", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha11-physical-binding-review",
       "date": "2026-09-13T11:01:53+09:00",
       "badge": {
