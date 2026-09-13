@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha11-physical-binding-review",
+      "date": "2026-09-13T11:01:53+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "社会的な関係をひとつ決めると、その手前にある物理側の条件が見えてくることがあります。公開リポジトリでは、Alpha 1.1のPropertyRight実証に必要なPhysical側の初期結び付けを整理するレビュー用ドラフトが立っています。まだ承認前で、実装済みでもありません。「誰が何を持つか」を確かめるなら、まず「その何かがどこに、どう存在するか」が曖昧では困る。層をまたぐほど、足元から順に確かめるのが大事ですね。",
+        "en": "Defining one social relationship sometimes reveals the physical conditions that have to exist underneath it. In the public repository, a review-only draft is now looking at the initial Physical-side bindings needed to prove the Alpha 1.1 PropertyRight benchmark. It is not approved yet, and it is not implemented. If we want to verify who owns what, then what that thing is and how it exists cannot be ambiguous. The more layers connect, the more important it is to check the foundations in order.",
+        "zh-TW": "把一項社會關係定下來之後，有時反而會看見它前面還需要哪些物理層條件。公開儲存庫目前出現了一份僅供審查的草案，正在整理 Alpha 1.1 PropertyRight 驗證所需要的 Physical 側初始綁定。這份內容還沒有獲得批准，也尚未實作。既然要確認「誰擁有什麼」，那麼首先就不能讓「那個東西在哪裡、以什麼方式存在」含糊不清。跨越的層次越多，就越需要從腳下開始一層一層確認。",
+        "ko": "사회적 관계 하나를 정하고 나면, 그보다 앞에 필요한 물리 쪽 조건이 보일 때가 있습니다. 공개 저장소에서는 Alpha 1.1 PropertyRight 검증에 필요한 Physical 쪽 초기 연결을 정리하는 리뷰 전용 초안이 올라와 있습니다. 아직 승인 전이고 구현된 내용도 아닙니다. ‘누가 무엇을 갖는가’를 확인하려면, 먼저 ‘그 무엇이 어디에 어떻게 존재하는가’가 모호해서는 안 되겠죠. 여러 층을 이어 갈수록 발밑부터 순서대로 확인하는 일이 중요합니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "PHYSICAL", "DESIGN", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha1-action-loop",
       "date": "2026-09-13T10:03:21+09:00",
       "badge": {
