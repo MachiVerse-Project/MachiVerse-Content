@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha11-property-right-boundary",
+      "date": "2026-09-13T09:02:05+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "物がそこにあることと、それを誰かが「持っている」ことは、同じ情報ではありません。公開リポジトリでは、Alpha 1.1のベンチマーク向けにPropertyRightの設計がひとつ確定しました。まだ実装完了でも、一般世界の所有制度全体を決めた段階でもありません。物理的な存在と社会的な権利を分けて扱う。こういう線引きがあると、あとから世界の変化を追いやすくなります。",
+        "en": "Something existing in the world and someone owning it are not the same piece of information. In the public repository, one PropertyRight design boundary has now been approved for the Alpha 1.1 benchmark. This does not mean implementation is complete, nor does it define the entire ownership system for the general world. Keeping physical existence separate from social rights gives us a clearer trail when we later follow how the world changes.",
+        "zh-TW": "某樣東西存在於世界裡，和它「屬於誰」，其實不是同一件資訊。公開儲存庫目前已為 Alpha 1.1 的基準測試確定一項 PropertyRight 的設計邊界。這還不代表實作完成，也不是已經決定一般世界中的整套所有權制度。把物理上的存在和社會上的權利分開處理，之後追溯世界如何變化時，脈絡會更清楚。",
+        "ko": "어떤 물건이 세계에 존재한다는 것과 그것을 누군가가 ‘소유한다’는 것은 같은 정보가 아닙니다. 공개 저장소에서는 Alpha 1.1 벤치마크를 위한 PropertyRight 설계 경계 하나가 확정되었습니다. 아직 구현 완료를 뜻하지도 않고, 일반 세계의 소유 제도 전체를 정한 단계도 아닙니다. 물리적인 존재와 사회적인 권리를 나누어 다루면, 나중에 세계가 어떻게 변했는지 따라가기가 훨씬 선명해집니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "PROPERTY", "DESIGN", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha11-society-foundations",
       "date": "2026-09-13T08:04:05+09:00",
       "badge": {
