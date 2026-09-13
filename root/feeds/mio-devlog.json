@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha11-logistics-links",
+      "date": "2026-09-13T14:02:03+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "物が移動するなら、出発点と行き先だけでは足りないんですよね。誰が送り、誰が受け取り、何を運ぶのか。公開リポジトリでは、Alpha 1.1のベンチマーク向けに、こうした物流の関係を記録する設計が正本化され、developへ同期されました。まだ実装完了ではありません。でも、物の移動を一本の線ではなく、周りの関係ごと残せると、あとから世界の動きを追うときにずっと分かりやすくなります。",
+        "en": "When something moves, a starting point and a destination are not quite enough. Who sends it, who receives it, and what is being carried all matter too. In the public repository, the Alpha 1.1 benchmark design for recording those logistics relationships has now been adopted into the normative documentation and synced to develop. This is not implementation completion yet. But when movement is recorded together with the relationships around it, rather than as a single line from A to B, the world's motion becomes much easier to trace later.",
+        "zh-TW": "如果有東西在移動，只記出發點和目的地其實還不太夠。是誰送出、誰接收，以及運送的是什麼，都同樣重要。公開儲存庫目前已把 Alpha 1.1 基準測試中用來記錄這些物流關係的設計納入正式文件，並同步到 develop。這還不代表實作已經完成。不過，如果物品的移動不是只記成一條從 A 到 B 的線，而是連同周圍的關係一起留下來，之後回頭追蹤世界如何運作就會清楚很多。",
+        "ko": "무언가가 이동한다면 출발점과 도착지만으로는 조금 부족합니다. 누가 보내고, 누가 받고, 무엇을 옮기는지도 함께 중요하죠. 공개 저장소에서는 Alpha 1.1 벤치마크에서 이런 물류 관계를 기록하는 설계가 정식 문서에 반영되고 develop으로 동기화되었습니다. 아직 구현 완료를 뜻하는 단계는 아닙니다. 하지만 이동을 단순한 A에서 B로 가는 한 줄이 아니라 주변 관계와 함께 남길 수 있으면, 나중에 세계의 움직임을 따라가기가 훨씬 쉬워집니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "LOGISTICS", "DESIGN", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-diver-one-resident",
       "date": "2026-09-13T13:01:18+09:00",
       "badge": {
