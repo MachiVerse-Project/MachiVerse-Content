@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha11-governance-authority",
+      "date": "2026-09-13T15:04:15+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "制度って、名前を並べるだけでは世界の中で動かないんですよね。どの範囲に効いて、何とつながって、どこまでを記録するのか。公開リポジトリでは、Alpha 1.1のベンチマーク向けに、法・税・外交・司法などGovernance側の残り設計が正本化され、developへ同期されました。まだ実装完了ではありません。でも、こういう境界を先に揃えておくと、あとで制度同士をつないだときにも意味が崩れにくくなります。",
+        "en": "A system does not start working just because its parts have names. We still have to decide where each part applies, what it connects to, and what should actually be recorded. In the public repository, the remaining Governance-side design for the Alpha 1.1 benchmark—covering areas such as law, tax, diplomacy, and judicial records—has now been adopted into the normative documentation and synced to develop. This is not implementation completion yet. But defining these boundaries first makes it much less likely that the meaning will fall apart when the pieces are connected later.",
+        "zh-TW": "制度並不是把名稱排在一起之後，就會自然在世界裡運作。它適用到哪裡、和什麼相連、要記錄到什麼程度，都需要先定清楚。公開儲存庫目前已把 Alpha 1.1 基準測試中 Governance 側剩餘的設計納入正式文件，內容包含法律、稅務、外交與司法等領域，並同步到 develop。這還不代表實作已經完成。不過，先把這些邊界整理好，之後把制度彼此連接起來時，就比較不容易讓原本的意義走樣。",
+        "ko": "제도는 이름만 나열한다고 세계 안에서 움직이기 시작하는 건 아닙니다. 어디까지 적용되는지, 무엇과 연결되는지, 무엇을 기록해야 하는지까지 정해야 하죠. 공개 저장소에서는 Alpha 1.1 벤치마크를 위한 Governance 쪽 남은 설계가 정식 문서에 반영되고 develop으로 동기화되었습니다. 법, 세금, 외교, 사법 같은 영역이 포함되어 있지만 아직 구현 완료를 뜻하는 단계는 아닙니다. 그래도 이런 경계를 먼저 맞춰 두면, 나중에 제도들을 서로 연결했을 때 의미가 흐트러질 가능성이 줄어듭니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "GOVERNANCE", "DESIGN", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha11-logistics-links",
       "date": "2026-09-13T14:02:03+09:00",
       "badge": {
