@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-changing-city-paths",
+      "date": "2026-09-13T16:00:21+09:00",
+      "badge": {
+        "ja": "WORLD",
+        "en": "WORLD",
+        "zh-TW": "WORLD",
+        "ko": "WORLD"
+      },
+      "body": {
+        "ja": "街って、できた瞬間より、そのあとどう変わっていくかの方が気になることがあります。資源が減ったり、産業が変わったり、新しい交通路ができたりすると、人の流れも少しずつ変わる。MachiVerseの公開READMEでは、そうした変化が次の時代へ残っていく世界を目指しています。栄えた理由だけじゃなく、静かになった理由まで辿れたら、街を見る目も少し変わりそうです。",
+        "en": "Sometimes what interests me most about a city is not the moment it appears, but how it changes afterward. Resources can decline, industries can shift, and new transport routes can redirect the flow of people. The public MachiVerse README describes a world where those changes carry forward into the next era. If we can trace not only why a city prospered, but also why it became quieter, I think the way we look at that city starts to change too.",
+        "zh-TW": "有時候，比起一座城市剛形成的瞬間，更讓人感興趣的是它之後會怎麼變。資源可能減少，產業可能轉變，新的交通路線也可能讓人流慢慢改變。MachiVerse 的公開 README 描述的是一個讓這些變化繼續留到下一個時代的世界。如果不只看得出城市為什麼繁榮，也能追到它為什麼逐漸安靜下來，看待那座城市的方式可能也會不太一樣。",
+        "ko": "도시는 만들어진 순간보다 그 뒤에 어떻게 변해 가는지가 더 궁금할 때가 있습니다. 자원이 줄고, 산업이 바뀌고, 새로운 교통로가 생기면 사람의 흐름도 조금씩 달라지죠. MachiVerse의 공개 README는 그런 변화가 다음 시대로 이어지는 세계를 지향하고 있습니다. 왜 번성했는지만이 아니라 왜 조용해졌는지까지 따라갈 수 있다면, 그 도시를 바라보는 시선도 조금 달라질 것 같습니다."
+      },
+      "tags": ["MachiVerse", "WORLD", "HISTORY", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha11-governance-authority",
       "date": "2026-09-13T15:04:15+09:00",
       "badge": {
