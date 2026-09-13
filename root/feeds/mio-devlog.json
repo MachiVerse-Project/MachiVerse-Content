@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-diver-one-resident",
+      "date": "2026-09-13T13:01:18+09:00",
+      "badge": {
+        "ja": "WORLD",
+        "en": "WORLD",
+        "zh-TW": "WORLD",
+        "ko": "WORLD"
+      },
+      "body": {
+        "ja": "「世界に入る」と聞くと、外から街を動かす遊び方を想像しやすいです。でもMachiVerseが目指しているのは、少し違います。公開READMEでは、ダイバーは世界を好きに作り替える存在ではなく、すでにそこで暮らしている一人の住民として参加する体験を掲げています。上から眺めるのと、その中で暮らすのとでは、同じ街でも見えるものが変わりそうです。そういう視点の違いも、世界を面白くする一部だと思います。",
+        "en": "When you hear “enter the world,” it is easy to imagine playing from the outside and reshaping the city. MachiVerse is aiming for something a little different. The public README describes Divers not as beings who freely rewrite the world from outside, but as participants who step into the life of one resident already living there. Looking down on a city and living inside it can make the same place feel very different. That change in perspective is part of what can make a world interesting.",
+        "zh-TW": "聽到「進入世界」時，很容易先想到從外部操作、改造城市的玩法。不過 MachiVerse 想做的事情稍微不一樣。公開 README 中寫的是，Diver 並不是能從世界外任意改寫城市的存在，而是以一名原本就生活在那個世界裡的居民身分參與其中。從上方俯瞰一座城市，和真正生活在城市之中，即使是同一個地方，看見的東西也會不一樣。這種視角的差異，本身也是世界變得有趣的一部分。",
+        "ko": "‘세계에 들어간다’고 하면 바깥에서 도시를 움직이고 바꾸는 방식을 먼저 떠올리기 쉽습니다. 하지만 MachiVerse가 지향하는 모습은 조금 다릅니다. 공개 README에서는 Diver를 세계 밖에서 마음대로 도시를 바꾸는 존재가 아니라, 이미 그 세계에서 살아가고 있는 한 주민으로 참여하는 존재로 설명하고 있습니다. 위에서 도시를 바라보는 것과 그 안에서 살아가는 것은 같은 장소도 다르게 보이게 하겠죠. 그런 시점의 차이도 세계를 재미있게 만드는 한 부분이라고 생각합니다."
+      },
+      "tags": ["MachiVerse", "DIVER", "WORLD", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha11-history-lineage-review",
       "date": "2026-09-13T12:02:51+09:00",
       "badge": {
