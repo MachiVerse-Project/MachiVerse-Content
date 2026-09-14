@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-state-basis-next-step",
+      "date": "2026-09-14T16:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "次の状態を作るとき、「どの時点の世界を元にしたのか」が曖昧だと、同じ処理でも意味が変わってしまいます。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、candidate target Tを作るbasisとして State(T-1) を使う境界が明記されています。ひとつ前の状態を足場にして、次の状態を組み立てる。時間の境目をきちんと切っておくと、変化が重なっても前後関係を追いやすくなります。",
+        "en": "When building the next state, the same operation can mean something different if it is unclear which moment of the world it started from. In the public Alpha 1.1 QA-04 Gate 2 design, candidate target T is explicitly based on State(T-1). The next state is assembled with the previous one as its footing. Keeping that temporal boundary clear makes the before-and-after relationship much easier to follow even as changes accumulate.",
+        "zh-TW": "在建立下一個狀態時，如果不清楚它是從世界的哪一個時間點開始，同一個處理也可能變成不同的意思。公開的 Alpha 1.1 QA-04 Gate 2 設計明確規定，candidate target T 以 State(T-1) 作為 basis。以前一個狀態為立足點，再組成下一個狀態。把時間的邊界切清楚之後，即使變化不斷累積，也比較容易追蹤前後關係。",
+        "ko": "다음 상태를 만들 때 세계의 어느 시점을 기준으로 했는지가 모호하면 같은 처리도 다른 의미가 될 수 있습니다. 공개된 Alpha 1.1 QA-04 Gate 2 설계에서는 candidate target T의 basis를 State(T-1)로 명확히 두고 있습니다. 한 단계 전 상태를 발판으로 다음 상태를 조립하는 방식입니다. 시간의 경계를 분명히 나누어 두면 변화가 겹쳐도 앞뒤 관계를 따라가기 쉬워집니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "STEP", "STATE", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-reuse-canonical-authority",
       "date": "2026-09-14T15:01:40+09:00",
       "badge": {
