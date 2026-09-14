@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-review-removes-duplicate-authority",
+      "date": "2026-09-14T17:08:52+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "設計資料も、一度書いたら終わりではないんですよね。公開リポジトリでは、Alpha 1.1 QA-04 Gate 2のレビューで、専用のtransition hashを増やす案について、既存のStep runtime側に同じ役割のchange-set authorityがあることをsource auditで確認し、その専用定義を取り下げる修正が検討されています。まだレビュー中ですが、書いたものを減らす修正も大事です。重複した答えを残さない方が、仕組みの筋道はずっと追いやすくなります。",
+        "en": "Design documents are not finished just because something has been written down once. In a public Alpha 1.1 QA-04 Gate 2 review, a proposed dedicated transition hash is being removed after a source audit confirmed that the existing Step runtime already has change-set authority for the same role. The PR is still under review, but removing something can be an important correction too. A system is much easier to follow when it does not leave two answers for the same question.",
+        "zh-TW": "設計文件並不是寫過一次就算完成。公開儲存庫目前有一項 Alpha 1.1 QA-04 Gate 2 的審查修正：原本打算新增專用 transition hash，但 source audit 確認既有的 Step runtime 已經有負責同一用途的 change-set authority，因此正在檢討移除這項專用定義。這個 PR 仍在審查中，不過把已經寫下的東西刪掉，有時也是很重要的修正。不要為同一個問題留下兩套答案，整個系統的脈絡會更容易追蹤。",
+        "ko": "설계 문서도 한 번 적었다고 끝나는 것은 아닙니다. 공개 저장소의 Alpha 1.1 QA-04 Gate 2 리뷰에서는 전용 transition hash를 추가하려던 안에 대해, source audit로 기존 Step runtime에 같은 역할의 change-set authority가 이미 있다는 점을 확인하고 그 전용 정의를 빼는 수정이 검토되고 있습니다. 아직 리뷰 중인 PR이지만, 적어 둔 것을 줄이는 것도 중요한 수정입니다. 같은 질문에 두 개의 답을 남기지 않는 편이 구조의 흐름을 훨씬 따라가기 쉽습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "REVIEW", "DESIGN", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-state-basis-next-step",
       "date": "2026-09-14T16:01:40+09:00",
       "badge": {
