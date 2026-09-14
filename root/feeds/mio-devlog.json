@@ -137,7 +137,7 @@
         "ja": "世界の状態を変える処理ができても、その結果がそのまま次の確定状態になるわけではありません。公開リポジトリでは、Alpha 1.1のQA-04向けに、各Operationのtyped mutation resultを `PartitionCandidateV1` へつなぐ境界が正本化され、developへ同期されました。これはまだfull StepやCOMMIT、publishまでの完成ではありません。変化をいったん「候補」として切り分けると、確定する前に何を確かめるべきかが見えやすくなります。",
         "en": "Being able to mutate world state does not mean that result immediately becomes the next committed state. In the public repository, the Alpha 1.1 QA-04 boundary that connects typed mutation results from each Operation to `PartitionCandidateV1` has been adopted and synced to develop. This is not completion of the full Step, COMMIT, or publication path. Treating a change as a candidate first makes it much clearer what still needs to be checked before it becomes authoritative.",
         "zh-TW": "即使已經能處理世界狀態的變化，也不代表那個結果會直接成為下一個確定狀態。公開儲存庫已為 Alpha 1.1 的 QA-04 正式整理出把各 Operation 的 typed mutation result 連到 `PartitionCandidateV1` 的邊界，並同步到 develop。這還不代表 full Step、COMMIT 或 publish 已經完成。先把變化分成「候選狀態」，反而更容易看清楚在正式確定之前還需要驗證什麼。",
-        "ko": "세계 상태를 바꾸는 처리를 할 수 있다고 해서 그 결과가 곧바로 다음 확정 상태가 되는 것은 아닙니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 각 Operation의 typed mutation result를 `PartitionCandidateV1`로 이어 주는 경계를 정식화되어 develop에 동기화되었습니다. 아직 full Step이나 COMMIT, publish까지 완성되었다는 뜻은 아닙니다. 변화를 먼저 ‘후보’로 나누어 두면 확정하기 전에 무엇을 확인해야 하는지가 더 잘 보입니다."
+        "ko": "세계 상태를 바꾸는 처리를 할 수 있다고 해서 그 결과가 곧바로 다음 확정 상태가 되는 것은 아닙니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 각 Operation의 typed mutation result를 `PartitionCandidateV1`로 이어 주는 경계가 정식화되어 develop에 동기화되었습니다. 아직 full Step이나 COMMIT, publish까지 완성되었다는 뜻은 아닙니다. 변화를 먼저 ‘후보’로 나누어 두면 확정하기 전에 무엇을 확인해야 하는지가 더 잘 보입니다."
       },
       "tags": ["MachiVerse", "ALPHA 1.1", "PARTITION", "STATE", "MIO DEVLOG"]
     },
