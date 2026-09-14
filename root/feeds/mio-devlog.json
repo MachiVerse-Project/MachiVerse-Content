@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-step-change-set-trace",
+      "date": "2026-09-14T12:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "同じような変化に見えても、「何を元に」「どの操作を経て」変わったのかが違えば、記録としては別物です。公開リポジトリでは、Alpha 1.1のQA-04向けに、Step内のpartition変化をbasisとなる状態やordered OperationIds、遷移の記録と結び付ける設計が正本化され、developへ同期されました。結果だけでなく経路も残しておくと、あとから変化の理由を辿るときにずっと助かります。",
+        "en": "Two changes can look the same while still being different records if they started from different state or passed through different operations. In the public repository, the Alpha 1.1 QA-04 design for binding partition changes within a Step to their basis state, ordered OperationIds, and transition record has been adopted and synced to develop. Keeping the path as well as the result makes it much easier to trace why a change happened later.",
+        "zh-TW": "兩個變化看起來可能一樣，但如果它們的起點不同，或經過的操作順序不同，作為紀錄就不是同一件事。公開儲存庫已為 Alpha 1.1 的 QA-04 正式整理出把 Step 內的 partition 變化與 basis 狀態、ordered OperationIds 以及遷移紀錄連在一起的設計，並同步到 develop。不只留下結果，也把路徑留下來，之後追查變化為什麼發生時會清楚很多。",
+        "ko": "겉으로 같은 변화처럼 보여도 무엇을 기준으로 시작했고 어떤 조작 순서를 거쳤는지가 다르면 기록으로는 다른 사건입니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 Step 안의 partition 변화에 basis 상태, ordered OperationIds, 전이 기록을 연결하는 설계가 정식화되어 develop에 동기화되었습니다. 결과뿐 아니라 경로까지 남겨 두면 나중에 변화가 왜 일어났는지 따라갈 때 훨씬 도움이 됩니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "STEP", "TRACEABILITY", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-partition-candidate-boundary",
       "date": "2026-09-14T11:01:40+09:00",
       "badge": {
