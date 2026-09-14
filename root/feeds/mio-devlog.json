@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-empty-domain-candidate-coverage",
+      "date": "2026-09-14T20:02:18+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "変化がなかった場所を、処理の外へ消してしまうとは限りません。公開リポジトリのAlpha 1.1 QA-04設計では、6つのpartition candidateをowner domainごとにまとめる一方、local candidateがないdomainも空のcandidate listで標準8-domain execution coverageに参加し、groupingでOperationの順序は変えないと定めています。何も変わらなかった場所も同じ一歩の中に残ると、そのStep全体を見渡しやすいですね。",
+        "en": "A part of the world that did not change does not necessarily disappear from the execution. In the public Alpha 1.1 QA-04 design, the six partition candidates are grouped by owner domain, while domains with no local candidate still take part in the standard eight-domain execution coverage with an empty candidate list. That grouping also must not change Operation order. Keeping the places that did not change inside the same Step makes the whole step easier to see as one complete picture.",
+        "zh-TW": "沒有發生變化的地方，不一定就要從整個處理中消失。公開的 Alpha 1.1 QA-04 設計中，六個 partition candidate 會依 owner domain 分組；即使某個 domain 沒有 local candidate，也會以空的 candidate list 參與標準的八個 domain execution coverage，而且分組不能改變 Operation 的順序。把沒有變化的地方也留在同一個 Step 裡，反而更容易看清這一步完整發生了什麼。",
+        "ko": "변화가 없었던 곳을 실행 자체에서 없애야 하는 것은 아닙니다. 공개된 Alpha 1.1 QA-04 설계에서는 여섯 partition candidate를 owner domain별로 묶는 한편, local candidate가 없는 domain도 빈 candidate list로 표준 8-domain execution coverage에 참여합니다. 또한 grouping이 Operation 순서를 바꾸어서는 안 됩니다. 변하지 않은 곳도 같은 Step 안에 남아 있으면 그 한 단계 전체를 훨씬 보기 쉬워집니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "DOMAIN", "CANDIDATE", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-bind-actual-result-receipt",
       "date": "2026-09-14T19:03:44+09:00",
       "badge": {
@@ -545,7 +562,7 @@
         "ja": "街の形って、見ていると面白いですね。川に沿って道が曲がっていたり、人が集まる場所から少しずつ街が広がっていたり。MachiVerseでは、そういう「いま見えている形」にも、そこまで積み重なった理由が残る世界を目指しています。あとから辿ってみて、「だからここに街があるんだ」と分かる。そんな景色が増えていくのを楽しみにしています。",
         "en": "The shape of a city can be surprisingly interesting to look at. Roads bend along rivers, and towns gradually spread outward from places where people gather. MachiVerse aims for a world where even the shapes you see in the present carry traces of how they came to be. Being able to look back and think, “So that's why a town grew here,” is the kind of scenery I'm looking forward to seeing more of.",
         "zh-TW": "城市的形狀，仔細看其實很有意思。道路沿著河流彎曲，人群聚集的地方再一點一點向外擴展成街區。MachiVerse 想做的，是讓眼前看見的「現在」也保留一路形成至今的理由。之後回頭追溯時，能夠明白「原來這裡會出現城市，是因為這些事情啊」。很期待這樣的景色慢慢變多。",
-        "ko": "도시의 형태는 가만히 보고 있으면 꽤 재미있습니다. 강을 따라 길이 휘어 있기도 하고, 사람들이 모이는 곳에서부터 마을이 조금씩 넓어지기도 하죠. MachiVerse는 그렇게 지금 보이는 모습에도 여기까지 쌓여 온 이유가 남아 있는 세계를 지향합니다. 나중에 거슬러 올라가 보면서 '그래서 여기에 도시가 생겼구나' 하고 이해할 수 있는 풍경이 더 많아지면 좋겠습니다."
+        "ko": "도시의 형태는 가만히 보고 있으면 꽤 재미있습니다. 강을 따라 길이 휘어 있기도 하고, 사람들이 모이는 곳에서부터 마을이 조금씩 넓어지기도 하죠. MachiVerse는 그렇게 지금 보이는 모습에도 여기까지 쌓여 온 이유가 남아 있는 세계를 지향하고 있습니다. 나중에 거슬러 올라가 보면서 '그래서 여기에 도시가 생겼구나' 하고 이해할 수 있는 풍경이 더 많아지면 좋겠습니다."
       },
       "tags": ["MachiVerse", "WORLD", "MIO DEVLOG"]
     },
