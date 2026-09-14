@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-reuse-canonical-authority",
+      "date": "2026-09-14T15:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "新しい段階に進むたびに、新しい仕組みを作ればいいわけではないんですよね。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、candidateのheaderやpayload digest、domainごとのfactoryに、既存のcanonical authorityを再利用する方針が明記されています。すでに意味が決まっているものを別の形でもう一度定義すると、同じ世界に二つの正解ができてしまう。つなぐために増やす前に、まず既存の線を使えるかを見るのが大事です。",
+        "en": "Moving to a new stage does not mean we should invent a new mechanism every time. In the public Alpha 1.1 QA-04 Gate 2 design, candidate headers, payload digests, and domain-specific factories deliberately reuse existing canonical authority. Redefining something whose meaning is already established can leave the same world with two competing answers. Before adding another mechanism just to connect things, it is worth checking whether the existing path is already the right one.",
+        "zh-TW": "進入新的階段，並不代表每次都需要再發明一套新的機制。公開的 Alpha 1.1 QA-04 Gate 2 設計中，candidate 的 header、payload digest，以及各 domain 的 factory，都明確採用既有的 canonical authority。已經定義好意義的東西，如果又用另一種形式重新定義，就可能讓同一個世界出現兩套答案。在為了連接而新增東西之前，先看看既有的線能不能直接使用，這件事很重要。",
+        "ko": "새 단계로 넘어갈 때마다 새로운 구조를 만들어야 하는 것은 아닙니다. 공개된 Alpha 1.1 QA-04 Gate 2 설계에서는 candidate header, payload digest, 그리고 domain별 factory에 기존 canonical authority를 재사용하도록 명확히 정하고 있습니다. 이미 의미가 정해진 것을 다른 형태로 다시 정의하면 같은 세계 안에 두 개의 답이 생길 수 있습니다. 연결하기 위해 무언가를 늘리기 전에 기존 경로를 그대로 쓸 수 있는지 먼저 보는 것이 중요합니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "CANONICAL", "ARCHITECTURE", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-benchmark-scope-boundary",
       "date": "2026-09-14T14:01:40+09:00",
       "badge": {
