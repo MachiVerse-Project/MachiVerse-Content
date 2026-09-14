@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-market-order-boundary",
+      "date": "2026-09-14T08:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "市場に注文を出すことと、その取引が成立することは、似ていても別の出来事です。公開リポジトリでは、Alpha 1.1のQA-04向けに、市場注文を実際の状態へ追加するための境界が整理されました。一方で、matchingやclearing、settlementまでをこの処理が決めるわけではありません。ひとつの操作に役割を詰め込みすぎない方が、あとで「どこで何が起きたか」を素直に追えるんですよね。",
+        "en": "Placing an order in a market and having that trade actually complete are similar-looking events, but they are not the same event. In the public repository, a boundary has been defined for adding a market order to actual state for the Alpha 1.1 QA-04 workload. That operation does not also decide matching, clearing, or settlement. Keeping too many responsibilities out of one operation makes it much easier to trace where each part of a transaction actually happened.",
+        "zh-TW": "在市場中送出訂單，和那筆交易真正成立，看起來很接近，但其實是不同的事件。公開儲存庫已為 Alpha 1.1 的 QA-04 整理出把市場訂單加入實際狀態的處理邊界。不過，matching、clearing 與 settlement 並不會在這一步一起被決定。不要把太多責任塞進同一個操作裡，之後回頭追查「哪一件事是在什麼地方發生的」就會清楚很多。",
+        "ko": "시장에 주문을 내는 것과 그 거래가 실제로 성립하는 것은 비슷해 보여도 서로 다른 사건입니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 시장 주문을 실제 상태에 추가하는 경계가 정리되었습니다. 하지만 이 처리 하나가 matching, clearing, settlement까지 함께 결정하는 것은 아닙니다. 한 조작에 너무 많은 역할을 넣지 않으면 나중에 ‘어디에서 무엇이 일어났는지’를 훨씬 자연스럽게 따라갈 수 있습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "MARKET", "OPERATION", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-fail-closed-boundary",
       "date": "2026-09-13T21:01:40+09:00",
       "badge": {
