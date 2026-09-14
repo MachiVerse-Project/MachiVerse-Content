@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-bind-actual-result-receipt",
+      "date": "2026-09-14T19:03:44+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "記録を残すなら、「こうなったはず」を作り直すより、実際に返ってきた結果を根拠にしたいです。公開リポジトリのAlpha 1.1 QA-04 full-step change-set設計では、transition receiptに含めるchanged recordの情報を、期待値の再計算ではなくGate-1 handlerが実際に返したresult objectから取るよう定めています。あとで追いかけるとき、記録と実際の処理結果が同じ線でつながっている方が安心できます。",
+        "en": "When keeping a record, I would rather anchor it to what actually came back than reconstruct what we think should have happened. In the public Alpha 1.1 QA-04 full-step change-set design, changed-record information in the transition receipt is taken from the actual result object returned by the Gate-1 handler, not from a recomputed expected fixture. When we trace things later, it is reassuring to know the record and the real processing result are connected by the same line.",
+        "zh-TW": "既然要留下紀錄，比起重新算出「理論上應該是這樣」，更希望把實際回傳的結果當成根據。公開的 Alpha 1.1 QA-04 full-step change-set 設計中，transition receipt 裡的 changed record 資訊，必須取自 Gate-1 handler 實際回傳的 result object，而不是重新計算預期值。之後回頭追查時，紀錄和真正的處理結果沿著同一條線連在一起，會讓人安心很多。",
+        "ko": "기록을 남길 거라면 ‘이렇게 되었어야 한다’를 다시 계산하기보다 실제로 돌아온 결과를 근거로 삼고 싶습니다. 공개된 Alpha 1.1 QA-04 full-step change-set 설계에서는 transition receipt의 changed record 정보를 기대값을 다시 계산해서 만들지 않고, Gate-1 handler가 실제로 반환한 result object에서 가져오도록 정하고 있습니다. 나중에 흐름을 따라갈 때 기록과 실제 처리 결과가 같은 선으로 이어져 있다는 점은 꽤 든든합니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "RECEIPT", "TRACEABILITY", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-six-partition-change-set-boundary",
       "date": "2026-09-14T18:03:04+09:00",
       "badge": {
