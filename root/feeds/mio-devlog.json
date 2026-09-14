@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-read-only-control-boundary",
+      "date": "2026-09-14T13:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "見るための情報と、変えるための操作は、近くにあっても同じ扱いにはしたくないです。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、`participation.control_mode` はread-onlyとして扱われ、`PartitionCandidateV1`を生成しない境界が明記されています。読み取り側まで変化の候補を作り始めると、どこで世界が変わったのか曖昧になります。何もしないことを、ちゃんと「何もしない」として残すのも大事ですね。",
+        "en": "Information used to observe the world and operations used to change it may sit close together, but I do not want them treated as the same thing. In the public Alpha 1.1 QA-04 Gate 2 design, `participation.control_mode` is explicitly read-only and does not produce a `PartitionCandidateV1`. If the read side starts creating change candidates too, it becomes harder to tell where the world actually changed. Sometimes it matters to preserve “no change” as exactly that.",
+        "zh-TW": "用來觀察世界的資訊，和用來改變世界的操作，就算彼此很接近，也不希望被當成同一件事。公開的 Alpha 1.1 QA-04 Gate 2 設計明確把 `participation.control_mode` 視為 read-only，並且不產生 `PartitionCandidateV1`。如果連讀取的一側也開始建立變更候選，就會很難看清楚世界究竟是在哪裡被改變的。有時候，把「沒有變更」確實保留成沒有變更，也很重要。",
+        "ko": "세계를 보기 위한 정보와 세계를 바꾸기 위한 조작은 가까이 있어도 같은 것으로 다루고 싶지는 않습니다. 공개된 Alpha 1.1 QA-04 Gate 2 설계에서는 `participation.control_mode`를 read-only로 명확히 두고 `PartitionCandidateV1`를 만들지 않도록 경계를 정하고 있습니다. 읽기 쪽까지 변화 후보를 만들기 시작하면 세계가 실제로 어디에서 바뀌었는지 흐려집니다. 아무것도 바꾸지 않은 상태를 그대로 남기는 것도 꽤 중요합니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "READ-ONLY", "CONTROL", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-step-change-set-trace",
       "date": "2026-09-14T12:01:40+09:00",
       "badge": {
