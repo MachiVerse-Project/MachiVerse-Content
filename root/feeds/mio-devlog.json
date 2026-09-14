@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-environment-hazard-state",
+      "date": "2026-09-14T09:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "災害や環境変化を扱うなら、「起こした」という入力だけで終わらず、その後の世界に状態として残ることが大事です。公開リポジトリでは、Alpha 1.1のQA-04向けに `environment.hazard.inject` を持続的な `environment.hazard` の状態へつなぐ設計が正本化され、developへ同期されました。まだrelease完了を意味する段階ではありませんが、出来事を一瞬の命令ではなく、追いかけられる世界の状態にする境界がひとつ整いました。",
+        "en": "When handling disasters or environmental change, it matters that the effect does not end with the input that triggered it; it should remain as part of the world's state afterward. In the public repository, the Alpha 1.1 QA-04 design that connects `environment.hazard.inject` to persistent `environment.hazard` state has been adopted and synced to develop. This does not mean release completion, but it establishes another boundary where an event becomes world state that can be followed over time rather than a momentary command.",
+        "zh-TW": "要處理災害或環境變化時，不能只停在「觸發了什麼」這個輸入，之後的影響也需要作為世界狀態留下來。公開儲存庫已為 Alpha 1.1 的 QA-04 正式整理出從 `environment.hazard.inject` 連到持續性 `environment.hazard` 狀態的設計，並同步到 develop。這還不代表 release 已完成，但至少又整理好一條邊界：讓事件不只是瞬間的命令，而是之後可以持續追蹤的世界狀態。",
+        "ko": "재해나 환경 변화를 다룬다면 ‘발생시켰다’는 입력에서 끝나지 않고, 그 뒤의 세계에 상태로 남는 것이 중요합니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 `environment.hazard.inject`를 지속적인 `environment.hazard` 상태로 이어 주는 설계가 정식화되어 develop에 동기화되었습니다. 아직 release 완료를 뜻하는 단계는 아니지만, 사건을 순간적인 명령이 아니라 이후에도 따라갈 수 있는 세계 상태로 만드는 경계가 하나 더 정리되었습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "ENVIRONMENT", "HAZARD", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-market-order-boundary",
       "date": "2026-09-14T08:01:40+09:00",
       "badge": {
