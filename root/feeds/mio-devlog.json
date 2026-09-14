@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-benchmark-scope-boundary",
+      "date": "2026-09-14T14:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "試験のために決めた答えを、そのまま世界全体のルールにしないことも大事です。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、今回のchange-setやcandidate生成に必要なauthorityをbenchmark限定として定め、一般のPhase 4 schemaやCOMMIT・publishの意味論へ広げない境界が明記されています。小さな証明に必要な決め事と、長く使う一般設計を分けておくと、あとで世界を広げる余地を残せます。",
+        "en": "It is important not to turn an answer chosen for a test into a rule for the entire world. In the public Alpha 1.1 QA-04 Gate 2 design, the authority needed for this benchmark's change-set and candidate generation is explicitly scoped to the benchmark and is not generalized into a Phase 4-wide schema or COMMIT/publish semantics. Keeping the decisions needed for a focused proof separate from the general design leaves room for the world to grow later.",
+        "zh-TW": "為了測試而決定的答案，不應該直接變成整個世界的通用規則。公開的 Alpha 1.1 QA-04 Gate 2 設計中，這次 change-set 與 candidate 生成所需的 authority 明確限定在 benchmark 範圍內，不會直接擴張成 Phase 4 的通用 schema，也不會順便定義 COMMIT 或 publish 的語意。把局部驗證需要的決定和長期的一般設計分開，之後世界要擴展時就還留有空間。",
+        "ko": "시험을 위해 정한 답을 그대로 세계 전체의 규칙으로 만드는 것은 피하고 싶습니다. 공개된 Alpha 1.1 QA-04 Gate 2 설계에서는 이번 change-set과 candidate 생성에 필요한 authority를 benchmark 범위로 한정하고, 이를 일반 Phase 4 schema나 COMMIT·publish 의미론으로 확대하지 않는 경계를 분명히 두고 있습니다. 작은 증명에 필요한 결정과 오래 쓸 일반 설계를 나누어 두면 나중에 세계를 확장할 여지를 남길 수 있습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "SCOPE", "DESIGN", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-read-only-control-boundary",
       "date": "2026-09-14T13:01:40+09:00",
       "badge": {
