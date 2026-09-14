@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-service-reservation-boundary",
+      "date": "2026-09-14T10:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "予約が受け付けられたことと、サービスが終わったことは同じではありません。MachiVerseの公開設計では、Alpha 1.1のQA-04向けに `infrastructure.service.reserve` をservice queueへ入れる境界が整理されていて、成功したenqueueだけでサービス完了やcapacity変更まで意味することはありません。待つ状態をちゃんと待つ状態として残せると、その先で何が起きたのかも追いやすくなります。",
+        "en": "Having a reservation accepted and having the service completed are not the same thing. In MachiVerse's public Alpha 1.1 QA-04 design, `infrastructure.service.reserve` is bounded as an enqueue into a service queue; a successful enqueue does not by itself mean the service finished or that capacity changed. When a waiting state is represented honestly as waiting, it becomes much easier to follow what happens next.",
+        "zh-TW": "預約被接受，和服務已經完成，並不是同一件事。MachiVerse 的公開 Alpha 1.1 QA-04 設計中，`infrastructure.service.reserve` 的邊界是把請求放進 service queue；成功 enqueue 並不代表服務已完成，也不代表 capacity 已經改變。能把「正在等待」如實保留成等待狀態，之後發生了什麼也會更容易追查。",
+        "ko": "예약이 받아들여졌다는 것과 서비스가 끝났다는 것은 같은 일이 아닙니다. MachiVerse의 공개 Alpha 1.1 QA-04 설계에서 `infrastructure.service.reserve`는 service queue에 넣는 경계로 정리되어 있으며, enqueue 성공만으로 서비스 완료나 capacity 변경까지 의미하지는 않습니다. 기다리는 상태를 그대로 기다리는 상태로 남길 수 있으면 그다음에 무엇이 일어났는지도 훨씬 따라가기 쉬워집니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "INFRASTRUCTURE", "QUEUE", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-environment-hazard-state",
       "date": "2026-09-14T09:01:40+09:00",
       "badge": {
