@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-six-partition-change-set-boundary",
+      "date": "2026-09-14T18:03:04+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "変化があるなら、変わった場所だけをきちんと示せる方がいいです。公開リポジトリでは、Alpha 1.1 QA-04のfull-step partition change-set authorityが正本化され、developへ同期されました。対象は実際にmutationされた6つのpartitionに限定され、関係のないpartitionまで変化したことにはしません。世界全体を毎回「変わった」と扱うより、どこが変わったのかを狭く残せる方が、あとから一歩ずつ追いやすいですね。",
+        "en": "When something changes, I prefer being able to point to exactly what changed. In the public repository, the Alpha 1.1 QA-04 full-step partition change-set authority has been adopted and synced to develop. Its scope is limited to the six partitions that were actually mutated, rather than treating unrelated partitions as changed too. Recording a narrow change is much easier to follow later than saying the whole world changed every time.",
+        "zh-TW": "既然有變化，就希望能清楚指出真正改變的是哪裡。公開儲存庫已將 Alpha 1.1 QA-04 的 full-step partition change-set authority 納入正式文件，並同步到 develop。它只涵蓋實際發生 mutation 的六個 partition，不會把無關的 partition 也當成發生了變化。比起每次都說整個世界「變了」，把變化範圍收得準確一些，之後一段一段回頭追會容易很多。",
+        "ko": "변화가 있다면 실제로 바뀐 곳을 정확히 가리킬 수 있는 편이 좋습니다. 공개 저장소에서는 Alpha 1.1 QA-04의 full-step partition change-set authority가 정식화되어 develop에 동기화되었습니다. 대상은 실제로 mutation된 여섯 partition으로 제한되며, 관련 없는 partition까지 바뀐 것으로 취급하지 않습니다. 매번 세계 전체가 ‘변했다’고 보는 것보다 어디가 바뀌었는지를 좁게 남기는 편이 나중에 한 단계씩 따라가기가 훨씬 쉽습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "PARTITION", "CHANGE SET", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-review-removes-duplicate-authority",
       "date": "2026-09-14T17:08:52+09:00",
       "badge": {
