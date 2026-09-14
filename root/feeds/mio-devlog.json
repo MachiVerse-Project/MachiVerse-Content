@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-14-physical-move-velocity-boundary",
+      "date": "2026-09-14T21:07:37+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "動かす指示が入ったとき、すぐに位置まで書き換えるとは限りません。公開リポジトリのAlpha 1.1 QA-04設計では、`physical.move.request` のfocused applicationは指定された速度を `physical.presence` の `linear_velocity` へ反映する一方、position・occupancy・collision consequenceまではこの境界で変更しないと定めています。ひとつの操作がどこまで責任を持つかを狭く切ると、その次に何が世界を動かしたのかを追いやすくなります。",
+        "en": "A move request does not necessarily rewrite position immediately. In the public Alpha 1.1 QA-04 design, the focused application of `physical.move.request` applies the requested velocity to `physical.presence.linear_velocity`, while position, occupancy, and collision consequences remain outside this boundary. Keeping one operation's responsibility narrow makes it easier to trace what actually moved the world in the next step.",
+        "zh-TW": "收到移動指示時，不一定就要立刻把位置一起改寫。公開的 Alpha 1.1 QA-04 設計中，`physical.move.request` 的 focused application 會把指定速度反映到 `physical.presence` 的 `linear_velocity`，但 position、occupancy 與 collision consequence 不會在這個邊界裡一併修改。把一個操作負責到哪裡切得清楚一些，之後就更容易追查究竟是哪一步真正讓世界發生了位移。",
+        "ko": "이동 요청이 들어왔다고 해서 곧바로 위치까지 바꾸는 것은 아닙니다. 공개된 Alpha 1.1 QA-04 설계에서 `physical.move.request`의 focused application은 지정된 속도를 `physical.presence`의 `linear_velocity`에 반영하지만, position·occupancy·collision consequence까지 이 경계에서 함께 변경하지는 않습니다. 하나의 조작이 어디까지 책임지는지 좁게 나누어 두면 다음 단계에서 실제로 무엇이 세계를 움직였는지 따라가기 쉬워집니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "PHYSICAL", "MOVEMENT", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-empty-domain-candidate-coverage",
       "date": "2026-09-14T20:02:18+09:00",
       "badge": {
