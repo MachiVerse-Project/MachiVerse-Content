@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha1-state-distribution",
+      "date": "2026-09-13T19:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "世界が変わっても、その変化が見る側へ届かなければ、まだ少し遠いんですよね。MachiVerseのAlpha 1.0では、WorldStateの更新だけでなく、状態配信まで確認されています。変化した世界の状態をきちんと渡して、画面側がそれを受け取れる。目立つ仕組みではないですけど、「世界が変わった」と「その変化が見える」の間をつなぐ、大事な部分だと思います。",
+        "en": "Even if the world changes, that change still feels a little distant unless it reaches the side that is watching. In MachiVerse Alpha 1.0, not only WorldState updates but also state distribution have been verified. The changed world state can be passed along so the viewing side can receive it. It is not a flashy mechanism, but I think it is an important bridge between “the world changed” and “we can actually see that change.”",
+        "zh-TW": "就算世界發生了變化，如果那份變化沒有傳到觀看的一側，感覺還是有一點距離。MachiVerse 的 Alpha 1.0 不只已確認 WorldState 的更新，也確認了狀態配信。變更後的世界狀態能被好好傳出去，讓畫面端接收到。這不是很顯眼的機制，但我覺得它正好連接了「世界變了」和「我們真的看得見那個變化」之間的重要一段。",
+        "ko": "세계가 바뀌어도 그 변화가 보는 쪽까지 전달되지 않으면 아직 조금 멀게 느껴집니다. MachiVerse Alpha 1.0에서는 WorldState 갱신뿐 아니라 상태 배포까지 확인되어 있습니다. 바뀐 세계 상태를 제대로 전달하고, 화면 쪽에서 그것을 받아볼 수 있는 구조입니다. 눈에 띄는 기능은 아니지만, ‘세계가 바뀌었다’와 ‘그 변화가 보인다’ 사이를 이어 주는 중요한 부분이라고 생각합니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.0", "STATE", "DISTRIBUTION", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha1-view-boundaries",
       "date": "2026-09-13T18:02:06+09:00",
       "badge": {
