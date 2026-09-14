@@ -3,14 +3,34 @@
   "enabled": true,
   "maxPosts": 3,
   "profile": {
-    "name": {"ja": "南雲 澪", "en": "Mio Nagumo", "zh-TW": "南雲 澪", "ko": "미오 나구모"},
+    "name": {
+      "ja": "南雲 澪",
+      "en": "Mio Nagumo",
+      "zh-TW": "南雲 澪",
+      "ko": "미오 나구모"
+    },
     "handle": "@Mio_MachiVerse",
-    "role": {"ja": "Co-Founder / System Development Lead", "en": "Co-Founder / System Development Lead", "zh-TW": "Co-Founder / System Development Lead", "ko": "Co-Founder / System Development Lead"},
+    "role": {
+      "ja": "Co-Founder / System Development Lead",
+      "en": "Co-Founder / System Development Lead",
+      "zh-TW": "Co-Founder / System Development Lead",
+      "ko": "Co-Founder / System Development Lead"
+    },
     "avatar": "https://machiverse.app/assets/images/characters/nagumo-mio/web/mio-welcome.png"
   },
   "section": {
-    "kicker": {"ja": "MIO DEVLOG / DEVELOPMENT DIARY", "en": "MIO DEVLOG / DEVELOPMENT DIARY", "zh-TW": "MIO DEVLOG / DEVELOPMENT DIARY", "ko": "MIO DEVLOG / DEVELOPMENT DIARY"},
-    "title": {"ja": "南雲の、開発日記。", "en": "Mio's development diary.", "zh-TW": "南雲的開發日記。", "ko": "미오의 개발 일지."},
+    "kicker": {
+      "ja": "MIO DEVLOG / DEVELOPMENT DIARY",
+      "en": "MIO DEVLOG / DEVELOPMENT DIARY",
+      "zh-TW": "MIO DEVLOG / DEVELOPMENT DIARY",
+      "ko": "MIO DEVLOG / DEVELOPMENT DIARY"
+    },
+    "title": {
+      "ja": "南雲の、開発日記。",
+      "en": "Mio's development diary.",
+      "zh-TW": "南雲的開發日記。",
+      "ko": "미오의 개발 일지."
+    },
     "lead": {
       "ja": "MachiVerseの開発で考えていること、詰まったところ、少し前に進んだところ。南雲澪の視点で、短い投稿として残していきます。",
       "en": "Short notes from Mio's point of view: what we are thinking about, where development gets stuck, and the small steps that move MachiVerse forward.",
@@ -22,7 +42,12 @@
     {
       "id": "2026-09-14-state-basis-next-step",
       "date": "2026-09-14T16:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "次の状態を作るとき、「どの時点の世界を元にしたのか」が曖昧だと、同じ処理でも意味が変わってしまいます。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、candidate target Tを作るbasisとして State(T-1) を使う境界が明記されています。ひとつ前の状態を足場にして、次の状態を組み立てる。時間の境目をきちんと切っておくと、変化が重なっても前後関係を追いやすくなります。",
         "en": "When building the next state, the same operation can mean something different if it is unclear which moment of the world it started from. In the public Alpha 1.1 QA-04 Gate 2 design, candidate target T is explicitly based on State(T-1). The next state is assembled with the previous one as its footing. Keeping that temporal boundary clear makes the before-and-after relationship much easier to follow even as changes accumulate.",
@@ -34,7 +59,12 @@
     {
       "id": "2026-09-14-reuse-canonical-authority",
       "date": "2026-09-14T15:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "新しい段階に進むたびに、新しい仕組みを作ればいいわけではないんですよね。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、candidateのheaderやpayload digest、domainごとのfactoryに、既存のcanonical authorityを再利用する方針が明記されています。すでに意味が決まっているものを別の形でもう一度定義すると、同じ世界に二つの正解ができてしまう。つなぐために増やす前に、まず既存の線を使えるかを見るのが大事です。",
         "en": "Moving to a new stage does not mean we should invent a new mechanism every time. In the public Alpha 1.1 QA-04 Gate 2 design, candidate headers, payload digests, and domain-specific factories deliberately reuse existing canonical authority. Redefining something whose meaning is already established can leave the same world with two competing answers. Before adding another mechanism just to connect things, it is worth checking whether the existing path is already the right one.",
@@ -46,7 +76,12 @@
     {
       "id": "2026-09-14-benchmark-scope-boundary",
       "date": "2026-09-14T14:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "試験のために決めた答えを、そのまま世界全体のルールにしないことも大事です。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、今回のchange-setやcandidate生成に必要なauthorityをbenchmark限定として定め、一般のPhase 4 schemaやCOMMIT・publishの意味論へ広げない境界が明記されています。小さな証明に必要な決め事と、長く使う一般設計を分けておくと、あとで世界を広げる余地を残せます。",
         "en": "It is important not to turn an answer chosen for a test into a rule for the entire world. In the public Alpha 1.1 QA-04 Gate 2 design, the authority needed for this benchmark's change-set and candidate generation is explicitly scoped to the benchmark and is not generalized into a Phase 4-wide schema or COMMIT/publish semantics. Keeping the decisions needed for a focused proof separate from the general design leaves room for the world to grow later.",
@@ -58,7 +93,12 @@
     {
       "id": "2026-09-14-read-only-control-boundary",
       "date": "2026-09-14T13:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "見るための情報と、変えるための操作は、近くにあっても同じ扱いにはしたくないです。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、`participation.control_mode` はread-onlyとして扱われ、`PartitionCandidateV1`を生成しない境界が明記されています。読み取り側まで変化の候補を作り始めると、どこで世界が変わったのか曖昧になります。何もしないことを、ちゃんと「何もしない」として残すのも大事ですね。",
         "en": "Information used to observe the world and operations used to change it may sit close together, but I do not want them treated as the same thing. In the public Alpha 1.1 QA-04 Gate 2 design, `participation.control_mode` is explicitly read-only and does not produce a `PartitionCandidateV1`. If the read side starts creating change candidates too, it becomes harder to tell where the world actually changed. Sometimes it matters to preserve “no change” as exactly that.",
@@ -70,7 +110,12 @@
     {
       "id": "2026-09-14-step-change-set-trace",
       "date": "2026-09-14T12:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "同じような変化に見えても、「何を元に」「どの操作を経て」変わったのかが違えば、記録としては別物です。公開リポジトリでは、Alpha 1.1のQA-04向けに、Step内のpartition変化をbasisとなる状態やordered OperationIds、遷移の記録と結び付ける設計が正本化され、developへ同期されました。結果だけでなく経路も残しておくと、あとから変化の理由を辿るときにずっと助かります。",
         "en": "Two changes can look the same while still being different records if they started from different state or passed through different operations. In the public repository, the Alpha 1.1 QA-04 design for binding partition changes within a Step to their basis state, ordered OperationIds, and transition record has been adopted and synced to develop. Keeping the path as well as the result makes it much easier to trace why a change happened later.",
@@ -82,19 +127,29 @@
     {
       "id": "2026-09-14-partition-candidate-boundary",
       "date": "2026-09-14T11:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "世界の状態を変える処理ができても、その結果がそのまま次の確定状態になるわけではありません。公開リポジトリでは、Alpha 1.1のQA-04向けに、各Operationのtyped mutation resultを `PartitionCandidateV1` へつなぐ境界が正本化され、developへ同期されました。これはまだfull StepやCOMMIT、publishまでの完成ではありません。変化をいったん「候補」として切り分けると、確定する前に何を確かめるべきかが見えやすくなります。",
         "en": "Being able to mutate world state does not mean that result immediately becomes the next committed state. In the public repository, the Alpha 1.1 QA-04 boundary that connects typed mutation results from each Operation to `PartitionCandidateV1` has been adopted and synced to develop. This is not completion of the full Step, COMMIT, or publication path. Treating a change as a candidate first makes it much clearer what still needs to be checked before it becomes authoritative.",
         "zh-TW": "即使已經能處理世界狀態的變化，也不代表那個結果會直接成為下一個確定狀態。公開儲存庫已為 Alpha 1.1 的 QA-04 正式整理出把各 Operation 的 typed mutation result 連到 `PartitionCandidateV1` 的邊界，並同步到 develop。這還不代表 full Step、COMMIT 或 publish 已經完成。先把變化分成「候選狀態」，反而更容易看清楚在正式確定之前還需要驗證什麼。",
-        "ko": "세계 상태를 바꾸는 처리를 할 수 있다고 해서 그 결과가 곧바로 다음 확정 상태가 되는 것은 아닙니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 각 Operation의 typed mutation result를 `PartitionCandidateV1`로 이어 주는 경계가 정식화되어 develop에 동기화되었습니다. 아직 full Step이나 COMMIT, publish까지 완성되었다는 뜻은 아닙니다. 변화를 먼저 ‘후보’로 나누어 두면 확정하기 전에 무엇을 확인해야 하는지가 더 잘 보입니다."
+        "ko": "세계 상태를 바꾸는 처리를 할 수 있다고 해서 그 결과가 곧바로 다음 확정 상태가 되는 것은 아닙니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 각 Operation의 typed mutation result를 `PartitionCandidateV1`로 이어 주는 경계를 정식화되어 develop에 동기화되었습니다. 아직 full Step이나 COMMIT, publish까지 완성되었다는 뜻은 아닙니다. 변화를 먼저 ‘후보’로 나누어 두면 확정하기 전에 무엇을 확인해야 하는지가 더 잘 보입니다."
       },
       "tags": ["MachiVerse", "ALPHA 1.1", "PARTITION", "STATE", "MIO DEVLOG"]
     },
     {
       "id": "2026-09-14-service-reservation-boundary",
       "date": "2026-09-14T10:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "予約が受け付けられたことと、サービスが終わったことは同じではありません。MachiVerseの公開設計では、Alpha 1.1のQA-04向けに `infrastructure.service.reserve` をservice queueへ入れる境界が整理されていて、成功したenqueueだけでサービス完了やcapacity変更まで意味することはありません。待つ状態をちゃんと待つ状態として残せると、その先で何が起きたのかも追いやすくなります。",
         "en": "Having a reservation accepted and having the service completed are not the same thing. In MachiVerse's public Alpha 1.1 QA-04 design, `infrastructure.service.reserve` is bounded as an enqueue into a service queue; a successful enqueue does not by itself mean the service finished or that capacity changed. When a waiting state is represented honestly as waiting, it becomes much easier to follow what happens next.",
@@ -106,7 +161,12 @@
     {
       "id": "2026-09-14-environment-hazard-state",
       "date": "2026-09-14T09:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "災害や環境変化を扱うなら、「起こした」という入力だけで終わらず、その後の世界に状態として残ることが大事です。公開リポジトリでは、Alpha 1.1のQA-04向けに `environment.hazard.inject` を持続的な `environment.hazard` の状態へつなぐ設計が正本化され、developへ同期されました。まだrelease完了を意味する段階ではありませんが、出来事を一瞬の命令ではなく、追いかけられる世界の状態にする境界がひとつ整いました。",
         "en": "When handling disasters or environmental change, it matters that the effect does not end with the input that triggered it; it should remain as part of the world's state afterward. In the public repository, the Alpha 1.1 QA-04 design that connects `environment.hazard.inject` to persistent `environment.hazard` state has been adopted and synced to develop. This does not mean release completion, but it establishes another boundary where an event becomes world state that can be followed over time rather than a momentary command.",
@@ -118,7 +178,12 @@
     {
       "id": "2026-09-14-market-order-boundary",
       "date": "2026-09-14T08:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "市場に注文を出すことと、その取引が成立することは、似ていても別の出来事です。公開リポジトリでは、Alpha 1.1のQA-04向けに、市場注文を実際の状態へ追加するための境界が整理されました。一方で、matchingやclearing、settlementまでをこの処理が決めるわけではありません。ひとつの操作に役割を詰め込みすぎない方が、あとで「どこで何が起きたか」を素直に追えるんですよね。",
         "en": "Placing an order in a market and having that trade actually complete are similar-looking events, but they are not the same event. In the public repository, a boundary has been defined for adding a market order to actual state for the Alpha 1.1 QA-04 workload. That operation does not also decide matching, clearing, or settlement. Keeping too many responsibilities out of one operation makes it much easier to trace where each part of a transaction actually happened.",
@@ -130,7 +195,12 @@
     {
       "id": "2026-09-13-fail-closed-boundary",
       "date": "2026-09-13T21:01:40+09:00",
-      "badge": {"ja": "DESIGN", "en": "DESIGN", "zh-TW": "DESIGN", "ko": "DESIGN"},
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
       "body": {
         "ja": "分からない状態を、とりあえず通してしまう方が怖いことがあります。MachiVerseの公開設計や実装では、未登録の操作や不正な状態、権限や連続性を確認できない場面をfail-closedで拒否する境界がいくつも置かれています。止まるのは不便に見えても、世界の状態を曖昧なまま進めないための仕組みです。何を許さないかがはっきりしていると、安心して次の一歩をつなげられます。",
         "en": "Sometimes it is more frightening to let an unknown state pass just because we can. MachiVerse's public designs and implementation place fail-closed boundaries around cases such as unregistered operations, invalid states, or situations where authorization or continuity cannot be verified. Stopping can look inconvenient, but it keeps the world from moving forward on ambiguous authority. When it is clear what must not be accepted, the next step can be connected with much more confidence.",
@@ -142,7 +212,12 @@
     {
       "id": "2026-09-13-alpha11-reference-world-materialized",
       "date": "2026-09-13T20:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "大きな仕組みって、「全部そろった」と「もう動かせる」は同じではないんですよね。公開リポジトリでは、Alpha 1.1のQA-04参照世界について、Society/Governance 200万件とInfrastructure/Information 50万件のmaterialization完了が記録され、developにも同期されました。ただし、authoritativeなStep loopやrelease evidenceはまだ別の段階です。材料がそろったからこそ、次はそれをどう動かすかがはっきり見えてきます。",
         "en": "With a large system, “everything is assembled” and “it is ready to run” are not quite the same thing. In the public repository, materialization of the Alpha 1.1 QA-04 reference world has been recorded as complete—2,000,000 Society/Governance records and 500,000 Infrastructure/Information records—and synced to develop. The authoritative Step loop and release evidence are still separate stages. Once the pieces are all there, the next question of how to make them move becomes much clearer.",
@@ -154,7 +229,12 @@
     {
       "id": "2026-09-13-alpha1-state-distribution",
       "date": "2026-09-13T19:01:40+09:00",
-      "badge": {"ja": "ALPHA 1.0", "en": "ALPHA 1.0", "zh-TW": "ALPHA 1.0", "ko": "ALPHA 1.0"},
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
       "body": {
         "ja": "世界が変わっても、その変化が見る側へ届かなければ、まだ少し遠いんですよね。MachiVerseのAlpha 1.0では、WorldStateの更新だけでなく、状態配信まで確認されています。変化した世界の状態をきちんと渡して、画面側がそれを受け取れる。目立つ仕組みではないですけど、「世界が変わった」と「その変化が見える」の間をつなぐ、大事な部分だと思います。",
         "en": "Even if the world changes, that change still feels a little distant unless it reaches the side that is watching. In MachiVerse Alpha 1.0, not only WorldState updates but also state distribution have been verified. The changed world state can be passed along so the viewing side can receive it. It is not a flashy mechanism, but I think it is an important bridge between “the world changed” and “we can actually see that change.”",
@@ -166,7 +246,12 @@
     {
       "id": "2026-09-13-alpha1-view-boundaries",
       "date": "2026-09-13T18:02:06+09:00",
-      "badge": {"ja": "ALPHA 1.0", "en": "ALPHA 1.0", "zh-TW": "ALPHA 1.0", "ko": "ALPHA 1.0"},
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
       "body": {
         "ja": "同じ「画面」でも、世界を見るための入口と、運用するための入口は分けておきたいです。MachiVerseのAlpha 1.0では、世界の状態を見て最小のDiver操作を行うGeneral Viewと、health確認やConfig変更を扱うAdministration Viewが、別のコンポーネントとして実際に接続されています。役割が違うものを最初から分けておくと、どこで何を扱うのかが追いやすい。画面が二つあるというより、責任を混ぜないための境界なんですよね。",
         "en": "Even when both are called a “view,” I like keeping the entrance for seeing the world separate from the entrance for operating the system. In MachiVerse Alpha 1.0, the General View, which observes world state and supports minimal Diver operations, and the Administration View, which handles health checks and Config changes, are actually connected as separate components. Separating different responsibilities from the start makes it easier to trace what belongs where. It is less about having two screens and more about keeping their responsibilities from getting mixed together.",
@@ -178,7 +263,12 @@
     {
       "id": "2026-09-13-deterministic-world",
       "date": "2026-09-13T16:59:26+09:00",
-      "badge": {"ja": "SIMULATION", "en": "SIMULATION", "zh-TW": "SIMULATION", "ko": "SIMULATION"},
+      "badge": {
+        "ja": "SIMULATION",
+        "en": "SIMULATION",
+        "zh-TW": "SIMULATION",
+        "ko": "SIMULATION"
+      },
       "body": {
         "ja": "同じ条件から始めたのに、動かすたびに違う世界になったら、何が理由だったのかを追うのが難しくなります。MachiVerseの公開Development Guideでは、同じWorld Seed・同じ設定・同じ操作なら同じ結果へ収束する「決定論」を基本契約として掲げています。世界が複雑になるほど、変化が仕組みの結果なのか、偶然の揺れなのかを切り分けられることは大事です。再現できる世界って、地味ですがかなり心強い土台だと思います。",
         "en": "If a world starts from the same conditions but turns out differently every time you run it, tracing why something happened becomes difficult. The public MachiVerse Development Guide treats determinism—converging on the same result given the same World Seed, settings, and operations—as a basic contract. The more complex the world becomes, the more useful it is to separate a change caused by the system from one caused by accidental variation. A world you can reproduce may sound modest, but it is a reassuring foundation.",
@@ -190,7 +280,12 @@
     {
       "id": "2026-09-13-open-source-perspectives",
       "date": "2026-09-13T16:06:13+09:00",
-      "badge": {"ja": "DEVELOPMENT", "en": "DEVELOPMENT", "zh-TW": "DEVELOPMENT", "ko": "DEVELOPMENT"},
+      "badge": {
+        "ja": "DEVELOPMENT",
+        "en": "DEVELOPMENT",
+        "zh-TW": "DEVELOPMENT",
+        "ko": "DEVELOPMENT"
+      },
       "body": {
         "ja": "開発って、コードが増えたときだけ進むわけじゃないんですよね。設計を読み直したり、動きを確かめたり、UIを整えたり、分かりにくいところを質問してもらったり。MachiVerseの公開READMEでも、実装だけでなく設計・検証・可視化・ドキュメント・アイデア・質問まで、いろいろな参加の形を挙げています。違う視点が入ると、それまで見えていなかった穴が急に見えることがある。そういう瞬間も、開発の面白いところです。",
         "en": "Development doesn't only move forward when more code is written. Rereading a design, checking behavior, refining the UI, or simply having someone ask about a confusing part can all move things along. The public MachiVerse README lists many ways to take part beyond implementation, including design, verification, visualization, documentation, ideas, and questions. A different point of view can suddenly reveal a gap that was hard to see before. Moments like that are part of what makes development interesting.",
@@ -202,7 +297,12 @@
     {
       "id": "2026-09-13-changing-city-paths",
       "date": "2026-09-13T16:00:21+09:00",
-      "badge": {"ja": "WORLD", "en": "WORLD", "zh-TW": "WORLD", "ko": "WORLD"},
+      "badge": {
+        "ja": "WORLD",
+        "en": "WORLD",
+        "zh-TW": "WORLD",
+        "ko": "WORLD"
+      },
       "body": {
         "ja": "街って、できた瞬間より、そのあとどう変わっていくかの方が気になることがあります。資源が減ったり、産業が変わったり、新しい交通路ができたりすると、人の流れも少しずつ変わる。MachiVerseの公開READMEでは、そうした変化が次の時代へ残っていく世界を目指しています。栄えた理由だけじゃなく、静かになった理由まで辿れたら、街を見る目も少し変わりそうです。",
         "en": "Sometimes what interests me most about a city is not the moment it appears, but how it changes afterward. Resources can decline, industries can shift, and new transport routes can redirect the flow of people. The public MachiVerse README describes a world where those changes carry forward into the next era. If we can trace not only why a city prospered, but also why it became quieter, I think the way we look at that city starts to change too.",
@@ -214,7 +314,12 @@
     {
       "id": "2026-09-13-alpha11-governance-authority",
       "date": "2026-09-13T15:04:15+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "制度って、名前を並べるだけでは世界の中で動かないんですよね。どの範囲に効いて、何とつながって、どこまでを記録するのか。公開リポジトリでは、Alpha 1.1のベンチマーク向けに、法・税・外交・司法などGovernance側の残り設計が正本化され、developへ同期されました。まだ実装完了ではありません。でも、こういう境界を先に揃えておくと、あとで制度同士をつないだときにも意味が崩れにくくなります。",
         "en": "A system does not start working just because its parts have names. We still have to decide where each part applies, what it connects to, and what should actually be recorded. In the public repository, the remaining Governance-side design for the Alpha 1.1 benchmark—covering areas such as law, tax, diplomacy, and judicial records—has now been adopted into the normative documentation and synced to develop. This is not implementation completion yet. But defining these boundaries first makes it much less likely that the meaning will fall apart when the pieces are connected later.",
@@ -226,7 +331,12 @@
     {
       "id": "2026-09-13-alpha11-logistics-links",
       "date": "2026-09-13T14:02:03+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "物が移動するなら、出発点と行き先だけでは足りないんですよね。誰が送り、誰が受け取り、何を運ぶのか。公開リポジトリでは、Alpha 1.1のベンチマーク向けに、こうした物流の関係を記録する設計が正本化され、developへ同期されました。まだ実装完了ではありません。でも、物の移動を一本の線ではなく、周りの関係ごと残せると、あとから世界の動きを追うときにずっと分かりやすくなります。",
         "en": "When something moves, a starting point and a destination are not quite enough. Who sends it, who receives it, and what is being carried all matter too. In the public repository, the Alpha 1.1 benchmark design for recording those logistics relationships has now been adopted into the normative documentation and synced to develop. This is not implementation completion yet. But when movement is recorded together with the relationships around it, rather than as a single line from A to B, the world's motion becomes much easier to trace later.",
@@ -238,7 +348,12 @@
     {
       "id": "2026-09-13-diver-one-resident",
       "date": "2026-09-13T13:01:18+09:00",
-      "badge": {"ja": "WORLD", "en": "WORLD", "zh-TW": "WORLD", "ko": "WORLD"},
+      "badge": {
+        "ja": "WORLD",
+        "en": "WORLD",
+        "zh-TW": "WORLD",
+        "ko": "WORLD"
+      },
       "body": {
         "ja": "「世界に入る」と聞くと、外から街を動かす遊び方を想像しやすいです。でもMachiVerseが目指しているのは、少し違います。公開READMEでは、ダイバーは世界を好きに作り替える存在ではなく、すでにそこで暮らしている一人の住民として参加する体験を掲げています。上から眺めるのと、その中で暮らすのとでは、同じ街でも見えるものが変わりそうです。そういう視点の違いも、世界を面白くする一部だと思います。",
         "en": "When you hear “enter the world,” it is easy to imagine playing from the outside and reshaping the city. MachiVerse is aiming for something a little different. The public README describes Divers not as beings who freely rewrite the world from outside, but as participants who step into the life of one resident already living there. Looking down on a city and living inside it can make the same place feel very different. That change in perspective is part of what can make a world interesting.",
@@ -250,7 +365,12 @@
     {
       "id": "2026-09-13-alpha11-history-lineage-review",
       "date": "2026-09-13T12:02:51+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "出来事を残すなら、何が起点だったのかまで辿れる形にしたくなります。公開リポジトリでは、Alpha 1.1で履歴のつながりをどう記録するか、その次の設計案がレビューに入りました。今回は雇用の記録へ結び付ける案で、まだ承認前・未実装です。履歴って、ただ並べるだけだと記録の山になりやすいんですよね。あとから「ここから始まったんだ」と辿れる形にできるか。そういう線を一本ずつ決めています。",
         "en": "If we're going to keep a history, it helps if we can trace where it started. In the public repository, the next Alpha 1.1 design proposal for representing historical links has entered review. This proposal connects the history records to employment records, and it is still unapproved and unimplemented. A history can easily become just a pile of records if we only line things up. The interesting part is whether we can later trace it back and say, “This is where it began.” That's the kind of connection being worked out one line at a time.",
@@ -262,7 +382,12 @@
     {
       "id": "2026-09-13-alpha11-physical-binding-review",
       "date": "2026-09-13T11:01:53+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "社会的な関係をひとつ決めると、その手前にある物理側の条件が見えてくることがあります。公開リポジトリでは、Alpha 1.1のPropertyRight実証に必要なPhysical側の初期結び付けを整理するレビュー用ドラフトが立っています。まだ承認前で、実装済みでもありません。「誰が何を持つか」を確かめるなら、まず「その何かがどこに、どう存在するか」が曖昧では困る。層をまたぐほど、足元から順に確かめるのが大事ですね。",
         "en": "Defining one social relationship sometimes reveals the physical conditions that have to exist underneath it. In the public repository, a review-only draft is now looking at the initial Physical-side bindings needed to prove the Alpha 1.1 PropertyRight benchmark. It is not approved yet, and it is not implemented. If we want to verify who owns what, then what that thing is and how it exists cannot be ambiguous. The more layers connect, the more important it is to check the foundations in order.",
@@ -274,7 +399,12 @@
     {
       "id": "2026-09-13-alpha1-action-loop",
       "date": "2026-09-13T10:03:21+09:00",
-      "badge": {"ja": "ALPHA 1.0", "en": "ALPHA 1.0", "zh-TW": "ALPHA 1.0", "ko": "ALPHA 1.0"},
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
       "body": {
         "ja": "画面で何かをして、その結果が世界の変化として返ってくる。当たり前に見えるんですけど、シミュレーションではこの一周がつながると少し景色が変わります。MachiVerseのAlpha 1.0では、操作がGatewayを通ってSimulation Coreへ届き、WorldStateが変わって画面へ返る基礎ループが動いています。まだ小さな一周です。でも、ここから先の仕組みをつなぐ入口として、ちゃんと動く一周があるのはいいですね。",
         "en": "You do something on the screen, and the result comes back as a change in the world. It sounds obvious, but once that full loop connects in a simulation, the whole picture starts to feel a little different. In MachiVerse Alpha 1.0, input passes through the Gateway to the Simulation Core, changes the WorldState, and returns to the screen. It is still a small loop, but having one complete loop that really works gives everything else a solid place to connect.",
@@ -286,7 +416,12 @@
     {
       "id": "2026-09-13-alpha11-property-right-boundary",
       "date": "2026-09-13T09:02:05+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "物がそこにあることと、それを誰かが「持っている」ことは、同じ情報ではありません。公開リポジトリでは、Alpha 1.1のベンチマーク向けにPropertyRightの設計がひとつ確定しました。まだ実装完了でも、一般世界の所有制度全体を決めた段階でもありません。物理的な存在と社会的な権利を分けて扱う。こういう線引きがあると、あとから世界の変化を追いやすくなります。",
         "en": "Something existing in the world and someone owning it are not the same piece of information. In the public repository, one PropertyRight design boundary has now been approved for the Alpha 1.1 benchmark. This does not mean implementation is complete, nor does it define the entire ownership system for the general world. Keeping physical existence separate from social rights gives us a clearer trail when we later follow how the world changes.",
@@ -298,7 +433,12 @@
     {
       "id": "2026-09-13-alpha11-society-foundations",
       "date": "2026-09-13T08:04:05+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "社会の仕組みって、ひとつ決めると隣の仕組みとの境界が見えてきます。公開リポジトリでは、Alpha 1.1に向けて雇用や教育・文化・評判、それから通貨まわりの設計が順番に正本化され、developへ同期されています。まだ実装完了ではありません。先に「何をどう記録するか」を揃えておくと、あとで世界の出来事同士をつなぐときに迷いにくい。地味ですけど、こういう整理は効いてきます。",
         "en": "Social systems tend to reveal their boundaries once you define one part and look at what sits next to it. In the public repository, Alpha 1.1 design work for employment, education, culture, reputation, and currency has been adopted into the normative documentation and synced to develop in sequence. This is not implementation completion yet. Agreeing first on what should be recorded, and how, leaves fewer ambiguities when the pieces of the world start connecting later. It is quiet work, but it pays off.",
@@ -310,7 +450,12 @@
     {
       "id": "2026-09-12-alpha11-information-delivery-draft",
       "date": "2026-09-12T21:14:00+09:00",
-      "badge": {"ja": "ALPHA 1.1", "en": "ALPHA 1.1", "zh-TW": "ALPHA 1.1", "ko": "ALPHA 1.1"},
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
       "body": {
         "ja": "仕様を詰める作業って、実装より静かに見えるんですけど、意外と考えることが多いです。いま公開リポジトリでは、Alpha 1.1に向けて「情報がどう届けられたか」を扱う仕組みの設計ドラフトが監査中です。まだ実装済みではなく、まず境界や記録のしかたを固めている段階。こういう確認を先にしておくと、実装するときに迷う場所が少なくなります。",
         "en": "Design work can look quieter than implementation, but there is often a surprising amount to think through. In the public repository right now, an Alpha 1.1 design draft around how the system represents information delivery is being audited. It is not implemented yet; the current stage is about fixing the boundaries and how it should be recorded. Doing this kind of checking first usually leaves fewer ambiguous places when implementation begins.",
@@ -322,7 +467,12 @@
     {
       "id": "2026-09-12-alpha1-recovery-foundation",
       "date": "2026-09-12T20:18:00+09:00",
-      "badge": {"ja": "ALPHA 1.0", "en": "ALPHA 1.0", "zh-TW": "ALPHA 1.0", "ko": "ALPHA 1.0"},
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
       "body": {
         "ja": "シミュレーションって、動いている瞬間だけじゃなくて、止めたあとにちゃんと戻ってこられるかも大事なんですよね。MachiVerseのAlpha 1.0では、世界の状態を永続化して、再起動後にrecoveryできるところまで確認されています。派手な部分ではないですけど、積み重ねた状態を次の起動へつなげられる。こういう土台、けっこう好きです。",
         "en": "A simulation matters not only while it is running, but also in whether it can come back properly after it stops. In MachiVerse Alpha 1.0, persistence of the world state and recovery after a restart have been verified. It is not the flashiest part, but being able to carry accumulated state into the next run is an important foundation. Foundations like this are pretty satisfying.",
@@ -334,7 +484,12 @@
     {
       "id": "2026-09-12-city-traces",
       "date": "2026-09-12T19:00:00+09:00",
-      "badge": {"ja": "WORLD", "en": "WORLD", "zh-TW": "WORLD", "ko": "WORLD"},
+      "badge": {
+        "ja": "WORLD",
+        "en": "WORLD",
+        "zh-TW": "WORLD",
+        "ko": "WORLD"
+      },
       "body": {
         "ja": "街の形って、見ていると面白いですね。川に沿って道が曲がっていたり、人が集まる場所から少しずつ街が広がっていたり。MachiVerseでは、そういう「いま見えている形」にも、そこまで積み重なった理由が残る世界を目指しています。あとから辿ってみて、「だからここに街があるんだ」と分かる。そんな景色が増えていくのを楽しみにしています。",
         "en": "The shape of a city can be surprisingly interesting to look at. Roads bend along rivers, and towns gradually spread outward from places where people gather. MachiVerse aims for a world where even the shapes you see in the present carry traces of how they came to be. Being able to look back and think, “So that's why a town grew here,” is the kind of scenery I'm looking forward to seeing more of.",
@@ -346,7 +501,12 @@
     {
       "id": "2026-09-12-welcome",
       "date": "2026-09-12T00:00:00+09:00",
-      "badge": {"ja": "HELLO", "en": "HELLO", "zh-TW": "HELLO", "ko": "HELLO"},
+      "badge": {
+        "ja": "HELLO",
+        "en": "HELLO",
+        "zh-TW": "HELLO",
+        "ko": "HELLO"
+      },
       "body": {
         "ja": "はじめまして、南雲澪です。この開発日記では、MachiVerseが少しずつ形になっていく様子を、開発のそばから気軽に書き残していきます。うまくいったことも、詰まったところも、たまに細かい技術の話も。完成したところだけじゃなく、途中の景色も一緒に楽しんでもらえたら嬉しいです。これからよろしくお願いします。",
         "en": "Hi, I'm Mio Nagumo. In this development diary, I'll leave short, casual notes as MachiVerse gradually takes shape: the things that go well, the places where development gets stuck, and sometimes the small technical details in between. I hope you'll enjoy not only the finished parts, but also the view along the way. Nice to have you here.",
