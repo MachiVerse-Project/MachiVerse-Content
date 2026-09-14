@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-15-resident-action-state-boundary",
+      "date": "2026-09-15T08:00:53+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "住人が何かをしようとしていることと、その結果まで世界に起きたことは、同じではありません。公開リポジトリのAlpha 1.1 QA-04設計では、`resident.action.request` はResident側の `resident.behavior_state` に現在の行動を記録しますが、それだけで移動や市場、制度など外部domainでの成功まで確定しません。『何をしようとしているか』と『実際に何が起きたか』を分けておくと、世界の因果を追いやすくなります。",
+        "en": "A resident trying to do something is not the same as that consequence already having happened in the world. In the public Alpha 1.1 QA-04 design, `resident.action.request` records the current action in Resident-owned `resident.behavior_state`, but it does not by itself confirm success in external domains such as movement, markets, or institutions. Keeping “what the resident is trying to do” separate from “what actually happened” makes the world's causality much easier to trace.",
+        "zh-TW": "居民正準備做某件事，和那件事的結果已經真的發生在世界裡，並不是同一件事。公開的 Alpha 1.1 QA-04 設計中，`resident.action.request` 會把目前的行動記錄到 Resident 側的 `resident.behavior_state`，但不會因此就直接判定移動、市場或制度等外部 domain 的結果已經成功。把「正在打算做什麼」和「實際發生了什麼」分開，世界中的因果關係就會更容易追蹤。",
+        "ko": "주민이 무언가를 하려고 한다는 것과 그 결과가 이미 세계에서 일어났다는 것은 같은 일이 아닙니다. 공개된 Alpha 1.1 QA-04 설계에서 `resident.action.request`는 Resident 쪽 `resident.behavior_state`에 현재 행동을 기록하지만, 그것만으로 이동·시장·제도 같은 외부 domain의 성공까지 확정하지는 않습니다. ‘무엇을 하려고 하는가’와 ‘실제로 무엇이 일어났는가’를 나누어 두면 세계의 인과관계를 훨씬 따라가기 쉬워집니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "RESIDENT", "ACTION", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-14-physical-move-velocity-boundary",
       "date": "2026-09-14T21:07:37+09:00",
       "badge": {
