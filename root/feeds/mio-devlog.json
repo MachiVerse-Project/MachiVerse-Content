@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-13-alpha11-reference-world-materialized",
+      "date": "2026-09-13T20:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "大きな仕組みって、「全部そろった」と「もう動かせる」は同じではないんですよね。公開リポジトリでは、Alpha 1.1のQA-04参照世界について、Society/Governance 200万件とInfrastructure/Information 50万件のmaterialization完了が記録され、developにも同期されました。ただし、authoritativeなStep loopやrelease evidenceはまだ別の段階です。材料がそろったからこそ、次はそれをどう動かすかがはっきり見えてきます。",
+        "en": "With a large system, “everything is assembled” and “it is ready to run” are not quite the same thing. In the public repository, materialization of the Alpha 1.1 QA-04 reference world has been recorded as complete—2,000,000 Society/Governance records and 500,000 Infrastructure/Information records—and synced to develop. The authoritative Step loop and release evidence are still separate stages. Once the pieces are all there, the next question of how to make them move becomes much clearer.",
+        "zh-TW": "在大型系統裡，「材料都齊了」和「已經可以完整運作」其實不是同一件事。公開儲存庫已記錄 Alpha 1.1 QA-04 參照世界的 materialization 完成：Society/Governance 200 萬筆，以及 Infrastructure/Information 50 萬筆，並已同步到 develop。不過 authoritative Step loop 與 release evidence 仍然是下一個階段。正因為材料都到位了，接下來要怎麼讓它們真正動起來，反而變得更清楚。",
+        "ko": "큰 시스템에서는 ‘재료가 모두 갖춰졌다’와 ‘이제 완전히 움직일 수 있다’가 같은 뜻은 아닙니다. 공개 저장소에는 Alpha 1.1 QA-04 참조 세계의 materialization이 완료된 것으로 기록되었습니다. Society/Governance 200만 건과 Infrastructure/Information 50만 건이며 develop에도 동기화되었습니다. 다만 authoritative Step loop와 release evidence는 아직 별도의 다음 단계입니다. 재료가 모두 갖춰졌기 때문에, 이제 그것을 어떻게 움직일지가 더 선명하게 보이기 시작합니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "REFERENCE WORLD", "MATERIALIZATION", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-13-alpha1-state-distribution",
       "date": "2026-09-13T19:01:40+09:00",
       "badge": {
