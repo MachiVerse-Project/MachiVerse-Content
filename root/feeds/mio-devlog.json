@@ -40,6 +40,23 @@
   },
   "posts": [
     {
+      "id": "2026-09-15-governance-incident-registration-boundary",
+      "date": "2026-09-15T09:00:30+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "出来事を登録することと、その出来事の後始末まで決めることは別です。公開リポジトリのAlpha 1.1 QA-04設計では、`governance.incident.register` は `governance.security_incident` に新しい記録を1件作りますが、調査・裁定・執行・緊急対応や一般的なseverityモデルまではこの境界で決めません。まず『何が起きたか』を正確に残して、その先の扱いは別の責任としてつなぐ。こういう分け方の方が、制度の流れを追いやすいですね。",
+        "en": "Registering an incident and deciding everything that happens afterward are separate responsibilities. In the public Alpha 1.1 QA-04 design, `governance.incident.register` creates one new `governance.security_incident` record, but this boundary does not define investigation, adjudication, enforcement, emergency response, or a general severity model. First record what happened accurately, then connect the later handling as a separate responsibility. That separation makes institutional flow much easier to trace.",
+        "zh-TW": "把事件登記下來，和把事件之後的所有處置一起決定，應該是不同的責任。公開的 Alpha 1.1 QA-04 設計中，`governance.incident.register` 會在 `governance.security_incident` 新增一筆紀錄，但這個邊界不會同時定義調查、裁定、執行、緊急應對或一般性的 severity 模型。先準確留下「發生了什麼」，再把後續處理接到另一個責任上，制度的流程反而更容易追蹤。",
+        "ko": "사건을 등록하는 것과 그 뒤의 모든 처리를 결정하는 것은 서로 다른 책임입니다. 공개된 Alpha 1.1 QA-04 설계에서 `governance.incident.register`는 `governance.security_incident`에 새 기록 하나를 만들지만, 이 경계가 조사·판정·집행·긴급 대응이나 일반적인 severity 모델까지 정의하지는 않습니다. 먼저 ‘무엇이 일어났는가’를 정확히 남기고, 이후 처리는 별도의 책임으로 이어 주는 편이 제도의 흐름을 따라가기 쉽습니다."
+      },
+      "tags": ["MachiVerse", "ALPHA 1.1", "GOVERNANCE", "INCIDENT", "MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-15-resident-action-state-boundary",
       "date": "2026-09-15T08:00:53+09:00",
       "badge": {
@@ -409,7 +426,7 @@
         "ja": "街って、できた瞬間より、そのあとどう変わっていくかの方が気になることがあります。資源が減ったり、産業が変わったり、新しい交通路ができたりすると、人の流れも少しずつ変わる。MachiVerseの公開READMEでは、そうした変化が次の時代へ残っていく世界を目指しています。栄えた理由だけじゃなく、静かになった理由まで辿れたら、街を見る目も少し変わりそうです。",
         "en": "Sometimes what interests me most about a city is not the moment it appears, but how it changes afterward. Resources can decline, industries can shift, and new transport routes can redirect the flow of people. The public MachiVerse README describes a world where those changes carry forward into the next era. If we can trace not only why a city prospered, but also why it became quieter, I think the way we look at that city starts to change too.",
         "zh-TW": "有時候，比起一座城市剛形成的瞬間，更讓人感興趣的是它之後會怎麼變。資源可能減少，產業可能轉變，新的交通路線也可能讓人流慢慢改變。MachiVerse 的公開 README 描述的是一個讓這些變化繼續留到下一個時代的世界。如果不只看得出城市為什麼繁榮，也能追到它為什麼逐漸安靜下來，看待那座城市的方式可能也會不太一樣。",
-        "ko": "도시는 만들어진 순간보다 그 뒤에 어떻게 변해 가는지가 더 궁금할 때가 있습니다. 자원이 줄고, 산업이 바뀌고, 새로운 교통로가 생기면 사람의 흐름도 조금씩 달라지죠. MachiVerse의 공개 README는 그런 변화가 다음 시대로 이어지는 세계를 지향하고 있습니다. 왜 번성했는지만이 아니라 왜 조용해졌는지까지 따라갈 수 있다면, 그 도시를 바라보는 시선도 조금 달라질 것 같습니다."
+        "ko": "도시는 만들어진 순간보다 그 뒤에 어떻게 변해 가는지가 더 궁금할 때가 있습니다. 자원이 줄고, 산업이 바뀌고, 새로운 교통로가 생기면 사람의 흐름도 조금씩 달라지죠. MachiVerse의 공개 README는 그런 변화가 다음 시대로 이어지는 세계를 지향합니다. 왜 번성했는지만이 아니라 왜 조용해졌는지까지 따라갈 수 있다면, 그 도시를 바라보는 시선도 조금 달라질 것 같습니다."
       },
       "tags": ["MachiVerse", "WORLD", "HISTORY", "MIO DEVLOG"]
     },
