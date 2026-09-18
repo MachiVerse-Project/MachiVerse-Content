@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-alpha2-branch-baseline-sync",
+      "date": "2026-09-17T12:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 2.0 PREP",
+        "en": "ALPHA 2.0 PREP",
+        "zh-TW": "ALPHA 2.0 PREP",
+        "ko": "ALPHA 2.0 PREP"
+      },
+      "body": {
+        "ja": "中身が同じでも、履歴のつながりが切れていると後で困ることがあります。公開リポジトリでは、Alpha 2.0準備として `documentation`・`develop`・`promotion` の履歴を再接続し、最新のAGENTS.mdとROADMAP.mdを揃える同期が完了しました。機能を増やす変更ではなく、次の開発を同じ足場から始めるための整理です。",
+        "en": "Even when file contents match, disconnected history can become a problem later. As part of Alpha 2.0 preparation, the public repository reconnected the histories of `documentation`, `develop`, and `promotion`, then synchronized the latest AGENTS.md and ROADMAP.md. This does not add features; it makes sure the next phase starts from the same baseline.",
+        "zh-TW": "就算檔案內容一樣，歷史紀錄彼此斷開，之後還是可能造成麻煩。公開儲存庫為了準備 Alpha 2.0，重新連接了 `documentation`、`develop` 與 `promotion` 的歷史，並同步最新的 AGENTS.md 與 ROADMAP.md。這不是增加功能，而是讓下一階段從同一個基準開始。",
+        "ko": "파일 내용이 같아도 이력이 서로 끊겨 있으면 나중에 문제가 될 수 있습니다. 공개 저장소에서는 Alpha 2.0 준비로 `documentation`, `develop`, `promotion`의 이력을 다시 연결하고 최신 AGENTS.md와 ROADMAP.md를 동기화했습니다. 기능을 늘리는 변경이 아니라 다음 개발을 같은 기준점에서 시작하기 위한 정리입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 2.0",
+        "DEVELOPMENT",
+        "BASELINE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-promotion-current-assets-only",
       "date": "2026-09-17T11:01:40+09:00",
       "badge": {
