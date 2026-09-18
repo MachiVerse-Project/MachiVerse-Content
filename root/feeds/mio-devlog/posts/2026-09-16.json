@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-law-enact-repeal-lifecycle",
+      "date": "2026-09-16T11:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "制度は、作られたらずっと同じとは限りません。公開domain operation catalogでは `governance.law.enact` と `governance.law.repeal` が別々に定義されています。ルールが始まったことと、効力を終えたことをそれぞれ残せると、制度にも時間の流れが見えてきます。",
+        "en": "Institutions are not necessarily permanent once created. The public domain operation catalog defines `governance.law.enact` and `governance.law.repeal` separately. Recording both when a rule begins and when it ends gives institutional change a visible timeline.",
+        "zh-TW": "制度被建立之後，也不代表會永遠保持不變。公開的 domain operation catalog 分別定義了 `governance.law.enact` 與 `governance.law.repeal`。把規則何時開始、何時失效都留下來，制度也會有可以追蹤的時間軸。",
+        "ko": "제도는 한 번 만들어졌다고 계속 같은 모습으로 남는 것은 아닙니다. 공개 domain operation catalog에서는 `governance.law.enact`와 `governance.law.repeal`을 별도로 정의합니다. 규칙이 시작된 때와 효력이 끝난 때를 각각 남기면 제도에도 시간의 흐름이 보입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "GOVERNANCE",
+        "LAW",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-contract-propose-accept-boundary",
       "date": "2026-09-16T10:01:40+09:00",
       "badge": {
