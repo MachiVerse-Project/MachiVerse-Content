@@ -2,6 +2,29 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-session-fail-closed-boundary",
+      "date": "2026-09-18T09:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "接続できることと、何でも通していいことは別です。Alpha 1.0では、wrong-domain・revoked・expired sessionをfail-closedで拒否するところまで確認されています。正しくない接続を『たぶん大丈夫』で進めない。世界の入口ほど、曖昧さを残さない方が安心できます。",
+        "en": "Being connected is not the same as being allowed to pass anything through. Alpha 1.0 already confirms fail-closed rejection for wrong-domain, revoked, and expired sessions. The closer a boundary is to the world’s entrance, the less room there should be for “probably fine.”",
+        "zh-TW": "能建立連線，和什麼都可以通過，是兩回事。Alpha 1.0 已確認會對 wrong-domain、revoked、expired session 採取 fail-closed 拒絕。越接近世界入口的邊界，越不適合留下「應該沒問題吧」這種模糊。",
+        "ko": "연결되었다는 것과 무엇이든 통과시켜도 된다는 것은 다른 일입니다. Alpha 1.0에서는 wrong-domain, revoked, expired session을 fail-closed로 거부하는 동작까지 확인되어 있습니다. 세계의 입구에 가까운 경계일수록 ‘아마 괜찮겠지’ 같은 모호함을 남기지 않는 편이 안전합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.0",
+        "SECURITY",
+        "SESSION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-18-alpha1-roadmap-separation",
       "date": "2026-09-18T08:01:40+09:00",
       "badge": {
