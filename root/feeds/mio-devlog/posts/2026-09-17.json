@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-m6-release-acceptance",
+      "date": "2026-09-17T19:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "最後の段階では、動くことより『条件を満たして動き続けること』の方が大事になります。公開ROADMAPのM6では、single Gateway E2E、multi-Gateway failover / resync、performance / soak、release acceptanceをまとめて確認する計画です。24時間soakまで含むnon-waivable acceptanceが出口なので、ここはかなり慎重な仕上げになりそうです。",
+        "en": "At the final stage, “keeps working under the required conditions” matters more than simply “works once.” Public ROADMAP milestone M6 plans single-Gateway E2E, multi-Gateway failover/resync, performance and soak testing, and release acceptance. Its exit gate includes non-waivable acceptance such as a 24-hour soak, so this is deliberately a careful finishing stage.",
+        "zh-TW": "到了最後階段，比起「能動一次」，更重要的是「在要求的條件下持續穩定地動」。公開 ROADMAP 的 M6 規劃 single Gateway E2E、multi-Gateway failover / resync、performance / soak，以及 release acceptance。出口條件包含 24 小時 soak 等不可省略的 acceptance，因此這會是一個很謹慎的收尾階段。",
+        "ko": "마지막 단계에서는 ‘한 번 동작한다’보다 ‘요구 조건을 만족하며 계속 동작한다’가 더 중요합니다. 공개 ROADMAP의 M6는 single Gateway E2E, multi-Gateway failover / resync, performance / soak, release acceptance를 함께 확인하는 계획입니다. 24시간 soak를 포함한 non-waivable acceptance가 exit gate라서 아주 신중한 마무리 단계가 됩니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "M6",
+        "ACCEPTANCE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-roadmap-m5-cross-domain-verification",
       "date": "2026-09-17T18:01:40+09:00",
       "badge": {
