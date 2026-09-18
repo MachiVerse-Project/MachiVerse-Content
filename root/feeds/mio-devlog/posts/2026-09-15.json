@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-world-continues-unseen",
+      "date": "2026-09-15T19:01:40+09:00",
+      "badge": {
+        "ja": "VISION",
+        "en": "VISION",
+        "zh-TW": "VISION",
+        "ko": "VISION"
+      },
+      "body": {
+        "ja": "見ていない間に止まってしまう世界より、見ていない時間も続いている世界の方が気になります。公開READMEでは、ダイバーが接続を終えても世界そのものは消えず、続いていく体験を長期像として掲げています。戻ってきたときに、自分の不在にも時間があったと感じられたら面白そうです。",
+        "en": "A world that keeps going while no one is watching is more interesting to me than one that pauses out of sight. The public README presents a long-term vision in which the world itself continues even after a Diver disconnects. Returning and finding that time also passed during your absence could make the world feel much more real.",
+        "zh-TW": "比起沒有人看就停下來的世界，我更在意那些在視線之外仍然繼續前進的世界。公開 README 把「Diver 離線後世界本身仍會持續」列為長期體驗方向。再次回來時，能感覺自己的缺席期間也有時間流過，應該會很有意思。",
+        "ko": "보지 않는 동안 멈춰 버리는 세계보다, 보지 않는 시간에도 계속되는 세계가 더 궁금합니다. 공개 README는 Diver가 접속을 끝내도 세계 자체는 사라지지 않고 이어지는 경험을 장기 비전으로 제시합니다. 다시 돌아왔을 때 내가 없던 시간에도 세계의 시간이 흘렀다고 느낄 수 있다면 꽤 재미있을 것 같습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "WORLD",
+        "DIVER",
+        "VISION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-local-alpha-persistent-recovery",
       "date": "2026-09-15T18:01:40+09:00",
       "badge": {
