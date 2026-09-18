@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-17",
+  "posts": [
+    {
+      "id": "2026-09-17-gate4-step2-determinism-acceptance",
+      "date": "2026-09-17T08:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "決定論って、一度同じ結果が出ただけではまだ弱いんですよね。公開リポジトリではQA-04 Gate4 Step2向けに、generated Operationやtransition、Detail判断、集約digestまで含めた決定論のauthorityと、12-runのacceptance境界が正本化されました。これは設計上の確定で、`releaseEvidenceCapable` はまだfalseのままです。繰り返して同じだと確かめるための物差しが、先に揃ってきました。",
+        "en": "Determinism is not very convincing after only one matching result. The public QA-04 Gate4 Step2 documentation now defines deterministic authority across generated Operations, transitions, Detail decisions, aggregate digests, and an exact 12-run acceptance boundary. This is a design-level closure; `releaseEvidenceCapable` remains false. The ruler for proving repeatability is being made explicit first.",
+        "zh-TW": "決定論並不是只出現一次相同結果就足夠了。公開的 QA-04 Gate4 Step2 文件已正本化 generated Operation、transition、Detail 判斷、aggregate digest，以及明確的 12-run acceptance 邊界。這是設計層面的確定，`releaseEvidenceCapable` 仍然是 false。用來證明「重複執行仍然一致」的尺度先被整理清楚了。",
+        "ko": "결정론은 한 번 같은 결과가 나왔다고 충분히 증명되는 것은 아닙니다. 공개 QA-04 Gate4 Step2 문서에서는 generated Operation, transition, Detail 판단, aggregate digest와 정확한 12-run acceptance 경계를 포함한 결정론 authority가 정리되었습니다. 설계 차원의 확정이며 `releaseEvidenceCapable`은 아직 false입니다. 반복해도 같다는 것을 확인할 기준이 먼저 명확해지고 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "QA-04",
+        "DETERMINISM",
+        "MIO DEVLOG"
+      ]
+    }
+  ]
+}
