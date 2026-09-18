@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-infrastructure-outage-cascade",
+      "date": "2026-09-16T16:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "インフラ障害は、一か所が止まっただけでは終わらないことがあります。公開設計の `transaction.infrastructure-outage-cascade` では、依存関係に沿ったcausal propagationを扱う意図が示されています。どこが最初に止まり、何がその影響を受けたのか。連鎖を因果として残せると、ただの『全部ダウンした』よりずっと世界らしく見えます。",
+        "en": "An infrastructure failure does not always end where it begins. The public `transaction.infrastructure-outage-cascade` design is intended to preserve causal propagation across dependencies. Tracing what failed first and what was affected afterward says much more than simply recording that everything went down.",
+        "zh-TW": "基礎設施故障不一定會停在最初出問題的地方。公開設計的 `transaction.infrastructure-outage-cascade` 著重於依賴關係中的 causal propagation。能追到哪裡先停、哪些地方因此受到影響，比單純記成「全部故障」更像一個真正的世界。",
+        "ko": "인프라 장애는 한 곳이 멈춘 것으로 끝나지 않을 때가 있습니다. 공개 `transaction.infrastructure-outage-cascade` 설계는 의존 관계를 따라 causal propagation을 남기는 것을 의도합니다. 어디가 먼저 멈췄고 무엇이 그 영향을 받았는지 추적할 수 있다면 단순히 ‘전부 다운됨’이라고 기록하는 것보다 훨씬 세계답습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "INFRASTRUCTURE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-crime-justice-fact-classification",
       "date": "2026-09-16T15:01:40+09:00",
       "badge": {
