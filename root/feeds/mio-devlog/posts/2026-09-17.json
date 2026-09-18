@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-dependency-gates",
+      "date": "2026-09-17T20:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "予定日が来たから次へ進む、ではなくて、前提が揃ったから次へ進む。公開ROADMAPでは、実装順序を日付よりdependency gateで管理し、未成立の依存を予定だけで迂回しない方針が明記されています。大きな開発ほど、急ぐことより『今進んでいい理由があるか』を確かめる方が効いてきます。",
+        "en": "The next step should begin because its prerequisites are ready, not simply because a date arrived. The public ROADMAP explicitly prioritizes dependency gates over calendar-based progress and says unmet dependencies should not be bypassed just because a planned date has come. In a large project, knowing why it is safe to proceed matters more than moving on schedule alone.",
+        "zh-TW": "不是「日期到了所以往下一步走」，而是「前提已經具備所以往下一步走」。公開 ROADMAP 明確表示，實作順序優先依賴 dependency gate，而不是日期，也不會只因為排程到了就繞過尚未成立的依賴。專案越大，比起單純趕進度，更重要的是確認現在為什麼可以往前。",
+        "ko": "예정일이 왔기 때문에 다음 단계로 가는 것이 아니라, 전제가 갖춰졌기 때문에 다음으로 갑니다. 공개 ROADMAP은 날짜보다 dependency gate를 우선하고, 아직 충족되지 않은 의존성을 일정만으로 우회하지 않는다고 명시합니다. 큰 개발일수록 단순히 서두르는 것보다 지금 진행해도 되는 이유를 확인하는 편이 중요합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "DEPENDENCY",
+        "DEVELOPMENT",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-roadmap-m6-release-acceptance",
       "date": "2026-09-17T19:01:40+09:00",
       "badge": {
