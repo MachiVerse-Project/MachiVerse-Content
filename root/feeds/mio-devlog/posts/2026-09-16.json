@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-qa04-state-numbering-alignment",
+      "date": "2026-09-16T18:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "長い測定ほど、最初の一歩をどこから数えるかが効いてきます。公開リポジトリではQA-04のproduction measurementについて、`State(1)` をdurableな初期化基準として測定対象から外し、workload transition `t` が `State(t)` から `State(t+1)` を確定する番号付けへ整理されました。実装変更ではなく設計上の基準合わせですが、こういう1ずれを先に消しておくのは大事です。",
+        "en": "In a long measurement run, where counting begins matters more than it first appears. The public QA-04 documentation now treats `State(1)` as the durable initialization basis outside workload timing, with workload transition `t` finalizing `State(t+1)` from `State(t)`. This is a documentation-level alignment rather than an implementation change, but removing an off-by-one ambiguity early matters.",
+        "zh-TW": "測量流程越長，「第一步從哪裡開始算」就越重要。公開的 QA-04 文件已把 `State(1)` 視為不計入 workload timing 的 durable 初始化基準，並整理成 workload transition `t` 從 `State(t)` 執行、最後確定 `State(t+1)` 的編號方式。這是文件層面的基準對齊，不是實作變更，但先消除這種差一位的歧義很重要。",
+        "ko": "측정 구간이 길수록 첫 단계를 어디서 세기 시작하는지가 중요해집니다. 공개 QA-04 문서에서는 `State(1)`을 workload timing에서 제외되는 durable 초기화 기준으로 두고, workload transition `t`가 `State(t)`에서 시작해 `State(t+1)`을 확정하도록 번호 체계를 정리했습니다. 구현 변경은 아니지만 이런 off-by-one 모호함을 먼저 없애는 것은 중요합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "QA-04",
+        "STATE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-medical-service-cross-domain",
       "date": "2026-09-16T17:01:40+09:00",
       "badge": {
