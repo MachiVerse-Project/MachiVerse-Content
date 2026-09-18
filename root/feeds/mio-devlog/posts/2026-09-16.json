@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-16",
+  "posts": [
+    {
+      "id": "2026-09-16-goal-and-action-separation",
+      "date": "2026-09-16T08:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "『何を目指しているか』と『いま何をしているか』は、近いようで別の情報です。公開されているdomain operation catalogでは、Residentの `resident.goal.adopt` と `resident.action.request` が別の操作として整理されています。目標と行動を分けておくと、同じ目標へ違う道筋で進むことも、途中で立ち止まることも扱いやすくなります。",
+        "en": "“What someone is aiming for” and “what they are doing right now” are related, but not the same information. The public domain operation catalog defines `resident.goal.adopt` separately from `resident.action.request`. Keeping goals and actions distinct makes it easier to represent different paths toward the same goal—or moments when action pauses.",
+        "zh-TW": "「想要達成什麼」和「現在正在做什麼」看起來很接近，但其實是不同資訊。公開的 domain operation catalog 把 Resident 的 `resident.goal.adopt` 與 `resident.action.request` 分成不同操作。把目標與行動分開，就更容易表達朝同一目標走不同路徑，或中途暫停行動的情況。",
+        "ko": "‘무엇을 목표로 하는가’와 ‘지금 무엇을 하고 있는가’는 가까워 보여도 서로 다른 정보입니다. 공개된 domain operation catalog에서는 Resident의 `resident.goal.adopt`와 `resident.action.request`를 별도 Operation으로 정리합니다. 목표와 행동을 나누어 두면 같은 목표로 다른 길을 가거나 중간에 행동을 멈추는 경우도 다루기 쉬워집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "RESIDENT",
+        "GOAL",
+        "MIO DEVLOG"
+      ]
+    }
+  ]
+}
