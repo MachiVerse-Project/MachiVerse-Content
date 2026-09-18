@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-m2-state-persistence",
+      "date": "2026-09-17T15:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "足場の次に来るのは、世界の状態を持ち続けるための共通部分です。公開ROADMAPのM2では、CoreのConfig・Persistence・WorldState、Gatewayのconfirmed cache / resync、Viewのconfirmed state storeなどを揃える計画になっています。世界を動かす前に、『状態をどう持って、どう戻すか』を固める段階ですね。",
+        "en": "After the scaffolding comes the common machinery for keeping world state. Public ROADMAP milestone M2 plans Core Config, Persistence, and WorldState foundations, Gateway confirmed-cache/resync support, and a confirmed-state store for the View. Before the world becomes more active, the plan is to make state storage and recovery dependable.",
+        "zh-TW": "基礎架構之後，下一步是讓世界狀態能持續存在的共通部分。公開 ROADMAP 的 M2 規劃 Core 的 Config、Persistence、WorldState，Gateway 的 confirmed cache / resync，以及 View 的 confirmed state store 等。讓世界更活躍之前，先把「狀態怎麼保存、怎麼恢復」穩定下來。",
+        "ko": "발판 다음에는 세계 상태를 계속 유지하기 위한 공통 기반이 옵니다. 공개 ROADMAP의 M2는 Core의 Config, Persistence, WorldState와 Gateway의 confirmed cache / resync, View의 confirmed state store 등을 준비하는 계획입니다. 세계를 더 움직이기 전에 상태를 어떻게 보관하고 되돌릴지 단단히 하는 단계입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "M2",
+        "PERSISTENCE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-roadmap-m1-foundation-scaffold",
       "date": "2026-09-17T14:01:40+09:00",
       "badge": {
