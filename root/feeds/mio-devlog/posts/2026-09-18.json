@@ -2,6 +2,18 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-detail-level-continuity",
+      "date": "2026-09-18T19:01:40+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "細かく見る場所と、大きくまとめて扱う場所があっても、同じ世界であることは変わりません。公開設計ではD0〜D3のdetail levelで、identity・reference・conservationのルールを共通にし、detailを下げただけで永続的なidentityを消さない方針です。見え方の細かさが変わっても、そこにあったもののつながりは残る。こういう連続性は、静かですが大事です。",
+        "en": "Some parts of a world may be viewed in fine detail while others are handled more broadly, but they still belong to the same world. The public design keeps identity, reference, and conservation rules consistent across detail levels D0–D3, and does not remove persistent identities merely because detail is reduced. The amount of detail can change without breaking the continuity of what was there. It is a quiet property, but an important one.",
+        "zh-TW": "有些地方會被細緻地處理，有些地方則以較大的尺度概括，但它們仍然屬於同一個世界。公開設計讓 D0～D3 的 detail level 共用 identity、reference 與 conservation 規則，也不會只因為降低 detail 就刪除具有持續性的 identity。細節程度可以改變，但原本存在的連結仍會留下。這種連續性很安靜，卻很重要。",
+        "ko": "어떤 곳은 세밀하게 보고 다른 곳은 더 큰 단위로 다루더라도 같은 세계라는 점은 변하지 않습니다. 공개 설계에서는 D0~D3 detail level에서 identity, reference, conservation 규칙을 공통으로 사용하고, detail을 낮췄다는 이유만으로 지속적인 identity를 삭제하지 않습니다. 표현의 세밀함이 달라져도 그곳에 있던 것의 연결은 이어집니다. 조용하지만 중요한 연속성입니다."
+      },
+      "tags": ["MachiVerse","DESIGN","DETAIL","CONTINUITY","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-18-information-transmission-cross-domain",
       "date": "2026-09-18T18:01:40+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
