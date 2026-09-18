@@ -2,6 +2,29 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-local-alpha-security-profile-boundary",
+      "date": "2026-09-18T10:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "ローカルで安全に動かせることと、そのままproductionへ出せることは別です。公開Development Guideでは、現在のlocal Alpha profileはloopback-onlyの開発・integration用で、production security profileの代替ではないと明記されています。動く範囲をはっきり書いておくと、できることを過大評価しなくて済みます。",
+        "en": "Running safely in a local environment is not the same as being ready for production deployment. The public Development Guide states that the current local Alpha profile is loopback-only for development and integration, and is not a substitute for a production security profile. Clear scope keeps working behavior from being mistaken for production readiness.",
+        "zh-TW": "能在本地環境安全運作，和可以直接拿去 production，是兩回事。公開 Development Guide 明確說明，目前的 local Alpha profile 是 loopback-only 的開發與 integration 用設定，不能代替 production security profile。把適用範圍寫清楚，就不會把「能動」誤認成「已可上線」。",
+        "ko": "로컬 환경에서 안전하게 동작하는 것과 그대로 production에 배포할 수 있다는 것은 다른 일입니다. 공개 Development Guide는 현재 local Alpha profile이 개발·integration용 loopback-only이며 production security profile의 대체가 아니라고 명시합니다. 범위를 분명히 하면 동작한다는 사실을 production 준비 완료로 과대평가하지 않게 됩니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.0",
+        "SECURITY",
+        "SCOPE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-18-session-fail-closed-boundary",
       "date": "2026-09-18T09:01:40+09:00",
       "badge": {
