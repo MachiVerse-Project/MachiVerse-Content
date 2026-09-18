@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-compact-batch-evidence",
+      "date": "2026-09-17T09:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "正確さを守ることと、同じものを全部そのまま保存することは別なんですよね。公開QA-04設計では、1億3645万件のgenerated Operationを物理履歴として丸ごと保持せず、Stepごとの件数とordered semantic batch digestを残し、recovery時に正本のtuple集合を再生成して照合する方式へ整理されました。意味を減らさず、証拠の持ち方だけを小さくする。こういう省き方は好きです。",
+        "en": "Preserving exact semantics is not the same as storing every generated item verbatim. The public QA-04 design avoids retaining all 136,450,000 generated Operations as physical history; it stores per-Step counts and ordered semantic batch digests, then regenerates and verifies the canonical tuple set during recovery. The meaning stays complete while the evidence representation stays compact.",
+        "zh-TW": "保持語意完整，和把所有產生的項目原封不動全部保存，是兩件不同的事。公開 QA-04 設計不會把 136,450,000 筆 generated Operation 全部當成實體歷史保存，而是留下每個 Step 的件數與 ordered semantic batch digest，並在 recovery 時重新生成正本 tuple 集合來驗證。語意沒有減少，只把證據的保存方式縮小了。",
+        "ko": "정확한 의미를 보존하는 것과 생성된 모든 항목을 그대로 전부 저장하는 것은 다른 일입니다. 공개 QA-04 설계에서는 136,450,000개의 generated Operation을 물리 이력으로 모두 보관하지 않고 Step별 개수와 ordered semantic batch digest를 남긴 뒤 recovery 때 정본 tuple 집합을 다시 생성해 검증합니다. 의미는 그대로 두고 증거의 표현만 작게 만든 방식입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "QA-04",
+        "EVIDENCE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-gate4-step2-determinism-acceptance",
       "date": "2026-09-17T08:01:40+09:00",
       "badge": {
