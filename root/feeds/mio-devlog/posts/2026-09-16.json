@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-contract-propose-accept-boundary",
+      "date": "2026-09-16T10:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "契約も、案が出たことと合意されたことは別です。公開domain operation catalogでは `society.contract.propose` と `society.contract.accept` が分けられています。提案の段階を残しておくと、誰が何に同意したのか、その手前まで辿りやすくなります。",
+        "en": "A contract being proposed is not the same as a contract being accepted. The public domain operation catalog separates `society.contract.propose` from `society.contract.accept`. Preserving the proposal stage makes it easier to trace what was agreed to and what came before that agreement.",
+        "zh-TW": "契約被提出，和契約被接受，並不是同一件事。公開的 domain operation catalog 將 `society.contract.propose` 與 `society.contract.accept` 分開。保留提案階段後，就更容易追到誰同意了什麼，以及同意之前發生了什麼。",
+        "ko": "계약안이 제안된 것과 계약이 받아들여진 것은 같은 일이 아닙니다. 공개 domain operation catalog에서는 `society.contract.propose`와 `society.contract.accept`를 분리합니다. 제안 단계를 남겨 두면 누가 무엇에 동의했는지, 그 이전 과정까지 더 쉽게 따라갈 수 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "SOCIETY",
+        "CONTRACT",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-employment-offer-accept-boundary",
       "date": "2026-09-16T09:01:40+09:00",
       "badge": {
