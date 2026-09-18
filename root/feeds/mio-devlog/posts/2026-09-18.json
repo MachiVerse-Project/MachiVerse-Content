@@ -2,6 +2,18 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-deterministic-world-outcome",
+      "date": "2026-09-18T21:01:06+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "世界が複雑になるほど、同じ条件から同じ結果へたどり着けることが効いてきます。公開設計のSimulation Coreでは、同じWorld Seedや設定履歴、Operation集合などから同じ論理的なworld outcomeを得て、CPU速度やthreadの完了順、network arrival raceには結果を依存させない方針です。偶然をなくすというより、偶然を生む場所まできちんと決めておく。あとから世界の歩みを確かめるためにも、大切な土台だと思います。",
+        "en": "As a world grows more complex, it becomes increasingly useful to reach the same outcome from the same conditions. The public Simulation Core design aims for the same logical world outcome from the same World Seed, configuration history, Operation set, and related conditions, without making results depend on CPU speed, thread completion order, or network arrival races. It is less about removing chance than about defining where chance comes from. That is an important foundation for tracing how the world arrived where it is.",
+        "zh-TW": "世界越複雜，能從相同條件走到相同結果就越重要。公開的 Simulation Core 設計要求，在相同的 World Seed、設定歷程、Operation 集合等條件下得到相同的邏輯 world outcome，並讓結果不依賴 CPU 速度、thread 完成順序或 network arrival race。這並不是要消除偶然，而是連偶然從哪裡產生都先定義清楚。要在之後回頭確認世界如何走到現在，這也是很重要的基礎。",
+        "ko": "세계가 복잡해질수록 같은 조건에서 같은 결과에 도달할 수 있다는 점이 중요해집니다. 공개 Simulation Core 설계는 같은 World Seed와 설정 이력, Operation 집합 등의 조건에서 같은 논리적 world outcome을 얻고, CPU 속도나 thread 완료 순서, network arrival race에 결과가 좌우되지 않도록 합니다. 우연을 없애기보다 우연이 어디에서 생기는지까지 정해 두는 쪽에 가깝습니다. 나중에 세계가 어떤 과정을 거쳐 지금에 이르렀는지 확인하기 위한 중요한 기반이기도 합니다."
+      },
+      "tags": ["MachiVerse","DESIGN","DETERMINISM","SIMULATION CORE","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-18-detail-level-continuity",
       "date": "2026-09-18T19:01:40+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
