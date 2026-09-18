@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-record-create-supersede-boundary",
+      "date": "2026-09-16T13:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "記録を直すとき、古いものをなかったことにするより『新しい版に置き換わった』と残す方が分かりやすいです。公開domain operation catalogでは `information.record.create` と `information.record.supersede` が別に定義されています。履歴を消さずに更新できると、情報がどう変わったかも追えます。",
+        "en": "When a record changes, it is often clearer to preserve that it was replaced rather than pretending the old one never existed. The public domain operation catalog separates `information.record.create` from `information.record.supersede`. Updating without erasing history makes the evolution of information traceable.",
+        "zh-TW": "記錄需要修改時，比起讓舊版本像從未存在過，保留「被新版取代」的關係會更清楚。公開的 domain operation catalog 將 `information.record.create` 與 `information.record.supersede` 分開定義。更新而不抹掉歷史，就能追蹤資訊是怎麼變化的。",
+        "ko": "기록을 고칠 때 예전 기록을 없던 일로 만드는 것보다 ‘새 버전으로 대체되었다’고 남기는 편이 더 명확합니다. 공개 domain operation catalog에서는 `information.record.create`와 `information.record.supersede`를 별도로 정의합니다. 이력을 지우지 않고 갱신하면 정보가 어떻게 변했는지도 따라갈 수 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "INFORMATION",
+        "RECORD",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-permission-issue-revoke-boundary",
       "date": "2026-09-16T12:01:40+09:00",
       "badge": {
