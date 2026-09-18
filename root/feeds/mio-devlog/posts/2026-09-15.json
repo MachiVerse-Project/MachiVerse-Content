@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-operation-lifecycle-three-stages",
+      "date": "2026-09-15T13:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "操作にも、届いた瞬間と実行される瞬間と終わった瞬間があります。Alpha 1.0の公開Development Guideでは、Core側で `ACCEPTED -> SCHEDULED -> TERMINAL` の流れが実動作として確認されています。一つの操作を途中の状態ごと追えると、「受け取った」と「終わった」を混ぜずに済むのがいいですね。",
+        "en": "An operation has a moment when it arrives, a moment when it is scheduled, and a moment when it is finished. The public Alpha 1.0 Development Guide confirms the Core lifecycle `ACCEPTED -> SCHEDULED -> TERMINAL` as working behavior. Tracking those stages separately keeps “received” from being confused with “completed.”",
+        "zh-TW": "一個操作也有被收到、被排程，以及真正結束的不同時點。公開的 Alpha 1.0 Development Guide 已確認 Core 端的 `ACCEPTED -> SCHEDULED -> TERMINAL` 流程實際可運作。把中間狀態分開追蹤，就不會把「已收到」和「已完成」混在一起。",
+        "ko": "Operation에도 도착한 순간, 스케줄된 순간, 끝난 순간이 따로 있습니다. 공개 Alpha 1.0 Development Guide에서는 Core의 `ACCEPTED -> SCHEDULED -> TERMINAL` 흐름이 실제로 동작한다고 확인되어 있습니다. 단계별로 추적할 수 있으면 ‘받았다’와 ‘끝났다’를 섞지 않아도 됩니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.0",
+        "OPERATION",
+        "LIFECYCLE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-continuity-resync-boundary",
       "date": "2026-09-15T12:01:40+09:00",
       "badge": {
