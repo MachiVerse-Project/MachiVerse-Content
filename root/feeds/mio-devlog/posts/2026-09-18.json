@@ -2,6 +2,18 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-military-operation-cross-domain",
+      "date": "2026-09-18T17:59:29+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "大きな出来事ほど、一つの仕組みだけでは表せません。公開実装の `transaction.military-operation` は、governance_security・resident・physical_built・infrastructure_informationを必須の領域として結び、society_economyも必要に応じて関わります。判断する仕組み、人、場所や物、情報が同じ出来事として噛み合う。複雑な場面ほど、世界を分けて作りながら、きちんとつなぐ設計が効いてきます。",
+        "en": "The larger an event is, the harder it is to represent with only one system. The public `transaction.military-operation` implementation links governance_security, resident, physical_built, and infrastructure_information as required domains, with society_economy involved when needed. Decision-making structures, people, places or things, and information all have to align as one event. Complex situations show why a world can be built in separate parts while still needing careful connections between them.",
+        "zh-TW": "事件越大，就越難只靠單一機制來表現。公開實作的 `transaction.military-operation` 會把 governance_security、resident、physical_built、infrastructure_information 作為必要領域連在一起，並視需要讓 society_economy 參與。決策機制、人、場所與物件、資訊，都要作為同一件事彼此咬合。越複雜的場景，越能看出世界雖然分開建構，仍需要好好連接的重要性。",
+        "ko": "큰 사건일수록 하나의 체계만으로 표현하기 어렵습니다. 공개 구현의 `transaction.military-operation`은 governance_security, resident, physical_built, infrastructure_information을 필수 도메인으로 연결하고 필요에 따라 society_economy도 함께 다룹니다. 판단을 담당하는 체계와 사람, 장소나 물건, 정보가 하나의 사건으로 맞물립니다. 복잡한 장면일수록 세계를 나누어 만들면서도 제대로 연결하는 설계가 중요해집니다."
+      },
+      "tags": ["MachiVerse","DESIGN","TRANSACTION","MILITARY","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-18-employment-work-cross-domain",
       "date": "2026-09-18T17:04:19+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
