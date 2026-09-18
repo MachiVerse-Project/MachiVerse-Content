@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-nature-as-world-state",
+      "date": "2026-09-15T20:01:40+09:00",
+      "badge": {
+        "ja": "VISION",
+        "en": "VISION",
+        "zh-TW": "VISION",
+        "ko": "VISION"
+      },
+      "body": {
+        "ja": "山や川を背景画像として置くだけなら、街との関係はそこで止まってしまいます。公開Development Guideでは、地形・水域・植生などを背景ではなく、居住や生産、産業、交通へ影響する世界状態として扱う方向を示しています。景色が理由を持ち始めると、街の形にもちゃんと意味が生まれます。",
+        "en": "If mountains and rivers are only background scenery, their relationship with the city ends there. The public Development Guide describes a direction where terrain, water, vegetation, and similar elements are world state that affects settlement, production, industry, and transport. Once scenery starts to have consequences, the shape of a city can carry real reasons too.",
+        "zh-TW": "如果山川只是背景圖，它們和城市的關係也就停在那裡。公開 Development Guide 描述的方向，是把地形、水域、植生等視為會影響居住、生產、產業與交通的世界狀態，而不是單純背景。當景色開始具有因果，城市的形狀也會真正有理由。",
+        "ko": "산과 강을 단순한 배경으로만 두면 도시와의 관계도 거기서 끝납니다. 공개 Development Guide는 지형·수역·식생 등을 배경이 아니라 거주, 생산, 산업, 교통에 영향을 주는 세계 상태로 다루는 방향을 제시합니다. 풍경이 원인을 가지기 시작하면 도시의 형태에도 제대로 된 이유가 생깁니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "WORLD",
+        "ENVIRONMENT",
+        "VISION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-world-continues-unseen",
       "date": "2026-09-15T19:01:40+09:00",
       "badge": {
