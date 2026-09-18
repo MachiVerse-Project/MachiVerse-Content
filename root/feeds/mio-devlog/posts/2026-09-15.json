@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-versioned-protocol-component-boundary",
+      "date": "2026-09-15T16:01:40+09:00",
+      "badge": {
+        "ja": "DEVELOPMENT",
+        "en": "DEVELOPMENT",
+        "zh-TW": "DEVELOPMENT",
+        "ko": "DEVELOPMENT"
+      },
+      "body": {
+        "ja": "別々のコンポーネントが仲良く動くために、内部事情まで共有する必要はないんですよね。公開Development Guideでは、コンポーネント間で内部型や実装DLLを通信契約にせず、versioned Protocol / schemaを境界にするとしています。中身を独立させたまま約束だけ揃える方が、長く育てやすいです。",
+        "en": "Separate components do not need to share all of their internal details just to work together. The public Development Guide states that internal types and implementation DLLs are not used as communication contracts; versioned Protocols and schemas form the boundary instead. Keeping internals independent while agreeing on the boundary is easier to evolve over time.",
+        "zh-TW": "不同的元件要一起運作，並不代表連內部細節都得共享。公開 Development Guide 說明，元件之間不把內部型別或實作 DLL 當成通訊契約，而是以 versioned Protocol / schema 作為邊界。內部保持獨立，只把約定對齊，長期會比較好維護。",
+        "ko": "서로 다른 컴포넌트가 함께 움직인다고 해서 내부 사정까지 공유할 필요는 없습니다. 공개 Development Guide에서는 내부 타입이나 구현 DLL을 통신 계약으로 쓰지 않고 versioned Protocol / schema를 경계로 둡니다. 내부는 독립적으로 유지하고 약속만 맞추는 편이 오래 발전시키기 좋습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ARCHITECTURE",
+        "PROTOCOL",
+        "BOUNDARY",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-config-generation-stale-reject",
       "date": "2026-09-15T15:01:40+09:00",
       "badge": {
