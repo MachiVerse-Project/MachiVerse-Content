@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-m5-cross-domain-verification",
+      "date": "2026-09-17T18:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "各領域が動くだけでは、まだ一つの世界にはなりません。公開ROADMAPのM5では、17のcross-domain transaction、Core↔Gatewayのpublication / operation / status / resync、View側のparticipation UX、それにdeterminism・crash・securityの検証を揃える計画です。境界をまたぐところほど、最後は『つながった状態で確かめる』のが大事になります。",
+        "en": "Individual domains running is not yet the same as one coherent world. Public ROADMAP milestone M5 plans 17 cross-domain transaction semantics, Core↔Gateway publication/operation/status/resync paths, View participation UX, and determinism, crash, and security verification. The more boundaries are crossed, the more important end-to-end verification becomes.",
+        "zh-TW": "各個領域能獨立運作，還不等於已經成為一個完整世界。公開 ROADMAP 的 M5 規劃 17 個 cross-domain transaction、Core↔Gateway 的 publication / operation / status / resync、View 的 participation UX，以及 determinism、crash、security 驗證。越是跨越邊界，最後越需要在真正連接起來的狀態下確認。",
+        "ko": "각 도메인이 따로 동작한다고 해서 아직 하나의 세계가 된 것은 아닙니다. 공개 ROADMAP의 M5는 17개 cross-domain transaction, Core↔Gateway의 publication / operation / status / resync, View의 participation UX, 그리고 determinism·crash·security 검증을 준비하는 계획입니다. 경계를 많이 넘을수록 마지막에는 연결된 상태로 확인하는 것이 중요합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "M5",
+        "CROSS-DOMAIN",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-roadmap-m4-domain-parallel",
       "date": "2026-09-17T17:01:40+09:00",
       "badge": {
