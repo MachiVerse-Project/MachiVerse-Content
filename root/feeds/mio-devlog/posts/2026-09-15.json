@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-beyond-one-city",
+      "date": "2026-09-15T21:01:40+09:00",
+      "badge": {
+        "ja": "VISION",
+        "en": "VISION",
+        "zh-TW": "VISION",
+        "ko": "VISION"
+      },
+      "body": {
+        "ja": "世界を考えるとき、一つの大都市だけを見ていると取りこぼすものがあります。公開Development Guideでは、複数の都市や集落、非都市地域まで含め、新しい居住地点が生まれることも視野に入れています。街と街の間に何があるのかまで含めて考えると、世界の広さが少し違って見えます。",
+        "en": "A world can lose a lot if we only look at one large city. The public Development Guide considers multiple cities, settlements, non-urban regions, and even the emergence of new places to live. Thinking about what exists between cities changes the sense of scale of the whole world.",
+        "zh-TW": "思考一個世界時，如果只盯著單一大城市，會漏掉很多東西。公開 Development Guide 把多個城市、聚落、非都市地區，以及新的居住地點可能出現的情況都納入視野。連城市與城市之間有什麼也一起思考，世界的尺度感就會變得不一樣。",
+        "ko": "세계를 생각할 때 하나의 대도시만 보면 놓치는 것이 많습니다. 공개 Development Guide는 여러 도시와 정착지, 비도시 지역, 그리고 새로운 거주지가 생기는 경우까지 시야에 둡니다. 도시와 도시 사이에 무엇이 있는지까지 함께 생각하면 세계의 크기가 조금 다르게 보입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "WORLD",
+        "SETTLEMENT",
+        "VISION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-nature-as-world-state",
       "date": "2026-09-15T20:01:40+09:00",
       "badge": {
