@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-permission-issue-revoke-boundary",
+      "date": "2026-09-16T12:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "許可があることと、その許可が今も有効なことは同じではありません。公開domain operation catalogでは `governance.permission.issue` と `governance.permission.revoke` が別の操作です。与えた記録と取り消した記録を分けておくと、ある時点で何が許されていたのかを後から追いやすくなります。",
+        "en": "Having been granted permission is not the same as that permission still being valid. The public domain operation catalog separates `governance.permission.issue` from `governance.permission.revoke`. Keeping grant and revocation as distinct records makes it easier to reconstruct what was allowed at a given point in time.",
+        "zh-TW": "曾經取得許可，和那份許可現在仍然有效，並不是同一件事。公開的 domain operation catalog 將 `governance.permission.issue` 與 `governance.permission.revoke` 分成不同操作。把授予與撤銷分開記錄，就更容易回頭確認某個時間點究竟允許了什麼。",
+        "ko": "허가를 받은 적이 있다는 것과 그 허가가 지금도 유효하다는 것은 같은 뜻이 아닙니다. 공개 domain operation catalog에서는 `governance.permission.issue`와 `governance.permission.revoke`를 별도 Operation으로 둡니다. 부여와 철회를 따로 기록하면 특정 시점에 무엇이 허용되어 있었는지 나중에 따라가기 쉽습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "GOVERNANCE",
+        "PERMISSION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-law-enact-repeal-lifecycle",
       "date": "2026-09-16T11:01:40+09:00",
       "badge": {
