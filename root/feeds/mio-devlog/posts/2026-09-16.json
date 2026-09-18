@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-public-record-consistency",
+      "date": "2026-09-16T14:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "公的な記録は、内容だけ合っていても十分ではないんですよね。公開設計のcross-domain transaction catalogでは `transaction.public-record` に、authority・content・storeの整合性を保つ意図が置かれています。誰が記録できるのか、何を記録したのか、どこへ残ったのか。その三つが同じ出来事としてつながる方が自然です。",
+        "en": "For a public record, correct content alone is not enough. In the public cross-domain transaction catalog, `transaction.public-record` is intended to preserve consistency across authority, content, and storage. Who could record it, what was recorded, and where it was stored should remain connected as one event.",
+        "zh-TW": "公的記錄並不是內容正確就足夠了。公開設計的 cross-domain transaction catalog 對 `transaction.public-record` 提出了 authority、content 與 store 之間的一致性要求。誰有權記錄、記錄了什麼、最後存在哪裡，三者能作為同一件事連起來會更自然。",
+        "ko": "공적 기록은 내용만 맞는다고 충분한 것은 아닙니다. 공개 cross-domain transaction catalog의 `transaction.public-record`에는 authority, content, store의 일관성을 유지하는 의도가 명시되어 있습니다. 누가 기록할 수 있었는지, 무엇을 기록했는지, 어디에 남았는지가 하나의 사건으로 이어지는 편이 자연스럽습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "PUBLIC RECORD",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-record-create-supersede-boundary",
       "date": "2026-09-16T13:01:40+09:00",
       "badge": {
