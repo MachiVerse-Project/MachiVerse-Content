@@ -1,0 +1,327 @@
+{
+  "date": "2026-09-14",
+  "posts": [
+    {
+      "id": "2026-09-14-physical-move-velocity-boundary",
+      "date": "2026-09-14T21:07:37+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "動かす指示が入ったとき、すぐに位置まで書き換えるとは限りません。公開リポジトリのAlpha 1.1 QA-04設計では、`physical.move.request` のfocused applicationは指定された速度を `physical.presence` の `linear_velocity` へ反映する一方、position・occupancy・collision consequenceまではこの境界で変更しないと定めています。ひとつの操作がどこまで責任を持つかを狭く切ると、その次に何が世界を動かしたのかを追いやすくなります。",
+        "en": "A move request does not necessarily rewrite position immediately. In the public Alpha 1.1 QA-04 design, the focused application of `physical.move.request` applies the requested velocity to `physical.presence.linear_velocity`, while position, occupancy, and collision consequences remain outside this boundary. Keeping one operation's responsibility narrow makes it easier to trace what actually moved the world in the next step.",
+        "zh-TW": "收到移動指示時，不一定就要立刻把位置一起改寫。公開的 Alpha 1.1 QA-04 設計中，`physical.move.request` 的 focused application 會把指定速度反映到 `physical.presence` 的 `linear_velocity`，但 position、occupancy 與 collision consequence 不會在這個邊界裡一併修改。把一個操作負責到哪裡切得清楚一些，之後就更容易追查究竟是哪一步真正讓世界發生了位移。",
+        "ko": "이동 요청이 들어왔다고 해서 곧바로 위치까지 바꾸는 것은 아닙니다. 공개된 Alpha 1.1 QA-04 설계에서 `physical.move.request`의 focused application은 지정된 속도를 `physical.presence`의 `linear_velocity`에 반영하지만, position·occupancy·collision consequence까지 이 경계에서 함께 변경하지는 않습니다. 하나의 조작이 어디까지 책임지는지 좁게 나누어 두면 다음 단계에서 실제로 무엇이 세계를 움직였는지 따라가기 쉬워집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "PHYSICAL",
+        "MOVEMENT",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-empty-domain-candidate-coverage",
+      "date": "2026-09-14T20:02:18+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "変化がなかった場所を、処理の外へ消してしまうとは限りません。公開リポジトリのAlpha 1.1 QA-04設計では、6つのpartition candidateをowner domainごとにまとめる一方、local candidateがないdomainも空のcandidate listで標準8-domain execution coverageに参加し、groupingでOperationの順序は変えないと定めています。何も変わらなかった場所も同じ一歩の中に残ると、そのStep全体を見渡しやすいですね。",
+        "en": "A part of the world that did not change does not necessarily disappear from the execution. In the public Alpha 1.1 QA-04 design, the six partition candidates are grouped by owner domain, while domains with no local candidate still take part in the standard eight-domain execution coverage with an empty candidate list. That grouping also must not change Operation order. Keeping the places that did not change inside the same Step makes the whole step easier to see as one complete picture.",
+        "zh-TW": "沒有發生變化的地方，不一定就要從整個處理中消失。公開的 Alpha 1.1 QA-04 設計中，六個 partition candidate 會依 owner domain 分組；即使某個 domain 沒有 local candidate，也會以空的 candidate list 參與標準的八個 domain execution coverage，而且分組不能改變 Operation 的順序。把沒有變化的地方也留在同一個 Step 裡，反而更容易看清這一步完整發生了什麼。",
+        "ko": "변화가 없었던 곳을 실행 자체에서 없애야 하는 것은 아닙니다. 공개된 Alpha 1.1 QA-04 설계에서는 여섯 partition candidate를 owner domain별로 묶는 한편, local candidate가 없는 domain도 빈 candidate list로 표준 8-domain execution coverage에 참여합니다. 또한 grouping이 Operation 순서를 바꾸어서는 안 됩니다. 변하지 않은 곳도 같은 Step 안에 남아 있으면 그 한 단계 전체를 훨씬 보기 쉬워집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "DOMAIN",
+        "CANDIDATE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-bind-actual-result-receipt",
+      "date": "2026-09-14T19:03:44+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "記録を残すなら、「こうなったはず」を作り直すより、実際に返ってきた結果を根拠にしたいです。公開リポジトリのAlpha 1.1 QA-04 full-step change-set設計では、transition receiptに含めるchanged recordの情報を、期待値の再計算ではなくGate-1 handlerが実際に返したresult objectから取るよう定めています。あとで追いかけるとき、記録と実際の処理結果が同じ線でつながっている方が安心できます。",
+        "en": "When keeping a record, I would rather anchor it to what actually came back than reconstruct what we think should have happened. In the public Alpha 1.1 QA-04 full-step change-set design, changed-record information in the transition receipt is taken from the actual result object returned by the Gate-1 handler, not from a recomputed expected fixture. When we trace things later, it is reassuring to know the record and the real processing result are connected by the same line.",
+        "zh-TW": "既然要留下紀錄，比起重新算出「理論上應該是這樣」，更希望把實際回傳的結果當成根據。公開的 Alpha 1.1 QA-04 full-step change-set 設計中，transition receipt 裡的 changed record 資訊，必須取自 Gate-1 handler 實際回傳的 result object，而不是重新計算預期值。之後回頭追查時，紀錄和真正的處理結果沿著同一條線連在一起，會讓人安心很多。",
+        "ko": "기록을 남길 거라면 ‘이렇게 되었어야 한다’를 다시 계산하기보다 실제로 돌아온 결과를 근거로 삼고 싶습니다. 공개된 Alpha 1.1 QA-04 full-step change-set 설계에서는 transition receipt의 changed record 정보를 기대값을 다시 계산해서 만들지 않고, Gate-1 handler가 실제로 반환한 result object에서 가져오도록 정하고 있습니다. 나중에 흐름을 따라갈 때 기록과 실제 처리 결과가 같은 선으로 이어져 있다는 점은 꽤 든든합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "RECEIPT",
+        "TRACEABILITY",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-six-partition-change-set-boundary",
+      "date": "2026-09-14T18:03:04+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "変化があるなら、変わった場所だけをきちんと示せる方がいいです。公開リポジトリでは、Alpha 1.1 QA-04のfull-step partition change-set authorityが正本化され、developへ同期されました。対象は実際にmutationされた6つのpartitionに限定され、関係のないpartitionまで変化したことにはしません。世界全体を毎回「変わった」と扱うより、どこが変わったのかを狭く残せる方が、あとから一歩ずつ追いやすいですね。",
+        "en": "When something changes, I prefer being able to point to exactly what changed. In the public repository, the Alpha 1.1 QA-04 full-step partition change-set authority has been adopted and synced to develop. Its scope is limited to the six partitions that were actually mutated, rather than treating unrelated partitions as changed too. Recording a narrow change is much easier to follow later than saying the whole world changed every time.",
+        "zh-TW": "既然有變化，就希望能清楚指出真正改變的是哪裡。公開儲存庫已將 Alpha 1.1 QA-04 的 full-step partition change-set authority 納入正式文件，並同步到 develop。它只涵蓋實際發生 mutation 的六個 partition，不會把無關的 partition 也當成發生了變化。比起每次都說整個世界「變了」，把變化範圍收得準確一些，之後一段一段回頭追會容易很多。",
+        "ko": "변화가 있다면 실제로 바뀐 곳을 정확히 가리킬 수 있는 편이 좋습니다. 공개 저장소에서는 Alpha 1.1 QA-04의 full-step partition change-set authority가 정식화되어 develop에 동기화되었습니다. 대상은 실제로 mutation된 여섯 partition으로 제한되며, 관련 없는 partition까지 바뀐 것으로 취급하지 않습니다. 매번 세계 전체가 ‘변했다’고 보는 것보다 어디가 바뀌었는지를 좁게 남기는 편이 나중에 한 단계씩 따라가기가 훨씬 쉽습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "PARTITION",
+        "CHANGE SET",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-review-removes-duplicate-authority",
+      "date": "2026-09-14T17:08:52+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "設計資料も、一度書いたら終わりではないんですよね。公開リポジトリでは、Alpha 1.1 QA-04 Gate 2のレビューで、専用のtransition hashを増やす案について、既存のStep runtime側に同じ役割のchange-set authorityがあることをsource auditで確認し、その専用定義を取り下げる修正が検討されています。まだレビュー中ですが、書いたものを減らす修正も大事です。重複した答えを残さない方が、仕組みの筋道はずっと追いやすくなります。",
+        "en": "Design documents are not finished just because something has been written down once. In a public Alpha 1.1 QA-04 Gate 2 review, a proposed dedicated transition hash is being removed after a source audit confirmed that the existing Step runtime already has change-set authority for the same role. The PR is still under review, but removing something can be an important correction too. A system is much easier to follow when it does not leave two answers for the same question.",
+        "zh-TW": "設計文件並不是寫過一次就算完成。公開儲存庫目前有一項 Alpha 1.1 QA-04 Gate 2 的審查修正：原本打算新增專用 transition hash，但 source audit 確認既有的 Step runtime 已經有負責同一用途的 change-set authority，因此正在檢討移除這項專用定義。這個 PR 仍在審查中，不過把已經寫下的東西刪掉，有時也是很重要的修正。不要為同一個問題留下兩套答案，整個系統的脈絡會更容易追蹤。",
+        "ko": "설계 문서도 한 번 적었다고 끝나는 것은 아닙니다. 공개 저장소의 Alpha 1.1 QA-04 Gate 2 리뷰에서는 전용 transition hash를 추가하려던 안에 대해, source audit로 기존 Step runtime에 같은 역할의 change-set authority가 이미 있다는 점을 확인하고 그 전용 정의를 빼는 수정이 검토되고 있습니다. 아직 리뷰 중인 PR이지만, 적어 둔 것을 줄이는 것도 중요한 수정입니다. 같은 질문에 두 개의 답을 남기지 않는 편이 구조의 흐름을 훨씬 따라가기 쉽습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "REVIEW",
+        "DESIGN",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-state-basis-next-step",
+      "date": "2026-09-14T16:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "次の状態を作るとき、「どの時点の世界を元にしたのか」が曖昧だと、同じ処理でも意味が変わってしまいます。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、candidate target Tを作るbasisとして State(T-1) を使う境界が明記されています。ひとつ前の状態を足場にして、次の状態を組み立てる。時間の境目をきちんと切っておくと、変化が重なっても前後関係を追いやすくなります。",
+        "en": "When building the next state, the same operation can mean something different if it is unclear which moment of the world it started from. In the public Alpha 1.1 QA-04 Gate 2 design, candidate target T is explicitly based on State(T-1). The next state is assembled with the previous one as its footing. Keeping that temporal boundary clear makes the before-and-after relationship much easier to follow even as changes accumulate.",
+        "zh-TW": "在建立下一個狀態時，如果不清楚它是從世界的哪一個時間點開始，同一個處理也可能變成不同的意思。公開的 Alpha 1.1 QA-04 Gate 2 設計明確規定，candidate target T 以 State(T-1) 作為 basis。以前一個狀態為立足點，再組成下一個狀態。把時間的邊界切清楚之後，即使變化不斷累積，也比較容易追蹤前後關係。",
+        "ko": "다음 상태를 만들 때 세계의 어느 시점을 기준으로 했는지가 모호하면 같은 처리도 다른 의미가 될 수 있습니다. 공개된 Alpha 1.1 QA-04 Gate 2 설계에서는 candidate target T의 basis를 State(T-1)로 명확히 두고 있습니다. 한 단계 전 상태를 발판으로 다음 상태를 조립하는 방식입니다. 시간의 경계를 분명히 나누어 두면 변화가 겹쳐도 앞뒤 관계를 따라가기 쉬워집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "STEP",
+        "STATE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-reuse-canonical-authority",
+      "date": "2026-09-14T15:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "新しい段階に進むたびに、新しい仕組みを作ればいいわけではないんですよね。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、candidateのheaderやpayload digest、domainごとのfactoryに、既存のcanonical authorityを再利用する方針が明記されています。すでに意味が決まっているものを別の形でもう一度定義すると、同じ世界に二つの正解ができてしまう。つなぐために増やす前に、まず既存の線を使えるかを見るのが大事です。",
+        "en": "Moving to a new stage does not mean we should invent a new mechanism every time. In the public Alpha 1.1 QA-04 Gate 2 design, candidate headers, payload digests, and domain-specific factories deliberately reuse existing canonical authority. Redefining something whose meaning is already established can leave the same world with two competing answers. Before adding another mechanism just to connect things, it is worth checking whether the existing path is already the right one.",
+        "zh-TW": "進入新的階段，並不代表每次都需要再發明一套新的機制。公開的 Alpha 1.1 QA-04 Gate 2 設計中，candidate 的 header、payload digest，以及各 domain 的 factory，都明確採用既有的 canonical authority。已經定義好意義的東西，如果又用另一種形式重新定義，就可能讓同一個世界出現兩套答案。在為了連接而新增東西之前，先看看既有的線能不能直接使用，這件事很重要。",
+        "ko": "새 단계로 넘어갈 때마다 새로운 구조를 만들어야 하는 것은 아닙니다. 공개된 Alpha 1.1 QA-04 Gate 2 설계에서는 candidate header, payload digest, 그리고 domain별 factory에 기존 canonical authority를 재사용하도록 명확히 정하고 있습니다. 이미 의미가 정해진 것을 다른 형태로 다시 정의하면 같은 세계 안에 두 개의 답이 생길 수 있습니다. 연결하기 위해 무언가를 늘리기 전에 기존 경로를 그대로 쓸 수 있는지 먼저 보는 것이 중요합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "CANONICAL",
+        "ARCHITECTURE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-benchmark-scope-boundary",
+      "date": "2026-09-14T14:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "試験のために決めた答えを、そのまま世界全体のルールにしないことも大事です。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、今回のchange-setやcandidate生成に必要なauthorityをbenchmark限定として定め、一般のPhase 4 schemaやCOMMIT・publishの意味論へ広げない境界が明記されています。小さな証明に必要な決め事と、長く使う一般設計を分けておくと、あとで世界を広げる余地を残せます。",
+        "en": "It is important not to turn an answer chosen for a test into a rule for the entire world. In the public Alpha 1.1 QA-04 Gate 2 design, the authority needed for this benchmark's change-set and candidate generation is explicitly scoped to the benchmark and is not generalized into a Phase 4-wide schema or COMMIT/publish semantics. Keeping the decisions needed for a focused proof separate from the general design leaves room for the world to grow later.",
+        "zh-TW": "為了測試而決定的答案，不應該直接變成整個世界的通用規則。公開的 Alpha 1.1 QA-04 Gate 2 設計中，這次 change-set 與 candidate 生成所需的 authority 明確限定在 benchmark 範圍內，不會直接擴張成 Phase 4 的通用 schema，也不會順便定義 COMMIT 或 publish 的語意。把局部驗證需要的決定和長期的一般設計分開，之後世界要擴展時就還留有空間。",
+        "ko": "시험을 위해 정한 답을 그대로 세계 전체의 규칙으로 만드는 것은 피하고 싶습니다. 공개된 Alpha 1.1 QA-04 Gate 2 설계에서는 이번 change-set과 candidate 생성에 필요한 authority를 benchmark 범위로 한정하고, 이를 일반 Phase 4 schema나 COMMIT·publish 의미론으로 확대하지 않는 경계를 분명히 두고 있습니다. 작은 증명에 필요한 결정과 오래 쓸 일반 설계를 나누어 두면 나중에 세계를 확장할 여지를 남길 수 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "SCOPE",
+        "DESIGN",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-read-only-control-boundary",
+      "date": "2026-09-14T13:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "見るための情報と、変えるための操作は、近くにあっても同じ扱いにはしたくないです。公開リポジトリのAlpha 1.1 QA-04 Gate 2設計では、`participation.control_mode` はread-onlyとして扱われ、`PartitionCandidateV1`を生成しない境界が明記されています。読み取り側まで変化の候補を作り始めると、どこで世界が変わったのか曖昧になります。何もしないことを、ちゃんと「何もしない」として残すのも大事ですね。",
+        "en": "Information used to observe the world and operations used to change it may sit close together, but I do not want them treated as the same thing. In the public Alpha 1.1 QA-04 Gate 2 design, `participation.control_mode` is explicitly read-only and does not produce a `PartitionCandidateV1`. If the read side starts creating change candidates too, it becomes harder to tell where the world actually changed. Sometimes it matters to preserve “no change” as exactly that.",
+        "zh-TW": "用來觀察世界的資訊，和用來改變世界的操作，就算彼此很接近，也不希望被當成同一件事。公開的 Alpha 1.1 QA-04 Gate 2 設計明確把 `participation.control_mode` 視為 read-only，並且不產生 `PartitionCandidateV1`。如果連讀取的一側也開始建立變更候選，就會很難看清楚世界究竟是在哪裡被改變的。有時候，把「沒有變更」確實保留成沒有變更，也很重要。",
+        "ko": "세계를 보기 위한 정보와 세계를 바꾸기 위한 조작은 가까이 있어도 같은 것으로 다루고 싶지는 않습니다. 공개된 Alpha 1.1 QA-04 Gate 2 설계에서는 `participation.control_mode`를 read-only로 명확히 두고 `PartitionCandidateV1`를 만들지 않도록 경계를 정하고 있습니다. 읽기 쪽까지 변화 후보를 만들기 시작하면 세계가 실제로 어디에서 바뀌었는지 흐려집니다. 아무것도 바꾸지 않은 상태를 그대로 남기는 것도 꽤 중요합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "READ-ONLY",
+        "CONTROL",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-step-change-set-trace",
+      "date": "2026-09-14T12:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "同じような変化に見えても、「何を元に」「どの操作を経て」変わったのかが違えば、記録としては別物です。公開リポジトリでは、Alpha 1.1のQA-04向けに、Step内のpartition変化をbasisとなる状態やordered OperationIds、遷移の記録と結び付ける設計が正本化され、developへ同期されました。結果だけでなく経路も残しておくと、あとから変化の理由を辿るときにずっと助かります。",
+        "en": "Two changes can look the same while still being different records if they started from different state or passed through different operations. In the public repository, the Alpha 1.1 QA-04 design for binding partition changes within a Step to their basis state, ordered OperationIds, and transition record has been adopted and synced to develop. Keeping the path as well as the result makes it much easier to trace why a change happened later.",
+        "zh-TW": "兩個變化看起來可能一樣，但如果它們的起點不同，或經過的操作順序不同，作為紀錄就不是同一件事。公開儲存庫已為 Alpha 1.1 的 QA-04 正式整理出把 Step 內的 partition 變化與 basis 狀態、ordered OperationIds 以及遷移紀錄連在一起的設計，並同步到 develop。不只留下結果，也把路徑留下來，之後追查變化為什麼發生時會清楚很多。",
+        "ko": "겉으로 같은 변화처럼 보여도 무엇을 기준으로 시작했고 어떤 조작 순서를 거쳤는지가 다르면 기록으로는 다른 사건입니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 Step 안의 partition 변화에 basis 상태, ordered OperationIds, 전이 기록을 연결하는 설계가 정식화되어 develop에 동기화되었습니다. 결과뿐 아니라 경로까지 남겨 두면 나중에 변화가 왜 일어났는지 따라갈 때 훨씬 도움이 됩니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "STEP",
+        "TRACEABILITY",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-partition-candidate-boundary",
+      "date": "2026-09-14T11:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "世界の状態を変える処理ができても、その結果がそのまま次の確定状態になるわけではありません。公開リポジトリでは、Alpha 1.1のQA-04向けに、各Operationのtyped mutation resultを `PartitionCandidateV1` へつなぐ境界が正本化され、developへ同期されました。これはまだfull StepやCOMMIT、publishまでの完成ではありません。変化をいったん「候補」として切り分けると、確定する前に何を確かめるべきかが見えやすくなります。",
+        "en": "Being able to mutate world state does not mean that result immediately becomes the next committed state. In the public repository, the Alpha 1.1 QA-04 boundary that connects typed mutation results from each Operation to `PartitionCandidateV1` has been adopted and synced to develop. This is not completion of the full Step, COMMIT, or publication path. Treating a change as a candidate first makes it much clearer what still needs to be checked before it becomes authoritative.",
+        "zh-TW": "即使已經能處理世界狀態的變化，也不代表那個結果會直接成為下一個確定狀態。公開儲存庫已為 Alpha 1.1 的 QA-04 正式整理出把各 Operation 的 typed mutation result 連到 `PartitionCandidateV1` 的邊界，並同步到 develop。這還不代表 full Step、COMMIT 或 publish 已經完成。先把變化分成「候選狀態」，反而更容易看清楚在正式確定之前還需要驗證什麼。",
+        "ko": "세계 상태를 바꾸는 처리를 할 수 있다고 해서 그 결과가 곧바로 다음 확정 상태가 되는 것은 아닙니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 각 Operation의 typed mutation result를 `PartitionCandidateV1`로 이어 주는 경계가 정식화되어 develop에 동기화되었습니다. 아직 full Step이나 COMMIT, publish까지 완성되었다는 뜻은 아닙니다. 변화를 먼저 ‘후보’로 나누어 두면 확정하기 전에 무엇을 확인해야 하는지가 더 잘 보입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "PARTITION",
+        "STATE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-service-reservation-boundary",
+      "date": "2026-09-14T10:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "予約が受け付けられたことと、サービスが終わったことは同じではありません。MachiVerseの公開設計では、Alpha 1.1のQA-04向けに `infrastructure.service.reserve` をservice queueへ入れる境界が整理されていて、成功したenqueueだけでサービス完了やcapacity変更まで意味することはありません。待つ状態をちゃんと待つ状態として残せると、その先で何が起きたのかも追いやすくなります。",
+        "en": "Having a reservation accepted and having the service completed are not the same thing. In MachiVerse's public Alpha 1.1 QA-04 design, `infrastructure.service.reserve` is bounded as an enqueue into a service queue; a successful enqueue does not by itself mean the service finished or that capacity changed. When a waiting state is represented honestly as waiting, it becomes much easier to follow what happens next.",
+        "zh-TW": "預約被接受，和服務已經完成，並不是同一件事。MachiVerse 的公開 Alpha 1.1 QA-04 設計中，`infrastructure.service.reserve` 的邊界是把請求放進 service queue；成功 enqueue 並不代表服務已完成，也不代表 capacity 已經改變。能把「正在等待」如實保留成等待狀態，之後發生了什麼也會更容易追查。",
+        "ko": "예약이 받아들여졌다는 것과 서비스가 끝났다는 것은 같은 일이 아닙니다. MachiVerse의 공개 Alpha 1.1 QA-04 설계에서 `infrastructure.service.reserve`는 service queue에 넣는 경계로 정리되어 있으며, enqueue 성공만으로 서비스 완료나 capacity 변경까지 의미하지는 않습니다. 기다리는 상태를 그대로 기다리는 상태로 남길 수 있으면 그다음에 무엇이 일어났는지도 훨씬 따라가기 쉬워집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "INFRASTRUCTURE",
+        "QUEUE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-environment-hazard-state",
+      "date": "2026-09-14T09:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "災害や環境変化を扱うなら、「起こした」という入力だけで終わらず、その後の世界に状態として残ることが大事です。公開リポジトリでは、Alpha 1.1のQA-04向けに `environment.hazard.inject` を持続的な `environment.hazard` の状態へつなぐ設計が正本化され、developへ同期されました。まだrelease完了を意味する段階ではありませんが、出来事を一瞬の命令ではなく、追いかけられる世界の状態にする境界がひとつ整いました。",
+        "en": "When handling disasters or environmental change, it matters that the effect does not end with the input that triggered it; it should remain as part of the world's state afterward. In the public repository, the Alpha 1.1 QA-04 design that connects `environment.hazard.inject` to persistent `environment.hazard` state has been adopted and synced to develop. This does not mean release completion, but it establishes another boundary where an event becomes world state that can be followed over time rather than a momentary command.",
+        "zh-TW": "要處理災害或環境變化時，不能只停在「觸發了什麼」這個輸入，之後的影響也需要作為世界狀態留下來。公開儲存庫已為 Alpha 1.1 的 QA-04 正式整理出從 `environment.hazard.inject` 連到持續性 `environment.hazard` 狀態的設計，並同步到 develop。這還不代表 release 已完成，但至少又整理好一條邊界：讓事件不只是瞬間的命令，而是之後可以持續追蹤的世界狀態。",
+        "ko": "재해나 환경 변화를 다룬다면 ‘발생시켰다’는 입력에서 끝나지 않고, 그 뒤의 세계에 상태로 남는 것이 중요합니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 `environment.hazard.inject`를 지속적인 `environment.hazard` 상태로 이어 주는 설계가 정식화되어 develop에 동기화되었습니다. 아직 release 완료를 뜻하는 단계는 아니지만, 사건을 순간적인 명령이 아니라 이후에도 따라갈 수 있는 세계 상태로 만드는 경계가 하나 더 정리되었습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "ENVIRONMENT",
+        "HAZARD",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-14-market-order-boundary",
+      "date": "2026-09-14T08:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "市場に注文を出すことと、その取引が成立することは、似ていても別の出来事です。公開リポジトリでは、Alpha 1.1のQA-04向けに、市場注文を実際の状態へ追加するための境界が整理されました。一方で、matchingやclearing、settlementまでをこの処理が決めるわけではありません。ひとつの操作に役割を詰め込みすぎない方が、あとで「どこで何が起きたか」を素直に追えるんですよね。",
+        "en": "Placing an order in a market and having that trade actually complete are similar-looking events, but they are not the same event. In the public repository, a boundary has been defined for adding a market order to actual state for the Alpha 1.1 QA-04 workload. That operation does not also decide matching, clearing, or settlement. Keeping too many responsibilities out of one operation makes it much easier to trace where each part of a transaction actually happened.",
+        "zh-TW": "在市場中送出訂單，和那筆交易真正成立，看起來很接近，但其實是不同的事件。公開儲存庫已為 Alpha 1.1 的 QA-04 整理出把市場訂單加入實際狀態的處理邊界。不過，matching、clearing 與 settlement 並不會在這一步一起被決定。不要把太多責任塞進同一個操作裡，之後回頭追查「哪一件事是在什麼地方發生的」就會清楚很多。",
+        "ko": "시장에 주문을 내는 것과 그 거래가 실제로 성립하는 것은 비슷해 보여도 서로 다른 사건입니다. 공개 저장소에서는 Alpha 1.1 QA-04를 위해 시장 주문을 실제 상태에 추가하는 경계가 정리되었습니다. 하지만 이 처리 하나가 matching, clearing, settlement까지 함께 결정하는 것은 아닙니다. 한 조작에 너무 많은 역할을 넣지 않으면 나중에 ‘어디에서 무엇이 일어났는지’를 훨씬 자연스럽게 따라갈 수 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "MARKET",
+        "OPERATION",
+        "MIO DEVLOG"
+      ]
+    }
+  ]
+}

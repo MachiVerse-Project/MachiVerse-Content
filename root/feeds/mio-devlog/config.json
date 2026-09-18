@@ -1,0 +1,40 @@
+{
+  "_note": "MIO DEVLOGの共通設定です。投稿は root/feeds/mio-devlog/posts/YYYY-MM-DD.json にJST日付単位で保存します。Websiteは当日を含む直近7日分を読み込みます。",
+  "enabled": true,
+  "profile": {
+    "name": {
+      "ja": "南雲 澪",
+      "en": "Mio Nagumo",
+      "zh-TW": "南雲 澪",
+      "ko": "미오 나구모"
+    },
+    "handle": "@Mio_MachiVerse",
+    "role": {
+      "ja": "Co-Founder / System Development Lead",
+      "en": "Co-Founder / System Development Lead",
+      "zh-TW": "Co-Founder / System Development Lead",
+      "ko": "Co-Founder / System Development Lead"
+    },
+    "avatar": "https://machiverse.app/assets/images/characters/nagumo-mio/web/mio-welcome.png"
+  },
+  "section": {
+    "kicker": {
+      "ja": "MIO DEVLOG / DEVELOPMENT DIARY",
+      "en": "MIO DEVLOG / DEVELOPMENT DIARY",
+      "zh-TW": "MIO DEVLOG / DEVELOPMENT DIARY",
+      "ko": "MIO DEVLOG / DEVELOPMENT DIARY"
+    },
+    "title": {
+      "ja": "南雲の、開発日記。",
+      "en": "Mio's development diary.",
+      "zh-TW": "南雲的開發日記。",
+      "ko": "미오의 개발 일지."
+    },
+    "lead": {
+      "ja": "MachiVerseの開発で考えていること、詰まったところ、少し前に進んだところ。南雲澪の視点で、短い投稿として残していきます。",
+      "en": "Short notes from Mio's point of view: what we are thinking about, where development gets stuck, and the small steps that move MachiVerse forward.",
+      "zh-TW": "以南雲澪的視角，留下 MachiVerse 開發中正在思考的事、卡住的地方，以及一點一點往前推進的紀錄。",
+      "ko": "MachiVerse 개발 중 고민하는 것, 막히는 지점, 조금씩 앞으로 나아간 순간을 미오의 시점에서 짧은 게시물로 남깁니다."
+    }
+  }
+}

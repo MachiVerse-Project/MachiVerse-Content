@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-15",
+  "posts": [
+    {
+      "id": "2026-09-15-governance-incident-registration-boundary",
+      "date": "2026-09-15T09:00:30+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "出来事を登録することと、その出来事の後始末まで決めることは別です。公開リポジトリのAlpha 1.1 QA-04設計では、`governance.incident.register` は `governance.security_incident` に新しい記録を1件作りますが、調査・裁定・執行・緊急対応や一般的なseverityモデルまではこの境界で決めません。まず『何が起きたか』を正確に残して、その先の扱いは別の責任としてつなぐ。こういう分け方の方が、制度の流れを追いやすいですね。",
+        "en": "Registering an incident and deciding everything that happens afterward are separate responsibilities. In the public Alpha 1.1 QA-04 design, `governance.incident.register` creates one new `governance.security_incident` record, but this boundary does not define investigation, adjudication, enforcement, emergency response, or a general severity model. First record what happened accurately, then connect the later handling as a separate responsibility. That separation makes institutional flow much easier to trace.",
+        "zh-TW": "把事件登記下來，和把事件之後的所有處置一起決定，應該是不同的責任。公開的 Alpha 1.1 QA-04 設計中，`governance.incident.register` 會在 `governance.security_incident` 新增一筆紀錄，但這個邊界不會同時定義調查、裁定、執行、緊急應對或一般性的 severity 模型。先準確留下「發生了什麼」，再把後續處理接到另一個責任上，制度的流程反而更容易追蹤。",
+        "ko": "사건을 등록하는 것과 그 뒤의 모든 처리를 결정하는 것은 서로 다른 책임입니다. 공개된 Alpha 1.1 QA-04 설계에서 `governance.incident.register`는 `governance.security_incident`에 새 기록 하나를 만들지만, 이 경계가 조사·판정·집행·긴급 대응이나 일반적인 severity 모델까지 정의하지는 않습니다. 먼저 ‘무엇이 일어났는가’를 정확히 남기고, 이후 처리는 별도의 책임으로 이어 주는 편이 제도의 흐름을 따라가기 쉽습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "GOVERNANCE",
+        "INCIDENT",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-15-resident-action-state-boundary",
+      "date": "2026-09-15T08:00:53+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "住人が何かをしようとしていることと、その結果まで世界に起きたことは、同じではありません。公開リポジトリのAlpha 1.1 QA-04設計では、`resident.action.request` はResident側の `resident.behavior_state` に現在の行動を記録しますが、それだけで移動や市場、制度など外部domainでの成功まで確定しません。『何をしようとしているか』と『実際に何が起きたか』を分けておくと、世界の因果を追いやすくなります。",
+        "en": "A resident trying to do something is not the same as that consequence already having happened in the world. In the public Alpha 1.1 QA-04 design, `resident.action.request` records the current action in Resident-owned `resident.behavior_state`, but it does not by itself confirm success in external domains such as movement, markets, or institutions. Keeping “what the resident is trying to do” separate from “what actually happened” makes the world's causality much easier to trace.",
+        "zh-TW": "居民正準備做某件事，和那件事的結果已經真的發生在世界裡，並不是同一件事。公開的 Alpha 1.1 QA-04 設計中，`resident.action.request` 會把目前的行動記錄到 Resident 側的 `resident.behavior_state`，但不會因此就直接判定移動、市場或制度等外部 domain 的結果已經成功。把「正在打算做什麼」和「實際發生了什麼」分開，世界中的因果關係就會更容易追蹤。",
+        "ko": "주민이 무언가를 하려고 한다는 것과 그 결과가 이미 세계에서 일어났다는 것은 같은 일이 아닙니다. 공개된 Alpha 1.1 QA-04 설계에서 `resident.action.request`는 Resident 쪽 `resident.behavior_state`에 현재 행동을 기록하지만, 그것만으로 이동·시장·제도 같은 외부 domain의 성공까지 확정하지는 않습니다. ‘무엇을 하려고 하는가’와 ‘실제로 무엇이 일어났는가’를 나누어 두면 세계의 인과관계를 훨씬 따라가기 쉬워집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "RESIDENT",
+        "ACTION",
+        "MIO DEVLOG"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-12",
+  "posts": [
+    {
+      "id": "2026-09-12-alpha11-information-delivery-draft",
+      "date": "2026-09-12T21:14:00+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "仕様を詰める作業って、実装より静かに見えるんですけど、意外と考えることが多いです。いま公開リポジトリでは、Alpha 1.1に向けて「情報がどう届けられたか」を扱う仕組みの設計ドラフトが監査中です。まだ実装済みではなく、まず境界や記録のしかたを固めている段階。こういう確認を先にしておくと、実装するときに迷う場所が少なくなります。",
+        "en": "Design work can look quieter than implementation, but there is often a surprising amount to think through. In the public repository right now, an Alpha 1.1 design draft around how the system represents information delivery is being audited. It is not implemented yet; the current stage is about fixing the boundaries and how it should be recorded. Doing this kind of checking first usually leaves fewer ambiguous places when implementation begins.",
+        "zh-TW": "把規格慢慢收斂的工作，看起來比實作安靜，但其實要想的事情意外地很多。現在公開儲存庫裡，正針對 Alpha 1.1 中「資訊是如何被送達的」這套機制進行設計草案的審核。這還不是已完成實作的內容，目前先是在釐清邊界與記錄方式。先把這些確認好，之後實作時需要猶豫的地方就會少一些。",
+        "ko": "사양을 다듬는 작업은 구현보다 조용해 보이지만, 생각해야 할 게 의외로 많습니다. 지금 공개 저장소에서는 Alpha 1.1을 향해 ‘정보가 어떻게 전달되었는가’를 다루는 구조의 설계 초안을 검토하고 있습니다. 아직 구현 완료된 내용은 아니고, 먼저 경계와 기록 방식을 정리하는 단계입니다. 이런 확인을 앞에서 해 두면 실제 구현에 들어갔을 때 애매한 지점이 줄어듭니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "DESIGN",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-12-alpha1-recovery-foundation",
+      "date": "2026-09-12T20:18:00+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "シミュレーションって、動いている瞬間だけじゃなくて、止めたあとにちゃんと戻ってこられるかも大事なんですよね。MachiVerseのAlpha 1.0では、世界の状態を永続化して、再起動後にrecoveryできるところまで確認されています。派手な部分ではないですけど、積み重ねた状態を次の起動へつなげられる。こういう土台、けっこう好きです。",
+        "en": "A simulation matters not only while it is running, but also in whether it can come back properly after it stops. In MachiVerse Alpha 1.0, persistence of the world state and recovery after a restart have been verified. It is not the flashiest part, but being able to carry accumulated state into the next run is an important foundation. Foundations like this are pretty satisfying.",
+        "zh-TW": "模擬系統不只是在運行時重要，停下來之後能不能好好接著回來也很重要。MachiVerse 的 Alpha 1.0 已確認世界狀態的持久化，以及重新啟動後的 recovery。這不是最華麗的部分，但能把累積下來的狀態接到下一次啟動，是很重要的基礎。這種地方其實挺讓人喜歡的。",
+        "ko": "시뮬레이션은 돌아가고 있는 순간만큼이나, 멈춘 뒤에 제대로 이어서 돌아올 수 있는지도 중요합니다. MachiVerse Alpha 1.0에서는 세계 상태의 영속화와 재시작 후 recovery까지 확인되어 있습니다. 화려한 부분은 아니지만, 쌓아 온 상태를 다음 실행으로 이어 갈 수 있다는 건 중요한 기반이죠. 이런 부분은 꽤 마음에 듭니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.0",
+        "RECOVERY",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-12-city-traces",
+      "date": "2026-09-12T19:00:00+09:00",
+      "badge": {
+        "ja": "WORLD",
+        "en": "WORLD",
+        "zh-TW": "WORLD",
+        "ko": "WORLD"
+      },
+      "body": {
+        "ja": "街の形って、見ていると面白いですね。川に沿って道が曲がっていたり、人が集まる場所から少しずつ街が広がっていたり。MachiVerseでは、そういう「いま見えている形」にも、そこまで積み重なった理由が残る世界を目指しています。あとから辿ってみて、「だからここに街があるんだ」と分かる。そんな景色が増えていくのを楽しみにしています。",
+        "en": "The shape of a city can be surprisingly interesting to look at. Roads bend along rivers, and towns gradually spread outward from places where people gather. MachiVerse aims for a world where even the shapes you see in the present carry traces of how they came to be. Being able to look back and think, “So that's why a town grew here,” is the kind of scenery I'm looking forward to seeing more of.",
+        "zh-TW": "城市的形狀，仔細看其實很有意思。道路沿著河流彎曲，人群聚集的地方再一點一點向外擴展成街區。MachiVerse 想做的，是讓眼前看見的「現在」也保留一路形成至今的理由。之後回頭追溯時，能夠明白「原來這裡會出現城市，是因為這些事情啊」。很期待這樣的景色慢慢變多。",
+        "ko": "도시의 형태는 가만히 보고 있으면 꽤 재미있습니다. 강을 따라 길이 휘어 있기도 하고, 사람들이 모이는 곳에서부터 마을이 조금씩 넓어지기도 하죠. MachiVerse는 그렇게 지금 보이는 모습에도 여기까지 쌓여 온 이유가 남아 있는 세계를 지향합니다. 나중에 거슬러 올라가 보면서 '그래서 여기에 도시가 생겼구나' 하고 이해할 수 있는 풍경이 더 많아지면 좋겠습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "WORLD",
+        "MIO DEVLOG"
+      ]
+    },
+    {
+      "id": "2026-09-12-welcome",
+      "date": "2026-09-12T00:00:00+09:00",
+      "badge": {
+        "ja": "HELLO",
+        "en": "HELLO",
+        "zh-TW": "HELLO",
+        "ko": "HELLO"
+      },
+      "body": {
+        "ja": "はじめまして、南雲澪です。この開発日記では、MachiVerseが少しずつ形になっていく様子を、開発のそばから気軽に書き残していきます。うまくいったことも、詰まったところも、たまに細かい技術の話も。完成したところだけじゃなく、途中の景色も一緒に楽しんでもらえたら嬉しいです。これからよろしくお願いします。",
+        "en": "Hi, I'm Mio Nagumo. In this development diary, I'll leave short, casual notes as MachiVerse gradually takes shape: the things that go well, the places where development gets stuck, and sometimes the small technical details in between. I hope you'll enjoy not only the finished parts, but also the view along the way. Nice to have you here.",
+        "zh-TW": "初次見面，我是南雲澪。這本開發日記會輕鬆記下 MachiVerse 一點一點成形的過程：順利完成的事、卡住的地方，偶爾也會聊一些細節技術。希望大家不只看到完成後的樣子，也能一起看看途中經過的風景。今後請多多指教。",
+        "ko": "처음 뵙겠습니다, 미오 나구모입니다. 이 개발 일지에서는 MachiVerse가 조금씩 모습을 갖춰 가는 과정을 가볍게 남겨 보려고 합니다. 잘 풀린 일도, 막힌 부분도, 가끔은 작은 기술 이야기까지요. 완성된 모습뿐 아니라 만들어 가는 중간 풍경도 함께 즐겨 주시면 기쁠 것 같습니다. 앞으로 잘 부탁드립니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "MIO DEVLOG"
+      ]
+    }
+  ]
+}
