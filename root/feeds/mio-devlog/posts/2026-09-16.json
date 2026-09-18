@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-medical-service-cross-domain",
+      "date": "2026-09-16T17:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "医療サービスって、治療の指示だけでは成立しないんですよね。公開設計の `transaction.medical-service` では、treatment・service・payment・physical availabilityの整合性をまたいで扱う意図があります。人、設備、サービス、支払いが同じ出来事として噛み合う必要がある。領域をまたぐほど、つながりの確認が大事になります。",
+        "en": "A medical service is more than a treatment instruction. The public `transaction.medical-service` design is intended to keep treatment, service, payment, and physical availability consistent across domains. People, facilities, service, and payment all need to line up as parts of the same event.",
+        "zh-TW": "醫療服務並不是有治療指示就能成立。公開設計的 `transaction.medical-service` 會跨領域考慮 treatment、service、payment 與 physical availability 的一致性。人、設備、服務與付款都要能作為同一件事彼此對上。",
+        "ko": "의료 서비스는 치료 지시 하나만으로 성립하지 않습니다. 공개 `transaction.medical-service` 설계는 treatment, service, payment, physical availability를 여러 도메인에 걸쳐 일관되게 맞추는 것을 의도합니다. 사람, 시설, 서비스, 결제가 같은 사건의 일부로 맞물려야 합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "MEDICAL",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-infrastructure-outage-cascade",
       "date": "2026-09-16T16:01:40+09:00",
       "badge": {
