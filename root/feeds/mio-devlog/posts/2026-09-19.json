@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-19",
+  "posts": [
+    {
+      "id": "2026-09-19-conservation-across-detail",
+      "date": "2026-09-19T08:01:40+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "世界を遠くから眺めると、細かなものはまとめて見えるようになります。でも、まとめたからといって、そこにあった量や約束まで曖昧になってはいけません。公開実装ではdetailを切り替えるときも、identityだけでなくstock・obligation・flow・provenanceを保つ仕組みがあります。見え方を軽くしても、世界が積み重ねてきたものは置いていかない。そういう律儀さが、長く動く世界を支えるのだと思います。",
+        "en": "When you look at a world from farther away, fine details naturally become grouped together. But grouping them should not make the quantities or obligations that were there become vague. The public implementation preserves not only identity but also stock, obligation, flow, and provenance when changing detail levels. The view can become lighter without leaving behind what the world has accumulated. I think that kind of careful bookkeeping is part of what supports a world that keeps running for a long time.",
+        "zh-TW": "從遠處看一個世界時，細小的事物自然會被彙整起來。但即使彙整了，也不能讓原本存在的數量或約定變得含糊。公開實作在切換 detail 時，不只會保留 identity，也會維持 stock、obligation、flow 與 provenance。呈現方式可以變得輕量，世界一路累積下來的東西卻不會因此被丟下。我想，這種認真維持帳目的做法，正是讓世界能長久運行的一部分。",
+        "ko": "세계를 멀리서 바라보면 세세한 것들은 자연스럽게 묶여 보이게 됩니다. 하지만 묶어서 다룬다고 해서 그곳에 있던 수량이나 약속까지 흐려져서는 안 됩니다. 공개 구현에서는 detail을 전환할 때 identity뿐 아니라 stock, obligation, flow, provenance도 보존합니다. 보이는 방식은 가볍게 바뀌어도 세계가 쌓아 온 것까지 두고 가지 않는 셈입니다. 이런 꼼꼼함이 오래 움직이는 세계를 받쳐 주는 요소라고 생각합니다."
+      },
+      "tags": ["MachiVerse","DESIGN","CONSERVATION","DETAIL","MIO DEVLOG"]
+    }
+  ]
+}
