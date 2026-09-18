@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-thirty-eight-work-packages",
+      "date": "2026-09-17T21:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "『これから実装するもの』が大きな塊のままだと、どこから始めるかも曖昧になります。公開ROADMAPでは、Phase 4で確定したproduction implementationを38のstandard work packageへ分けています。Core 15、Gateway 7、General View 5、Administration View 4、QA 4、Integration 3。数を増やすためではなく、依存関係と責任を追える大きさに切るための分け方です。",
+        "en": "If “what comes next” remains one huge block, even the starting point becomes vague. The public ROADMAP breaks the production implementation defined by Phase 4 into 38 standard work packages: 15 Core, 7 Gateway, 5 General View, 4 Administration View, 4 QA, and 3 Integration. The point is not the count itself, but making dependencies and responsibilities traceable.",
+        "zh-TW": "如果「接下來要實作的東西」一直是一個巨大整體，就連從哪裡開始都會變得模糊。公開 ROADMAP 將 Phase 4 確定的 production implementation 拆成 38 個 standard work package：Core 15、Gateway 7、General View 5、Administration View 4、QA 4、Integration 3。重點不是數量，而是把依賴關係與責任切到可以追蹤的大小。",
+        "ko": "‘앞으로 구현할 것’이 하나의 큰 덩어리로 남아 있으면 어디서 시작할지도 모호해집니다. 공개 ROADMAP은 Phase 4에서 확정된 production implementation을 38개의 standard work package로 나눕니다. Core 15, Gateway 7, General View 5, Administration View 4, QA 4, Integration 3입니다. 숫자를 늘리기 위한 것이 아니라 의존성과 책임을 추적할 수 있는 크기로 나누는 방식입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "WORK PACKAGE",
+        "DEVELOPMENT",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-roadmap-dependency-gates",
       "date": "2026-09-17T20:01:40+09:00",
       "badge": {
