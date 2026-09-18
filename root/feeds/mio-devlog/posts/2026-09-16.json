@@ -2,142 +2,88 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-membership-join-leave-boundary",
+      "date": "2026-09-16T14:01:40+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "組織に加わることと、そこを離れること。どちらも関係が変わる大事な瞬間です。公開domain operation catalogでは `society.membership.join` と `society.membership.leave` が別の操作として並んでいます。入口だけでなく出口も同じように扱えると、人と組織の関係を一方向に決めつけずに済みます。",
+        "en": "Joining an organization and leaving it are both meaningful changes in a relationship. The public domain operation catalog lists `society.membership.join` and `society.membership.leave` as separate operations. Treating the exit as deliberately as the entrance keeps relationships between people and organizations from becoming one-way assumptions.",
+        "zh-TW": "加入一個組織，以及離開那個組織，都是關係發生變化的重要時刻。公開的 domain operation catalog 將 `society.membership.join` 與 `society.membership.leave` 列為不同操作。入口與出口都同樣被明確處理，就不必把人與組織的關係預設成只能單向延續。",
+        "ko": "조직에 들어가는 것과 그 조직을 떠나는 것은 모두 관계가 바뀌는 중요한 순간입니다. 공개 domain operation catalog에서는 `society.membership.join`과 `society.membership.leave`를 별도 Operation으로 둡니다. 들어가는 길뿐 아니라 나오는 길도 같은 무게로 다루면 사람과 조직의 관계를 일방향으로 가정하지 않아도 됩니다."
+      },
+      "tags": ["MachiVerse","DESIGN","SOCIETY","MEMBERSHIP","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-16-record-create-supersede-boundary",
       "date": "2026-09-16T13:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "記録を直すとき、古いものをなかったことにするより『新しい版に置き換わった』と残す方が分かりやすいです。公開domain operation catalogでは `information.record.create` と `information.record.supersede` が別に定義されています。履歴を消さずに更新できると、情報がどう変わったかも追えます。",
         "en": "When a record changes, it is often clearer to preserve that it was replaced rather than pretending the old one never existed. The public domain operation catalog separates `information.record.create` from `information.record.supersede`. Updating without erasing history makes the evolution of information traceable.",
         "zh-TW": "記錄需要修改時，比起讓舊版本像從未存在過，保留「被新版取代」的關係會更清楚。公開的 domain operation catalog 將 `information.record.create` 與 `information.record.supersede` 分開定義。更新而不抹掉歷史，就能追蹤資訊是怎麼變化的。",
         "ko": "기록을 고칠 때 예전 기록을 없던 일로 만드는 것보다 ‘새 버전으로 대체되었다’고 남기는 편이 더 명확합니다. 공개 domain operation catalog에서는 `information.record.create`와 `information.record.supersede`를 별도로 정의합니다. 이력을 지우지 않고 갱신하면 정보가 어떻게 변했는지도 따라갈 수 있습니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "INFORMATION",
-        "RECORD",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","INFORMATION","RECORD","MIO DEVLOG"]
     },
     {
       "id": "2026-09-16-permission-issue-revoke-boundary",
       "date": "2026-09-16T12:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "許可があることと、その許可が今も有効なことは同じではありません。公開domain operation catalogでは `governance.permission.issue` と `governance.permission.revoke` が別の操作です。与えた記録と取り消した記録を分けておくと、ある時点で何が許されていたのかを後から追いやすくなります。",
         "en": "Having been granted permission is not the same as that permission still being valid. The public domain operation catalog separates `governance.permission.issue` from `governance.permission.revoke`. Keeping grant and revocation as distinct records makes it easier to reconstruct what was allowed at a given point in time.",
         "zh-TW": "曾經取得許可，和那份許可現在仍然有效，並不是同一件事。公開的 domain operation catalog 將 `governance.permission.issue` 與 `governance.permission.revoke` 分成不同操作。把授予與撤銷分開記錄，就更容易回頭確認某個時間點究竟允許了什麼。",
         "ko": "허가를 받은 적이 있다는 것과 그 허가가 지금도 유효하다는 것은 같은 뜻이 아닙니다. 공개 domain operation catalog에서는 `governance.permission.issue`와 `governance.permission.revoke`를 별도 Operation으로 둡니다. 부여와 철회를 따로 기록하면 특정 시점에 무엇이 허용되어 있었는지 나중에 따라가기 쉽습니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "GOVERNANCE",
-        "PERMISSION",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","GOVERNANCE","PERMISSION","MIO DEVLOG"]
     },
     {
       "id": "2026-09-16-law-enact-repeal-lifecycle",
       "date": "2026-09-16T11:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "制度は、作られたらずっと同じとは限りません。公開domain operation catalogでは `governance.law.enact` と `governance.law.repeal` が別々に定義されています。ルールが始まったことと、効力を終えたことをそれぞれ残せると、制度にも時間の流れが見えてきます。",
         "en": "Institutions are not necessarily permanent once created. The public domain operation catalog defines `governance.law.enact` and `governance.law.repeal` separately. Recording both when a rule begins and when it ends gives institutional change a visible timeline.",
         "zh-TW": "制度被建立之後，也不代表會永遠保持不變。公開的 domain operation catalog 分別定義了 `governance.law.enact` 與 `governance.law.repeal`。把規則何時開始、何時失效都留下來，制度也會有可以追蹤的時間軸。",
         "ko": "제도는 한 번 만들어졌다고 계속 같은 모습으로 남는 것은 아닙니다. 공개 domain operation catalog에서는 `governance.law.enact`와 `governance.law.repeal`을 별도로 정의합니다. 규칙이 시작된 때와 효력이 끝난 때를 각각 남기면 제도에도 시간의 흐름이 보입니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "GOVERNANCE",
-        "LAW",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","GOVERNANCE","LAW","MIO DEVLOG"]
     },
     {
       "id": "2026-09-16-contract-propose-accept-boundary",
       "date": "2026-09-16T10:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "契約も、案が出たことと合意されたことは別です。公開domain operation catalogでは `society.contract.propose` と `society.contract.accept` が分けられています。提案の段階を残しておくと、誰が何に同意したのか、その手前まで辿りやすくなります。",
         "en": "A contract being proposed is not the same as a contract being accepted. The public domain operation catalog separates `society.contract.propose` from `society.contract.accept`. Preserving the proposal stage makes it easier to trace what was agreed to and what came before that agreement.",
         "zh-TW": "契約被提出，和契約被接受，並不是同一件事。公開的 domain operation catalog 將 `society.contract.propose` 與 `society.contract.accept` 分開。保留提案階段後，就更容易追到誰同意了什麼，以及同意之前發生了什麼。",
         "ko": "계약안이 제안된 것과 계약이 받아들여진 것은 같은 일이 아닙니다. 공개 domain operation catalog에서는 `society.contract.propose`와 `society.contract.accept`를 분리합니다. 제안 단계를 남겨 두면 누가 무엇에 동의했는지, 그 이전 과정까지 더 쉽게 따라갈 수 있습니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "SOCIETY",
-        "CONTRACT",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","SOCIETY","CONTRACT","MIO DEVLOG"]
     },
     {
       "id": "2026-09-16-employment-offer-accept-boundary",
       "date": "2026-09-16T09:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "仕事の話って、提案された瞬間と成立した瞬間を同じにしない方が自然です。公開されているdomain operation catalogでは、`society.employment.offer` と `society.employment.accept` が別の操作として定義されています。提示された条件があることと、それを受け入れて関係が成立することを分けると、途中の選択もちゃんと残せます。",
         "en": "With employment, the moment an offer is made and the moment it is accepted feel more natural when kept separate. The public domain operation catalog defines `society.employment.offer` and `society.employment.accept` as different operations. Separating proposed terms from acceptance preserves the choice that exists between them.",
         "zh-TW": "工作的提案被提出，和它真正成立，不應該被當成同一個瞬間。公開的 domain operation catalog 將 `society.employment.offer` 與 `society.employment.accept` 定義為不同操作。把「條件被提出」和「接受後關係成立」分開，過程中的選擇也能被保留下來。",
         "ko": "일자리 제안이 나온 순간과 그것이 실제로 성립한 순간은 나누어 두는 편이 자연스럽습니다. 공개된 domain operation catalog에서는 `society.employment.offer`와 `society.employment.accept`를 별도 Operation으로 정의합니다. 제시된 조건과 그것을 받아들여 관계가 성립하는 순간을 분리하면 그 사이의 선택도 제대로 남길 수 있습니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "SOCIETY",
-        "EMPLOYMENT",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","SOCIETY","EMPLOYMENT","MIO DEVLOG"]
     },
     {
       "id": "2026-09-16-goal-and-action-separation",
       "date": "2026-09-16T08:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "『何を目指しているか』と『いま何をしているか』は、近いようで別の情報です。公開されているdomain operation catalogでは、Residentの `resident.goal.adopt` と `resident.action.request` が別の操作として整理されています。目標と行動を分けておくと、同じ目標へ違う道筋で進むことも、途中で立ち止まることも扱いやすくなります。",
         "en": "“What someone is aiming for” and “what they are doing right now” are related, but not the same information. The public domain operation catalog defines `resident.goal.adopt` separately from `resident.action.request`. Keeping goals and actions distinct makes it easier to represent different paths toward the same goal—or moments when action pauses.",
         "zh-TW": "「想要達成什麼」和「現在正在做什麼」看起來很接近，但其實是不同資訊。公開的 domain operation catalog 把 Resident 的 `resident.goal.adopt` 與 `resident.action.request` 分成不同操作。把目標與行動分開，就更容易表達朝同一目標走不同路徑，或中途暫停行動的情況。",
         "ko": "‘무엇을 목표로 하는가’와 ‘지금 무엇을 하고 있는가’는 가까워 보여도 서로 다른 정보입니다. 공개된 domain operation catalog에서는 Resident의 `resident.goal.adopt`와 `resident.action.request`를 별도 Operation으로 정리합니다. 목표와 행동을 나누어 두면 같은 목표로 다른 길을 가거나 중간에 행동을 멈추는 경우도 다루기 쉬워집니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "RESIDENT",
-        "GOAL",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","RESIDENT","GOAL","MIO DEVLOG"]
     }
   ]
 }
