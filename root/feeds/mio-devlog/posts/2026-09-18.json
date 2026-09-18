@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-18",
+  "posts": [
+    {
+      "id": "2026-09-18-alpha1-roadmap-separation",
+      "date": "2026-09-18T08:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "動いているものがあることと、その先のproduction implementationまで終わっていることは別です。公開ROADMAPでは、Alpha 1.0のvertical sliceが実接続済みである一方、それをM0〜M6完了とはみなさないと明記されています。『もう動く』と『これから仕上げる』を同じ言葉でまとめない方が、現在地を素直に見られます。",
+        "en": "Having a working vertical slice is not the same as finishing the production implementation that comes after it. The public ROADMAP states that Alpha 1.0 is already connected and working, while explicitly not treating that as completion of M0–M6. Keeping “already works” separate from “still needs production completion” makes the project’s current position much clearer.",
+        "zh-TW": "已經有能實際運作的 vertical slice，和後續 production implementation 全部完成，是兩件不同的事。公開 ROADMAP 明確指出 Alpha 1.0 已完成實際連接，但不因此視為 M0～M6 已完成。把「已經能動」和「還要進一步完成」分開，現在的位置會更清楚。",
+        "ko": "실제로 동작하는 vertical slice가 있다는 것과 그 이후의 production implementation까지 끝났다는 것은 다른 일입니다. 공개 ROADMAP은 Alpha 1.0이 실제 연결되어 동작하지만 이를 M0~M6 완료로 보지 않는다고 명시합니다. ‘이미 동작함’과 ‘앞으로 완성해야 함’을 구분하면 현재 위치가 더 솔직하게 보입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "ALPHA 1.0",
+        "IMPLEMENTATION",
+        "MIO DEVLOG"
+      ]
+    }
+  ]
+}
