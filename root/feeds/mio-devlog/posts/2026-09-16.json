@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-crime-justice-fact-classification",
+      "date": "2026-09-16T15:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "何かが起きたという事実と、それを制度がどう分類するかは、同じ層に置かない方がいいです。公開設計の `transaction.crime-justice` では、factとlegal classificationを分けることが整合性の要点として示されています。出来事そのものと判断を分けておくと、後から制度が変わっても事実まで書き換えずに済みます。",
+        "en": "The fact that something happened and the way an institution classifies it are better kept on separate layers. The public `transaction.crime-justice` design explicitly separates physical facts from legal classification. Keeping the event and the judgment distinct means institutional change does not need to rewrite the underlying fact.",
+        "zh-TW": "某件事實際發生，和制度如何分類它，最好不要放在同一層。公開設計的 `transaction.crime-justice` 把 fact 與 legal classification 的分離列為一致性的重點。把事件本身與判斷分開，即使制度之後改變，也不必連原本的事實一起改寫。",
+        "ko": "무언가가 실제로 일어났다는 사실과 제도가 그것을 어떻게 분류하는가는 같은 층에 두지 않는 편이 좋습니다. 공개 `transaction.crime-justice` 설계에서는 fact와 legal classification의 분리가 일관성의 핵심으로 제시됩니다. 사건 자체와 판단을 분리하면 제도가 나중에 바뀌어도 사실까지 다시 쓰지 않아도 됩니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "JUSTICE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-public-record-consistency",
       "date": "2026-09-16T14:01:40+09:00",
       "badge": {
