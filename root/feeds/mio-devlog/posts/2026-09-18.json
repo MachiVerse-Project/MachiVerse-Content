@@ -2,6 +2,29 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-food-consumption-cross-domain",
+      "date": "2026-09-18T14:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "食べるという行動も、住人側の状態だけで完結はしません。公開設計の `transaction.food-consumption` では、physical quantity と nutrition consequence の整合性を扱う意図があります。物が減ったのに栄養側へ何も起きない、あるいは逆になると因果が切れてしまう。小さな日常ほど、世界の層がつながっているのがよく見えます。",
+        "en": "Eating is not an action that can be completed only on the resident side. The public `transaction.food-consumption` design is intended to keep physical quantity and nutritional consequence consistent. If the item decreases without a nutritional effect—or the reverse—the causal chain breaks. Everyday actions make cross-domain connections especially visible.",
+        "zh-TW": "「吃東西」這個行動也不能只在居民狀態裡完成。公開設計的 `transaction.food-consumption` 會處理 physical quantity 與 nutrition consequence 的一致性。如果物品減少了，營養端卻什麼都沒發生，或反過來，因果就會斷掉。越日常的小事，越能看見世界各層之間的連接。",
+        "ko": "먹는 행동도 Resident 쪽 상태만으로 끝나지는 않습니다. 공개 `transaction.food-consumption` 설계는 physical quantity와 nutrition consequence의 일관성을 다루는 것을 의도합니다. 물건의 양은 줄었는데 영양 쪽에는 아무 변화가 없거나 그 반대라면 인과가 끊깁니다. 일상적인 행동일수록 세계의 여러 층이 연결되어 있다는 점이 잘 보입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "FOOD",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-18-construction-cross-domain-consistency",
       "date": "2026-09-18T13:01:40+09:00",
       "badge": {
