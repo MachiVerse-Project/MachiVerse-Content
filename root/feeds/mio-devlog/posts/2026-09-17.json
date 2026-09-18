@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-m3-runtime-spine",
+      "date": "2026-09-17T16:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "状態を持てるようになったら、その次は『操作がどう流れるか』の背骨が必要になります。公開ROADMAPのM3では、Operation lifecycle、deterministic Step execution、Gatewayのpeer / custody / auth、Viewのprediction / reconciliationなどを揃える計画です。世界の動きを増やす前に、動かし方そのものを安定させる段階ですね。",
+        "en": "Once state can be preserved, the next need is a spine for how operations move through the system. Public ROADMAP milestone M3 plans the Operation lifecycle, deterministic Step execution, Gateway peer/custody/auth flows, and View prediction/reconciliation. Before adding more world behavior, the plan is to stabilize how actions move through the system.",
+        "zh-TW": "當狀態能穩定保存之後，下一步就需要讓「操作如何流動」有一條清楚的骨架。公開 ROADMAP 的 M3 規劃 Operation lifecycle、deterministic Step execution、Gateway 的 peer / custody / auth，以及 View 的 prediction / reconciliation。讓世界變得更複雜之前，先把操作怎麼走穩定下來。",
+        "ko": "상태를 유지할 수 있게 되면 다음에는 ‘Operation이 어떻게 흐르는가’를 지탱하는 뼈대가 필요합니다. 공개 ROADMAP의 M3는 Operation lifecycle, deterministic Step execution, Gateway의 peer / custody / auth, View의 prediction / reconciliation을 준비하는 계획입니다. 세계의 동작을 늘리기 전에 동작이 흐르는 방식 자체를 안정시키는 단계입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "M3",
+        "RUNTIME",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-roadmap-m2-state-persistence",
       "date": "2026-09-17T15:01:40+09:00",
       "badge": {
