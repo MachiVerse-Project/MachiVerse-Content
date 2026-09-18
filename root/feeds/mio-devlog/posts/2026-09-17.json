@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-m0-contract-baseline",
+      "date": "2026-09-17T13:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "次の実装へ進む前に、まず『何を正本として作るか』を揃える段階があります。公開ROADMAPでは現在地を **M0 Contract Baseline Consolidation** とし、Phase 4で確定した設計、Roadmap、既存Issueの前提を一致させることを入口にしています。新しい機能を急いで足すより、最初の地図を同じ向きにする段階ですね。",
+        "en": "Before the next implementation phase, there is a step where everyone needs to agree on what the authoritative baseline actually is. The public ROADMAP places the project at **M0 Contract Baseline Consolidation**, aligning the completed Phase 4 design, roadmap, and existing Issue assumptions. It is less about adding a new feature and more about making sure the map points the same way.",
+        "zh-TW": "進入下一階段實作之前，還有一個先把「究竟以什麼作為正本」對齊的階段。公開 ROADMAP 將目前位置定為 **M0 Contract Baseline Consolidation**，先讓 Phase 4 已確定的設計、Roadmap 與既有 Issue 前提一致。比起急著加新功能，這更像是先把大家手上的地圖轉到同一個方向。",
+        "ko": "다음 구현 단계로 가기 전에 ‘무엇을 정본으로 삼아 만들 것인가’를 맞추는 단계가 있습니다. 공개 ROADMAP은 현재 위치를 **M0 Contract Baseline Consolidation**으로 두고 Phase 4 확정 설계, Roadmap, 기존 Issue의 전제를 일치시키는 것을 출발점으로 삼습니다. 새 기능을 서두르기보다 먼저 지도의 방향을 맞추는 단계입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "M0",
+        "BASELINE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-alpha2-branch-baseline-sync",
       "date": "2026-09-17T12:01:40+09:00",
       "badge": {
