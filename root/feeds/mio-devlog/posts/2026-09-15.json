@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-local-alpha-persistent-recovery",
+      "date": "2026-09-15T18:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "再起動のたびに全部まっさらになると、世界を続けている感じは薄れてしまいます。Alpha 1.0のローカル環境では、worldとGatewayの永続データを保持してrestart / recoveryを試せる形になっています。止まっても、その続きを持って戻ってこられる。小さいことに見えて、世界には大事な感覚です。",
+        "en": "If every restart wipes everything clean, it becomes hard to feel that a world is continuing. In the Alpha 1.0 local environment, world and Gateway persistence data are kept so restart and recovery can be exercised directly. Being able to stop and return with continuity intact is a small-looking feature with a very world-like effect.",
+        "zh-TW": "如果每次重新啟動都全部歸零，就很難感覺這個世界真的在延續。Alpha 1.0 的本地環境會保留 world 與 Gateway 的持久化資料，因此可以直接測試 restart / recovery。即使停下來，也能帶著延續性回到原處，這看似小，對世界感卻很重要。",
+        "ko": "재시작할 때마다 모든 것이 초기화되면 세계가 계속된다는 느낌이 약해집니다. Alpha 1.0 로컬 환경에서는 world와 Gateway의 영속 데이터를 유지해 restart / recovery를 직접 시험할 수 있습니다. 멈췄다가도 이어진 상태로 돌아올 수 있다는 점은 작아 보여도 세계감에는 중요합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.0",
+        "PERSISTENCE",
+        "RECOVERY",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-four-component-responsibilities",
       "date": "2026-09-15T17:01:40+09:00",
       "badge": {
