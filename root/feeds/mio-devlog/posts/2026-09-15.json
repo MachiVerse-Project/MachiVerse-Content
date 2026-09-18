@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-four-component-responsibilities",
+      "date": "2026-09-15T17:01:40+09:00",
+      "badge": {
+        "ja": "DEVELOPMENT",
+        "en": "DEVELOPMENT",
+        "zh-TW": "DEVELOPMENT",
+        "ko": "DEVELOPMENT"
+      },
+      "body": {
+        "ja": "ひとつの大きなアプリに全部を詰め込むより、責任ごとに分けた方が見通しが良くなります。MachiVerseはSimulation Core、Gateway、General View、Administration Viewを最上位の4コンポーネントとして、独立した実行・ビルド・配布単位にしています。役割の境界が見えると、つなぐ場所も自然に見えてきます。",
+        "en": "Putting everything into one large application is not always the clearest shape. MachiVerse treats Simulation Core, Gateway, General View, and Administration View as four top-level components with independent execution, build, and distribution units. Once each responsibility is visible, the places where they should connect become clearer too.",
+        "zh-TW": "把所有東西都塞進一個大型應用程式，不一定最容易看清楚。MachiVerse 把 Simulation Core、Gateway、General View、Administration View 作為四個最上位元件，分別作為獨立的執行、建置與發布單位。責任邊界清楚之後，該在哪裡連接也會自然浮現。",
+        "ko": "모든 것을 하나의 큰 애플리케이션에 넣는 것보다 책임별로 나누는 편이 더 잘 보일 때가 있습니다. MachiVerse는 Simulation Core, Gateway, General View, Administration View를 네 개의 최상위 컴포넌트로 두고 각각 독립적인 실행·빌드·배포 단위로 다룹니다. 역할의 경계가 보이면 연결해야 할 지점도 자연스럽게 보입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ARCHITECTURE",
+        "COMPONENT",
+        "RESPONSIBILITY",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-versioned-protocol-component-boundary",
       "date": "2026-09-15T16:01:40+09:00",
       "badge": {
