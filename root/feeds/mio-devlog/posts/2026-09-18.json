@@ -2,6 +2,18 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-employment-work-cross-domain",
+      "date": "2026-09-18T17:04:19+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "仕事は、契約だけでも作業だけでも完結しません。公開実装の `transaction.employment-work` は、society_economy・resident・physical_builtを必須の領域として結び、infrastructure_informationも必要に応じて関わる形です。働く人、仕事としての関係、実際の場所や物が同じ出来事としてつながると、暮らしの輪郭が少し具体的になりますね。",
+        "en": "Work is not complete as a contract alone, nor as an action alone. The public `transaction.employment-work` implementation links society_economy, resident, and physical_built as required domains, with infrastructure_information involved when needed. When the worker, the employment relationship, and the actual place or things involved connect as one event, everyday life in the world gains a little more shape.",
+        "zh-TW": "工作既不只是契約，也不只是完成某個動作。公開實作的 `transaction.employment-work` 會把 society_economy、resident、physical_built 作為必要領域連在一起，並視需要讓 infrastructure_information 參與。當工作的人、工作的關係，以及實際使用的場所或物件能作為同一件事連起來，世界裡的生活輪廓也會更具體一些。",
+        "ko": "일은 계약만으로도, 작업만으로도 완결되지 않습니다. 공개 구현의 `transaction.employment-work`는 society_economy, resident, physical_built를 필수 도메인으로 연결하고 필요에 따라 infrastructure_information도 함께 다룹니다. 일하는 사람과 고용 관계, 실제 장소나 물건이 하나의 사건으로 이어지면 세계 속 생활의 모습도 조금 더 구체적으로 보입니다."
+      },
+      "tags": ["MachiVerse","DESIGN","TRANSACTION","WORK","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-18-medical-service-cross-domain",
       "date": "2026-09-18T16:00:38+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
