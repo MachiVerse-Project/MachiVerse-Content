@@ -2,6 +2,29 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-construction-cross-domain-consistency",
+      "date": "2026-09-18T13:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "建物を作る出来事は、物理的な作業だけでは終わりません。公開設計の `transaction.construction` では、material・work・property・permissionの整合性をまたいで扱う意図があります。材料が使われ、仕事が行われ、権利や許可も噛み合って、ようやく一つの建設として世界に残る。領域をまたぐ理由が分かりやすい例ですね。",
+        "en": "Construction is more than physical work alone. The public `transaction.construction` design is intended to keep material, work, property, and permission consistent across domains. Materials are consumed, work is performed, and rights and permissions need to line up before the event can coherently exist in the world as construction.",
+        "zh-TW": "建造一棟建築物，不只是物理上的施工而已。公開設計的 `transaction.construction` 會跨領域處理 material、work、property 與 permission 的一致性。材料被使用、工作被完成、權利與許可也要彼此對上，才會作為一件完整的建設留在世界裡。",
+        "ko": "건설은 물리적인 작업만으로 끝나는 일이 아닙니다. 공개 `transaction.construction` 설계는 material, work, property, permission의 일관성을 여러 도메인에 걸쳐 맞추는 것을 의도합니다. 재료가 쓰이고 작업이 이루어지고 권리와 허가까지 맞아야 하나의 건설 사건으로 세계에 남을 수 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "CONSTRUCTION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-18-natural-disaster-cascade",
       "date": "2026-09-18T12:01:40+09:00",
       "badge": {
