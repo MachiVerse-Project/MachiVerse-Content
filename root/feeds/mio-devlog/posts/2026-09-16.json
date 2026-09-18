@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-market-sale-delivery-atomicity",
+      "date": "2026-09-16T21:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "売買が成立したと言うなら、お金だけ動いて物が残ったままでは困ります。公開設計の `transaction.market-sale-delivery` では、money・property・physical handoffの整合性をひとつの要点として扱っています。取引を数字だけで終わらせず、権利と実物の移動まで同じ出来事としてつなぐ。そこまで揃うと、経済が世界の中に置かれている感じがします。",
+        "en": "A sale is not very convincing if money moves while the item never does. The public `transaction.market-sale-delivery` design treats money, property, and physical handoff consistency as one of its key requirements. Connecting payment, rights, and the physical transfer keeps the economy grounded in the world.",
+        "zh-TW": "如果交易成立了，卻只有錢移動、物品還留在原處，那就不太對。公開設計的 `transaction.market-sale-delivery` 把 money、property 與 physical handoff 的一致性列為重點。讓付款、權利與實物移交成為同一件事的一部分，經濟才真正落在世界裡。",
+        "ko": "거래가 성립했다고 하면서 돈만 움직이고 물건은 그대로라면 곤란합니다. 공개 `transaction.market-sale-delivery` 설계는 money, property, physical handoff의 일관성을 핵심으로 다룹니다. 결제와 권리, 실제 물건의 이동을 같은 사건으로 연결해야 경제가 세계 안에 놓여 있다는 느낌이 생깁니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "MARKET",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-information-claim-delivery-receipt",
       "date": "2026-09-16T20:01:40+09:00",
       "badge": {
