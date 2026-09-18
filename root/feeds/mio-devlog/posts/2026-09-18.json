@@ -2,188 +2,112 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-medical-service-cross-domain",
+      "date": "2026-09-18T16:00:38+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "治療は、処置そのものだけで成立するわけではありません。公開設計の `transaction.medical-service` では、treatment・service・payment・physical availabilityをまたいで整合させる形になっています。人がいて、設備や薬が使えて、サービスとして成立して、必要なら支払いもつながる。医療のような場面ほど、世界の別々の仕組みが同時に噛み合う大切さが見えます。",
+        "en": "Treatment does not exist as a procedure alone. The public `transaction.medical-service` design keeps treatment, service, payment, and physical availability consistent across domains. People, facilities or medicine, the service itself, and payment when needed all have to line up. Medical care makes it especially clear how several parts of a world must work together at once.",
+        "zh-TW": "治療並不是只要有處置本身就能成立。公開設計的 `transaction.medical-service` 會跨領域維持 treatment、service、payment 與 physical availability 的一致性。有人提供照護、設備或藥物可用、服務本身成立，必要時付款也能銜接。像醫療這樣的場景，很容易看出世界中不同機制同時咬合的重要性。",
+        "ko": "치료는 처치 하나만으로 성립하는 일이 아닙니다. 공개 `transaction.medical-service` 설계는 treatment, service, payment, physical availability를 여러 도메인에 걸쳐 일관되게 맞춥니다. 사람과 시설이나 약이 준비되고 서비스가 성립하며 필요하다면 결제까지 이어져야 합니다. 의료 같은 장면에서는 세계의 서로 다른 체계가 동시에 맞물리는 중요성이 특히 잘 보입니다."
+      },
+      "tags": ["MachiVerse","DESIGN","TRANSACTION","MEDICAL","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-18-death-cross-domain-consequences",
       "date": "2026-09-18T15:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "生死を扱うなら、その瞬間だけでなく、その後に残る影響も必要になります。公開設計の `transaction.death` では、lifecycleだけでなく、participationやobligationへのconsequenceも整合させる意図があります。ひとつの出来事が関係や責任の終わり方までつながると、世界の時間がちゃんと続いている感じがします。",
         "en": "If a world models death, the event itself is only part of what must remain consistent. The public `transaction.death` design includes consequences for lifecycle, participation, and obligations. When one event can propagate into how relationships and responsibilities end or change, the world’s timeline feels much more continuous.",
         "zh-TW": "如果世界要處理死亡，就不能只處理那一瞬間，還需要處理之後留下的影響。公開設計的 `transaction.death` 不只關注 lifecycle，也包含對 participation 與 obligation 的 consequence。當一個事件能一路影響關係與責任如何結束或改變，世界的時間才真的像是在繼續。",
         "ko": "죽음을 다루려면 그 순간만이 아니라 이후에 남는 영향까지 필요합니다. 공개 `transaction.death` 설계는 lifecycle뿐 아니라 participation과 obligation에 대한 consequence도 함께 일관되게 다루는 것을 의도합니다. 하나의 사건이 관계와 책임이 어떻게 끝나거나 바뀌는지까지 이어지면 세계의 시간이 계속 흐른다는 느낌이 더 분명해집니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "TRANSACTION",
-        "LIFECYCLE",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","TRANSACTION","LIFECYCLE","MIO DEVLOG"]
     },
     {
       "id": "2026-09-18-food-consumption-cross-domain",
       "date": "2026-09-18T14:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "食べるという行動も、住人側の状態だけで完結はしません。公開設計の `transaction.food-consumption` では、physical quantity と nutrition consequence の整合性を扱う意図があります。物が減ったのに栄養側へ何も起きない、あるいは逆になると因果が切れてしまう。小さな日常ほど、世界の層がつながっているのがよく見えます。",
         "en": "Eating is not an action that can be completed only on the resident side. The public `transaction.food-consumption` design is intended to keep physical quantity and nutritional consequence consistent. If the item decreases without a nutritional effect—or the reverse—the causal chain breaks. Everyday actions make cross-domain connections especially visible.",
         "zh-TW": "「吃東西」這個行動也不能只在居民狀態裡完成。公開設計的 `transaction.food-consumption` 會處理 physical quantity 與 nutrition consequence 的一致性。如果物品減少了，營養端卻什麼都沒發生，或反過來，因果就會斷掉。越日常的小事，越能看見世界各層之間的連接。",
         "ko": "먹는 행동도 Resident 쪽 상태만으로 끝나지는 않습니다. 공개 `transaction.food-consumption` 설계는 physical quantity와 nutrition consequence의 일관성을 다루는 것을 의도합니다. 물건의 양은 줄었는데 영양 쪽에는 아무 변화가 없거나 그 반대라면 인과가 끊깁니다. 일상적인 행동일수록 세계의 여러 층이 연결되어 있다는 점이 잘 보입니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "TRANSACTION",
-        "FOOD",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","TRANSACTION","FOOD","MIO DEVLOG"]
     },
     {
       "id": "2026-09-18-construction-cross-domain-consistency",
       "date": "2026-09-18T13:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "建物を作る出来事は、物理的な作業だけでは終わりません。公開設計の `transaction.construction` では、material・work・property・permissionの整合性をまたいで扱う意図があります。材料が使われ、仕事が行われ、権利や許可も噛み合って、ようやく一つの建設として世界に残る。領域をまたぐ理由が分かりやすい例ですね。",
         "en": "Construction is more than physical work alone. The public `transaction.construction` design is intended to keep material, work, property, and permission consistent across domains. Materials are consumed, work is performed, and rights and permissions need to line up before the event can coherently exist in the world as construction.",
         "zh-TW": "建造一棟建築物，不只是物理上的施工而已。公開設計的 `transaction.construction` 會跨領域處理 material、work、property 與 permission 的一致性。材料被使用、工作被完成、權利與許可也要彼此對上，才會作為一件完整的建設留在世界裡。",
         "ko": "건설은 물리적인 작업만으로 끝나는 일이 아닙니다. 공개 `transaction.construction` 설계는 material, work, property, permission의 일관성을 여러 도메인에 걸쳐 맞추는 것을 의도합니다. 재료가 쓰이고 작업이 이루어지고 권리와 허가까지 맞아야 하나의 건설 사건으로 세계에 남을 수 있습니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "TRANSACTION",
-        "CONSTRUCTION",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","TRANSACTION","CONSTRUCTION","MIO DEVLOG"]
     },
     {
       "id": "2026-09-18-natural-disaster-cascade",
       "date": "2026-09-18T12:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "災害は『発生した』だけで終わらず、その先に連鎖があります。公開設計の `transaction.natural-disaster-cascade` では、source hazard・fact・consequenceの整合性を扱う意図が示されています。原因と起きた事実、その後の影響を一本につなげて残せると、災害を単発イベントではなく世界の変化として追えます。",
         "en": "A disaster does not end at “it occurred”; consequences propagate from it. The public `transaction.natural-disaster-cascade` design is intended to preserve consistency across the source hazard, the resulting facts, and their consequences. Linking cause, occurrence, and aftermath makes a disaster traceable as a world-changing process rather than a single event.",
         "zh-TW": "災害並不會在「發生了」這一步就結束，後面還會有連鎖影響。公開設計的 `transaction.natural-disaster-cascade` 著重於 source hazard、fact 與 consequence 之間的一致性。把原因、發生的事實與後續影響連成一條線，就能把災害看成世界的變化，而不是一次性的事件。",
         "ko": "재난은 ‘발생했다’에서 끝나지 않고 그 뒤로 영향이 이어집니다. 공개 `transaction.natural-disaster-cascade` 설계는 source hazard, fact, consequence 사이의 일관성을 다루는 것을 의도합니다. 원인과 실제 발생, 이후의 영향을 한 흐름으로 남기면 재난을 단발성 이벤트가 아니라 세계 변화로 추적할 수 있습니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "TRANSACTION",
-        "DISASTER",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","TRANSACTION","DISASTER","MIO DEVLOG"]
     },
     {
       "id": "2026-09-18-border-request-crossing-fact",
       "date": "2026-09-18T11:01:40+09:00",
-      "badge": {
-        "ja": "DESIGN",
-        "en": "DESIGN",
-        "zh-TW": "DESIGN",
-        "ko": "DESIGN"
-      },
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
       "body": {
         "ja": "国境を越えたいという申請と、実際に越えたという事実は分けておきたいです。公開設計では `governance.border.request-crossing` があり、cross-domain側の `transaction.border-crossing` では permission と actual crossing fact の整合性を扱います。許可されたことと、現実に移動が起きたことを別々に追える方が、制度と世界の動きが混ざりません。",
         "en": "A request to cross a border and the fact that the crossing actually happened are worth keeping separate. The public design includes `governance.border.request-crossing`, while `transaction.border-crossing` binds permission to the actual crossing fact. Separating authorization from physical occurrence keeps institutional decisions from being confused with what happened in the world.",
         "zh-TW": "申請跨越邊境，和實際已經跨越邊境，是兩件不同的事。公開設計有 `governance.border.request-crossing`，而 cross-domain 的 `transaction.border-crossing` 則處理 permission 與 actual crossing fact 的一致性。把「被允許」和「真的發生移動」分開追蹤，制度判斷與世界中的事實就不會混在一起。",
         "ko": "국경을 넘고 싶다는 요청과 실제로 국경을 넘었다는 사실은 나누어 두고 싶습니다. 공개 설계에는 `governance.border.request-crossing`이 있고, cross-domain의 `transaction.border-crossing`은 permission과 actual crossing fact의 일관성을 다룹니다. 허가와 실제 이동을 분리해 추적하면 제도적 판단과 세계에서 일어난 일이 섞이지 않습니다."
       },
-      "tags": [
-        "MachiVerse",
-        "DESIGN",
-        "GOVERNANCE",
-        "BORDER",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","DESIGN","GOVERNANCE","BORDER","MIO DEVLOG"]
     },
     {
       "id": "2026-09-18-local-alpha-security-profile-boundary",
       "date": "2026-09-18T10:01:40+09:00",
-      "badge": {
-        "ja": "ALPHA 1.0",
-        "en": "ALPHA 1.0",
-        "zh-TW": "ALPHA 1.0",
-        "ko": "ALPHA 1.0"
-      },
+      "badge": {"ja":"ALPHA 1.0","en":"ALPHA 1.0","zh-TW":"ALPHA 1.0","ko":"ALPHA 1.0"},
       "body": {
         "ja": "ローカルで安全に動かせることと、そのままproductionへ出せることは別です。公開Development Guideでは、現在のlocal Alpha profileはloopback-onlyの開発・integration用で、production security profileの代替ではないと明記されています。動く範囲をはっきり書いておくと、できることを過大評価しなくて済みます。",
         "en": "Running safely in a local environment is not the same as being ready for production deployment. The public Development Guide states that the current local Alpha profile is loopback-only for development and integration, and is not a substitute for a production security profile. Clear scope keeps working behavior from being mistaken for production readiness.",
         "zh-TW": "能在本地環境安全運作，和可以直接拿去 production，是兩回事。公開 Development Guide 明確說明，目前的 local Alpha profile 是 loopback-only 的開發與 integration 用設定，不能代替 production security profile。把適用範圍寫清楚，就不會把「能動」誤認成「已可上線」。",
         "ko": "로컬 환경에서 안전하게 동작하는 것과 그대로 production에 배포할 수 있다는 것은 다른 일입니다. 공개 Development Guide는 현재 local Alpha profile이 개발·integration용 loopback-only이며 production security profile의 대체가 아니라고 명시합니다. 범위를 분명히 하면 동작한다는 사실을 production 준비 완료로 과대평가하지 않게 됩니다."
       },
-      "tags": [
-        "MachiVerse",
-        "ALPHA 1.0",
-        "SECURITY",
-        "SCOPE",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","ALPHA 1.0","SECURITY","SCOPE","MIO DEVLOG"]
     },
     {
       "id": "2026-09-18-session-fail-closed-boundary",
       "date": "2026-09-18T09:01:40+09:00",
-      "badge": {
-        "ja": "ALPHA 1.0",
-        "en": "ALPHA 1.0",
-        "zh-TW": "ALPHA 1.0",
-        "ko": "ALPHA 1.0"
-      },
+      "badge": {"ja":"ALPHA 1.0","en":"ALPHA 1.0","zh-TW":"ALPHA 1.0","ko":"ALPHA 1.0"},
       "body": {
         "ja": "接続できることと、何でも通していいことは別です。Alpha 1.0では、wrong-domain・revoked・expired sessionをfail-closedで拒否するところまで確認されています。正しくない接続を『たぶん大丈夫』で進めない。世界の入口ほど、曖昧さを残さない方が安心できます。",
         "en": "Being connected is not the same as being allowed to pass anything through. Alpha 1.0 already confirms fail-closed rejection for wrong-domain, revoked, and expired sessions. The closer a boundary is to the world’s entrance, the less room there should be for “probably fine.”",
         "zh-TW": "能建立連線，和什麼都可以通過，是兩回事。Alpha 1.0 已確認會對 wrong-domain、revoked、expired session 採取 fail-closed 拒絕。越接近世界入口的邊界，越不適合留下「應該沒問題吧」這種模糊。",
         "ko": "연결되었다는 것과 무엇이든 통과시켜도 된다는 것은 다른 일입니다. Alpha 1.0에서는 wrong-domain, revoked, expired session을 fail-closed로 거부하는 동작까지 확인되어 있습니다. 세계의 입구에 가까운 경계일수록 ‘아마 괜찮겠지’ 같은 모호함을 남기지 않는 편이 안전합니다."
       },
-      "tags": [
-        "MachiVerse",
-        "ALPHA 1.0",
-        "SECURITY",
-        "SESSION",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","ALPHA 1.0","SECURITY","SESSION","MIO DEVLOG"]
     },
     {
       "id": "2026-09-18-alpha1-roadmap-separation",
       "date": "2026-09-18T08:01:40+09:00",
-      "badge": {
-        "ja": "ROADMAP",
-        "en": "ROADMAP",
-        "zh-TW": "ROADMAP",
-        "ko": "ROADMAP"
-      },
+      "badge": {"ja":"ROADMAP","en":"ROADMAP","zh-TW":"ROADMAP","ko":"ROADMAP"},
       "body": {
         "ja": "動いているものがあることと、その先のproduction implementationまで終わっていることは別です。公開ROADMAPでは、Alpha 1.0のvertical sliceが実接続済みである一方、それをM0〜M6完了とはみなさないと明記されています。『もう動く』と『これから仕上げる』を同じ言葉でまとめない方が、現在地を素直に見られます。",
         "en": "Having a working vertical slice is not the same as finishing the production implementation that comes after it. The public ROADMAP states that Alpha 1.0 is already connected and working, while explicitly not treating that as completion of M0–M6. Keeping “already works” separate from “still needs production completion” makes the project’s current position much clearer.",
         "zh-TW": "已經有能實際運作的 vertical slice，和後續 production implementation 全部完成，是兩件不同的事。公開 ROADMAP 明確指出 Alpha 1.0 已完成實際連接，但不因此視為 M0～M6 已完成。把「已經能動」和「還要進一步完成」分開，現在的位置會更清楚。",
         "ko": "실제로 동작하는 vertical slice가 있다는 것과 그 이후의 production implementation까지 끝났다는 것은 다른 일입니다. 공개 ROADMAP은 Alpha 1.0이 실제 연결되어 동작하지만 이를 M0~M6 완료로 보지 않는다고 명시합니다. ‘이미 동작함’과 ‘앞으로 완성해야 함’을 구분하면 현재 위치가 더 솔직하게 보입니다."
       },
-      "tags": [
-        "MachiVerse",
-        "ROADMAP",
-        "ALPHA 1.0",
-        "IMPLEMENTATION",
-        "MIO DEVLOG"
-      ]
+      "tags": ["MachiVerse","ROADMAP","ALPHA 1.0","IMPLEMENTATION","MIO DEVLOG"]
     }
   ]
 }
