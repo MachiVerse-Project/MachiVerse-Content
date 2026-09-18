@@ -2,6 +2,18 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-information-transmission-cross-domain",
+      "date": "2026-09-18T18:01:40+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "情報は、届いたというだけでも世界を少し動かします。公開実装の `transaction.information-transmission` は infrastructure_information を必須の領域とし、society_economy と resident が必要に応じて関わります。知らせそのものと、それを受け取る人や社会の動きが別々の仕組みでも、一つの出来事として結べる。目に見えないものほど、つながり方が大事ですね。",
+        "en": "Information can change a world simply by arriving. The public `transaction.information-transmission` implementation requires infrastructure_information, with society_economy and resident involved when needed. The message itself and the people or social activity that receive it can live in separate systems while still being connected as one event. The less visible something is, the more its connections matter.",
+        "zh-TW": "資訊光是「送達」這件事，就可能讓世界產生一些變化。公開實作的 `transaction.information-transmission` 以 infrastructure_information 為必要領域，並視需要讓 society_economy 與 resident 參與。訊息本身，以及接收它的人或社會活動，即使屬於不同機制，也能作為同一件事連起來。越是看不見的東西，連接方式反而越重要呢。",
+        "ko": "정보는 도착했다는 사실만으로도 세계를 조금 움직일 수 있습니다. 공개 구현의 `transaction.information-transmission`은 infrastructure_information을 필수 도메인으로 두고, 필요에 따라 society_economy와 resident가 함께 관여합니다. 소식 자체와 그것을 받는 사람이나 사회의 움직임이 서로 다른 체계에 있어도 하나의 사건으로 연결할 수 있습니다. 눈에 보이지 않는 것일수록 연결 방식이 중요하네요."
+      },
+      "tags": ["MachiVerse","DESIGN","TRANSACTION","INFORMATION","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-18-military-operation-cross-domain",
       "date": "2026-09-18T17:59:29+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
