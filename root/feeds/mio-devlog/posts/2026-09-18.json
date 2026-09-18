@@ -2,6 +2,29 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-death-cross-domain-consequences",
+      "date": "2026-09-18T15:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "生死を扱うなら、その瞬間だけでなく、その後に残る影響も必要になります。公開設計の `transaction.death` では、lifecycleだけでなく、participationやobligationへのconsequenceも整合させる意図があります。ひとつの出来事が関係や責任の終わり方までつながると、世界の時間がちゃんと続いている感じがします。",
+        "en": "If a world models death, the event itself is only part of what must remain consistent. The public `transaction.death` design includes consequences for lifecycle, participation, and obligations. When one event can propagate into how relationships and responsibilities end or change, the world’s timeline feels much more continuous.",
+        "zh-TW": "如果世界要處理死亡，就不能只處理那一瞬間，還需要處理之後留下的影響。公開設計的 `transaction.death` 不只關注 lifecycle，也包含對 participation 與 obligation 的 consequence。當一個事件能一路影響關係與責任如何結束或改變，世界的時間才真的像是在繼續。",
+        "ko": "죽음을 다루려면 그 순간만이 아니라 이후에 남는 영향까지 필요합니다. 공개 `transaction.death` 설계는 lifecycle뿐 아니라 participation과 obligation에 대한 consequence도 함께 일관되게 다루는 것을 의도합니다. 하나의 사건이 관계와 책임이 어떻게 끝나거나 바뀌는지까지 이어지면 세계의 시간이 계속 흐른다는 느낌이 더 분명해집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "LIFECYCLE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-18-food-consumption-cross-domain",
       "date": "2026-09-18T14:01:40+09:00",
       "badge": {
