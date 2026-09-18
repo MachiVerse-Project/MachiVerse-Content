@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-qa04-step-candidate-id",
+      "date": "2026-09-16T19:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "同じStepを指すIDなら、実行した時刻やworkerが違っても同じ意味であってほしいです。公開リポジトリではQA-04の `StepCandidateV1.CandidateId` を、`WorldId`・basis step・target stepだけを権威ある組として決める設計が正本化されました。runやthread、retryの番号はIDに入れません。こちらも文書上の確定で、runtime実装の完了を意味するものではありません。",
+        "en": "If an ID represents the same Step, its meaning should not change just because the worker or execution time changed. The public QA-04 design now derives `StepCandidateV1.CandidateId` from the authoritative tuple of `WorldId`, basis step, and target step only; run, thread, and retry ordinals are excluded. This is a documentation-level decision, not completion of runtime implementation.",
+        "zh-TW": "如果一個 ID 指的是同一個 Step，那麼不應該因為執行時間或 worker 不同就變成不同意思。公開的 QA-04 設計已把 `StepCandidateV1.CandidateId` 的權威來源限定為 `WorldId`、basis step 與 target step；run、thread、retry 的序號都不放進 ID。這是文件層面的確定，不代表 runtime 實作已完成。",
+        "ko": "같은 Step을 가리키는 ID라면 실행 시각이나 worker가 달라도 같은 의미를 가져야 합니다. 공개 QA-04 설계에서는 `StepCandidateV1.CandidateId`를 `WorldId`, basis step, target step의 authoritative tuple만으로 결정하고 run, thread, retry ordinal은 제외하도록 정리했습니다. 문서 차원의 확정이며 runtime 구현 완료를 뜻하지는 않습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "QA-04",
+        "CANDIDATE ID",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-qa04-state-numbering-alignment",
       "date": "2026-09-16T18:01:40+09:00",
       "badge": {
