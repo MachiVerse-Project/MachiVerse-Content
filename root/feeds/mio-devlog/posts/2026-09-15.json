@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-confirmed-full-delta-publication",
+      "date": "2026-09-15T11:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "世界の状態は、毎回すべてを送り直せばいいわけでもありません。Alpha 1.0では、confirmed worldを `FULL` と `DELTA` のpublicationとして扱うところまで実際に動いています。全体が必要なときと、変わった分だけで足りるときを分けられると、世界の受け渡し方にも少し輪郭が出ます。",
+        "en": "A world state does not need to be resent in full every time. In Alpha 1.0, the confirmed world is already delivered through `FULL` and `DELTA` publications. Distinguishing when the whole state is needed from when only the changes are enough gives the handoff of the world a much clearer shape.",
+        "zh-TW": "世界狀態並不是每次都要全部重新送一次。Alpha 1.0 已經實際運作到把 confirmed world 以 `FULL` 與 `DELTA` publication 傳遞的階段。能分清楚何時需要全量、何時只需要變更部分，世界狀態的交接方式就會清楚很多。",
+        "ko": "세계 상태를 매번 전부 다시 보낼 필요는 없습니다. Alpha 1.0에서는 confirmed world를 `FULL`과 `DELTA` publication으로 전달하는 흐름이 실제로 동작합니다. 전체가 필요한 때와 변경분만으로 충분한 때를 나누면 세계 상태를 넘기는 방식도 훨씬 선명해집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.0",
+        "PUBLICATION",
+        "STATE",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-payment-request-outcome-boundary",
       "date": "2026-09-15T10:01:40+09:00",
       "badge": {
