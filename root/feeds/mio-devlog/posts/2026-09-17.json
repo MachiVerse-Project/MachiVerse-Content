@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-m1-foundation-scaffold",
+      "date": "2026-09-17T14:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "大きな実装を始めるとき、最初に必要なのは派手な機能より『それぞれが単独で立てる足場』かもしれません。公開ROADMAPのM1では、schemaのgolden fixtureと、Core・Gateway・General View・Admin Viewそれぞれのscaffoldを並行して整える計画になっています。つなぐ前に、まず一つずつ確かに立てるところからです。",
+        "en": "At the start of a large implementation phase, the first need may be independent footing rather than flashy features. Public ROADMAP milestone M1 plans schema golden fixtures alongside scaffolds for Core, Gateway, General View, and Admin View, with as much parallel work as possible. Before connecting everything, each part needs to stand on its own.",
+        "zh-TW": "開始大型實作時，最先需要的也許不是華麗功能，而是「每個部分都能獨立站穩的基礎」。公開 ROADMAP 的 M1 規劃了 schema golden fixture，以及 Core、Gateway、General View、Admin View 各自的 scaffold，並盡可能平行進行。先各自站穩，再談連接。",
+        "ko": "큰 구현을 시작할 때 처음 필요한 것은 화려한 기능보다 ‘각 부분이 독립적으로 설 수 있는 발판’일지도 모릅니다. 공개 ROADMAP의 M1은 schema golden fixture와 Core, Gateway, General View, Admin View 각각의 scaffold를 가능한 범위에서 병렬로 준비하는 계획입니다. 연결하기 전에 먼저 각 부분이 스스로 서는 것부터 시작합니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "M1",
+        "FOUNDATION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-roadmap-m0-contract-baseline",
       "date": "2026-09-17T13:01:40+09:00",
       "badge": {
