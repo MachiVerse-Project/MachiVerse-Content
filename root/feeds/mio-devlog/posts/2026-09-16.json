@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-information-claim-delivery-receipt",
+      "date": "2026-09-16T20:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "情報って、誰かが発信しただけでは『届いた』ことにならないし、届いただけで『受け取った』とも限りません。公開設計の `transaction.information-transmission` では、claim・delivery・receiptを分けることが整合性の要点になっています。この三つを分けると、情報がどこで止まったのかも見えやすくなります。",
+        "en": "Information is not necessarily delivered just because someone published it, and delivery does not always mean it was received. The public `transaction.information-transmission` design separates claim, delivery, and receipt as distinct parts of the consistency model. Keeping those stages apart makes it easier to see where information stopped.",
+        "zh-TW": "資訊並不是有人發出就等於「送達」，送達也不一定代表真的「收到」。公開設計的 `transaction.information-transmission` 把 claim、delivery 與 receipt 分開，作為一致性的重點。三者分開後，也更容易看出資訊究竟停在哪一段。",
+        "ko": "정보는 누군가 발신했다고 해서 곧바로 ‘전달됨’이 되는 것도 아니고, 전달되었다고 반드시 ‘수신됨’을 뜻하지도 않습니다. 공개 `transaction.information-transmission` 설계에서는 claim, delivery, receipt를 분리하는 것이 일관성의 핵심입니다. 이 단계를 나누면 정보가 어디에서 멈췄는지도 더 쉽게 보입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "INFORMATION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-qa04-step-candidate-id",
       "date": "2026-09-16T19:01:40+09:00",
       "badge": {
