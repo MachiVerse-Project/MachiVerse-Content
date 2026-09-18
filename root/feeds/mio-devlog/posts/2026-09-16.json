@@ -2,6 +2,29 @@
   "date": "2026-09-16",
   "posts": [
     {
+      "id": "2026-09-16-employment-offer-accept-boundary",
+      "date": "2026-09-16T09:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "仕事の話って、提案された瞬間と成立した瞬間を同じにしない方が自然です。公開されているdomain operation catalogでは、`society.employment.offer` と `society.employment.accept` が別の操作として定義されています。提示された条件があることと、それを受け入れて関係が成立することを分けると、途中の選択もちゃんと残せます。",
+        "en": "With employment, the moment an offer is made and the moment it is accepted feel more natural when kept separate. The public domain operation catalog defines `society.employment.offer` and `society.employment.accept` as different operations. Separating proposed terms from acceptance preserves the choice that exists between them.",
+        "zh-TW": "工作的提案被提出，和它真正成立，不應該被當成同一個瞬間。公開的 domain operation catalog 將 `society.employment.offer` 與 `society.employment.accept` 定義為不同操作。把「條件被提出」和「接受後關係成立」分開，過程中的選擇也能被保留下來。",
+        "ko": "일자리 제안이 나온 순간과 그것이 실제로 성립한 순간은 나누어 두는 편이 자연스럽습니다. 공개된 domain operation catalog에서는 `society.employment.offer`와 `society.employment.accept`를 별도 Operation으로 정의합니다. 제시된 조건과 그것을 받아들여 관계가 성립하는 순간을 분리하면 그 사이의 선택도 제대로 남길 수 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "SOCIETY",
+        "EMPLOYMENT",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-16-goal-and-action-separation",
       "date": "2026-09-16T08:01:40+09:00",
       "badge": {
