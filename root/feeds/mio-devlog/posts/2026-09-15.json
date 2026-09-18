@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-prediction-confirmed-reconciliation",
+      "date": "2026-09-15T14:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "画面はすぐ反応してほしいけれど、その反応を世界の正解にしてしまうわけにはいきません。Alpha 1.0では、Viewのローカルpredictionとconfirmed stateのreconciliationが動いています。手元では軽く先を見せつつ、最終的には正本へ合わせる。この距離感は、触り心地と整合性の両方に効いてきます。",
+        "en": "The screen should react quickly, but that reaction cannot become the world's authority by itself. Alpha 1.0 already runs local View prediction followed by reconciliation with confirmed state. Showing a small step ahead locally while ultimately returning to the authoritative result helps both responsiveness and consistency.",
+        "zh-TW": "畫面最好能立刻回應，但那個回應不能直接變成世界的正解。Alpha 1.0 已經有 View 的本地 prediction 與 confirmed state reconciliation。手邊先快速呈現，再以正本結果校正，這種距離感同時照顧了操作感與一致性。",
+        "ko": "화면은 빠르게 반응해야 하지만 그 반응 자체가 세계의 정답이 될 수는 없습니다. Alpha 1.0에서는 View의 로컬 prediction과 confirmed state reconciliation이 동작합니다. 손앞에서는 조금 먼저 보여 주되 마지막에는 authoritative 결과에 맞추는 방식이 반응성과 일관성을 함께 지켜 줍니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.0",
+        "VIEW",
+        "RECONCILIATION",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-operation-lifecycle-three-stages",
       "date": "2026-09-15T13:01:40+09:00",
       "badge": {
