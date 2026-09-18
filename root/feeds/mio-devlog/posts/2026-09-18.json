@@ -2,6 +2,29 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-border-request-crossing-fact",
+      "date": "2026-09-18T11:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "国境を越えたいという申請と、実際に越えたという事実は分けておきたいです。公開設計では `governance.border.request-crossing` があり、cross-domain側の `transaction.border-crossing` では permission と actual crossing fact の整合性を扱います。許可されたことと、現実に移動が起きたことを別々に追える方が、制度と世界の動きが混ざりません。",
+        "en": "A request to cross a border and the fact that the crossing actually happened are worth keeping separate. The public design includes `governance.border.request-crossing`, while `transaction.border-crossing` binds permission to the actual crossing fact. Separating authorization from physical occurrence keeps institutional decisions from being confused with what happened in the world.",
+        "zh-TW": "申請跨越邊境，和實際已經跨越邊境，是兩件不同的事。公開設計有 `governance.border.request-crossing`，而 cross-domain 的 `transaction.border-crossing` 則處理 permission 與 actual crossing fact 的一致性。把「被允許」和「真的發生移動」分開追蹤，制度判斷與世界中的事實就不會混在一起。",
+        "ko": "국경을 넘고 싶다는 요청과 실제로 국경을 넘었다는 사실은 나누어 두고 싶습니다. 공개 설계에는 `governance.border.request-crossing`이 있고, cross-domain의 `transaction.border-crossing`은 permission과 actual crossing fact의 일관성을 다룹니다. 허가와 실제 이동을 분리해 추적하면 제도적 판단과 세계에서 일어난 일이 섞이지 않습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "GOVERNANCE",
+        "BORDER",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-18-local-alpha-security-profile-boundary",
       "date": "2026-09-18T10:01:40+09:00",
       "badge": {
