@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-config-generation-stale-reject",
+      "date": "2026-09-15T15:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.0",
+        "en": "ALPHA 1.0",
+        "zh-TW": "ALPHA 1.0",
+        "ko": "ALPHA 1.0"
+      },
+      "body": {
+        "ja": "設定変更って、内容だけでなく『どの世代を見て変更したか』も大事です。Alpha 1.0ではexpected `ConfigGeneration` を付けた変更と、stale generationのreject、audit correlationまで確認されています。古い前提のまま上書きしない仕組みがあると、運用の変更も少し安心して扱えます。",
+        "en": "For configuration changes, what matters is not only the new value but also which generation it was based on. Alpha 1.0 confirms changes with an expected `ConfigGeneration`, rejection of stale generations, and audit correlation. Refusing to overwrite newer state from an old assumption makes operational changes much safer to reason about.",
+        "zh-TW": "設定變更不只要看改成什麼，也要知道「是基於哪一代設定來修改」。Alpha 1.0 已確認帶有 expected `ConfigGeneration` 的變更、對 stale generation 的拒絕，以及 audit correlation。避免用舊前提覆蓋新狀態，運維上的修改也會更安心。",
+        "ko": "설정 변경은 새 값뿐 아니라 ‘어느 세대를 보고 바꿨는가’도 중요합니다. Alpha 1.0에서는 expected `ConfigGeneration`을 포함한 변경, stale generation 거부, audit correlation까지 확인되어 있습니다. 오래된 전제로 최신 상태를 덮지 않게 하면 운영 변경도 훨씬 안심하고 다룰 수 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.0",
+        "CONFIG",
+        "AUDIT",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-prediction-confirmed-reconciliation",
       "date": "2026-09-15T14:01:40+09:00",
       "badge": {
