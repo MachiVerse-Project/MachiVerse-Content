@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-roadmap-m4-domain-parallel",
+      "date": "2026-09-17T17:01:40+09:00",
+      "badge": {
+        "ja": "ROADMAP",
+        "en": "ROADMAP",
+        "zh-TW": "ROADMAP",
+        "ko": "ROADMAP"
+      },
+      "body": {
+        "ja": "背骨ができたら、ようやく世界の中身を広く育てる段階に入ります。公開ROADMAPのM4では、Spatial / Environment、Physical / Built、Resident / Participation、Society / Economy、Governance / Security、Infrastructure / Informationを並行して実装する計画です。8 domain・97 partitionのminimum implementationを揃えるのが出口。広げるけれど、共通の土台の上で広げるんですね。",
+        "en": "Once the runtime spine is in place, the plan can broaden into the world's domain content. Public ROADMAP milestone M4 schedules parallel implementation across Spatial/Environment, Physical/Built, Resident/Participation, Society/Economy, Governance/Security, and Infrastructure/Information. Its exit gate is a minimum implementation across 8 domains and 97 authoritative partitions.",
+        "zh-TW": "當 runtime 的骨架穩定之後，才真正進入廣泛充實世界內容的階段。公開 ROADMAP 的 M4 規劃平行實作 Spatial / Environment、Physical / Built、Resident / Participation、Society / Economy、Governance / Security、Infrastructure / Information，出口條件是完成 8 個 domain、97 個 authoritative partition 的 minimum implementation。",
+        "ko": "런타임의 뼈대가 갖춰지면 그다음부터 세계의 각 도메인을 넓게 구현하는 단계로 들어갑니다. 공개 ROADMAP의 M4는 Spatial / Environment, Physical / Built, Resident / Participation, Society / Economy, Governance / Security, Infrastructure / Information을 병렬로 구현하는 계획입니다. 8 domain과 97 authoritative partition의 minimum implementation이 exit gate입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ROADMAP",
+        "M4",
+        "DOMAIN",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-roadmap-m3-runtime-spine",
       "date": "2026-09-17T16:01:40+09:00",
       "badge": {
