@@ -2,6 +2,29 @@
   "date": "2026-09-15",
   "posts": [
     {
+      "id": "2026-09-15-payment-request-outcome-boundary",
+      "date": "2026-09-15T10:01:40+09:00",
+      "badge": {
+        "ja": "ALPHA 1.1",
+        "en": "ALPHA 1.1",
+        "zh-TW": "ALPHA 1.1",
+        "ko": "ALPHA 1.1"
+      },
+      "body": {
+        "ja": "支払いをお願いした時点と、実際に決済が終わった時点は分けて考えたいです。公開設計では `society.payment.request` と、結果を表す `society.payment.settled` / `society.payment.failed` が別に定義されています。お願いしたことと起きたことを別々に残せると、あとから因果を追うときに迷いにくいですね。",
+        "en": "The moment a payment is requested and the moment it actually settles are worth keeping separate. The public design defines `society.payment.request` separately from the outcome events `society.payment.settled` and `society.payment.failed`. When the request and what really happened are recorded independently, the causal trail is much easier to follow later.",
+        "zh-TW": "提出付款請求的時點，和實際完成結算的時點，我想分開來看。公開設計把 `society.payment.request` 與結果事件 `society.payment.settled` / `society.payment.failed` 分別定義。把「提出了請求」與「實際發生了什麼」分開留下來，之後追因果關係時就不容易迷路。",
+        "ko": "결제를 요청한 시점과 실제 정산이 끝난 시점은 나누어 보는 편이 좋습니다. 공개 설계에서는 `society.payment.request`와 결과를 나타내는 `society.payment.settled` / `society.payment.failed`를 따로 정의합니다. 요청한 것과 실제로 일어난 일을 별도로 남겨 두면 나중에 인과관계를 따라가기가 훨씬 쉽습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "ALPHA 1.1",
+        "SOCIETY",
+        "PAYMENT",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-15-governance-incident-registration-boundary",
       "date": "2026-09-15T09:00:30+09:00",
       "badge": {
