@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-promotion-current-assets-only",
+      "date": "2026-09-17T11:01:40+09:00",
+      "badge": {
+        "ja": "DEVELOPMENT",
+        "en": "DEVELOPMENT",
+        "zh-TW": "DEVELOPMENT",
+        "ko": "DEVELOPMENT"
+      },
+      "body": {
+        "ja": "素材は多いほど安心、とは限らないんですよね。公開リポジトリでは `promotion` に残っていた未使用の旧公開アセットが整理され、現役で使うアイコンとsocial previewを残す形へ揃えられました。公開候補をまとめる場所と、過去素材を全部抱える場所を同じにしない。今使うものが分かるだけでも、制作の迷いはかなり減ります。",
+        "en": "More assets do not always make a workspace safer or clearer. In the public repository, unused legacy public assets on `promotion` were cleaned up while the active icon and social preview were retained. Keeping a branch for current public candidates rather than every historical asset makes the working set much easier to understand.",
+        "zh-TW": "素材並不是越多越安心。公開儲存庫整理了 `promotion` 中未使用的舊公開資產，只保留目前實際使用的 icon 與 social preview。把「現在的公開候選素材」和「所有歷史素材」分開，光是讓工作集變清楚，就能少很多猶豫。",
+        "ko": "자산은 많을수록 무조건 안심되는 것은 아닙니다. 공개 저장소에서는 `promotion`에 남아 있던 사용하지 않는 구형 공개 자산을 정리하고 현재 사용하는 아이콘과 social preview만 남기는 쪽으로 맞췄습니다. 현재 공개 후보를 모으는 곳과 과거 자산 전체를 보관하는 곳을 구분하면 작업 대상이 훨씬 선명해집니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DEVELOPMENT",
+        "PROMOTION",
+        "ASSETS",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-promotion-permanent-branch",
       "date": "2026-09-17T10:01:40+09:00",
       "badge": {
