@@ -2,6 +2,29 @@
   "date": "2026-09-17",
   "posts": [
     {
+      "id": "2026-09-17-promotion-permanent-branch",
+      "date": "2026-09-17T10:01:40+09:00",
+      "badge": {
+        "ja": "DEVELOPMENT",
+        "en": "DEVELOPMENT",
+        "zh-TW": "DEVELOPMENT",
+        "ko": "DEVELOPMENT"
+      },
+      "body": {
+        "ja": "公開用の素材にも、どこでまとめるかという責任の置き場所が必要です。公開リポジトリでは `promotion` が常設ブランチとして正式化され、ブランド資産やCreative Asset、プロモーション資料、公開向けビジュアルの統合先として役割が明記されました。実装コードを変える話ではなく、素材を育てる場所の境界をはっきりさせる整理です。",
+        "en": "Public-facing assets also need a clear place of responsibility. In the public repository, `promotion` has been formalized as a permanent branch for integrating brand assets, Creative Assets, promotional materials, and public-facing visuals. This is not an implementation change; it clarifies where that work belongs.",
+        "zh-TW": "面向公開的素材，也需要有清楚的責任歸屬。公開儲存庫已把 `promotion` 正式列為常設分支，負責整合品牌資產、Creative Asset、宣傳資料與公開視覺。這不是實作程式碼的變更，而是把素材應該在哪裡整理與成長的邊界說清楚。",
+        "ko": "공개용 자산에도 어디에서 통합하고 관리할지에 대한 책임 위치가 필요합니다. 공개 저장소에서는 `promotion`을 상설 브랜치로 공식화하고 브랜드 자산, Creative Asset, 프로모션 자료, 공개용 비주얼의 통합 지점으로 역할을 명시했습니다. 구현 코드 변경이 아니라 작업의 책임 경계를 분명히 한 정리입니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DEVELOPMENT",
+        "PROMOTION",
+        "BRANCH",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-17-compact-batch-evidence",
       "date": "2026-09-17T09:01:40+09:00",
       "badge": {
