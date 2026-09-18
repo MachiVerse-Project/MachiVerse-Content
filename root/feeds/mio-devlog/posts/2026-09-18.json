@@ -2,6 +2,29 @@
   "date": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-natural-disaster-cascade",
+      "date": "2026-09-18T12:01:40+09:00",
+      "badge": {
+        "ja": "DESIGN",
+        "en": "DESIGN",
+        "zh-TW": "DESIGN",
+        "ko": "DESIGN"
+      },
+      "body": {
+        "ja": "災害は『発生した』だけで終わらず、その先に連鎖があります。公開設計の `transaction.natural-disaster-cascade` では、source hazard・fact・consequenceの整合性を扱う意図が示されています。原因と起きた事実、その後の影響を一本につなげて残せると、災害を単発イベントではなく世界の変化として追えます。",
+        "en": "A disaster does not end at “it occurred”; consequences propagate from it. The public `transaction.natural-disaster-cascade` design is intended to preserve consistency across the source hazard, the resulting facts, and their consequences. Linking cause, occurrence, and aftermath makes a disaster traceable as a world-changing process rather than a single event.",
+        "zh-TW": "災害並不會在「發生了」這一步就結束，後面還會有連鎖影響。公開設計的 `transaction.natural-disaster-cascade` 著重於 source hazard、fact 與 consequence 之間的一致性。把原因、發生的事實與後續影響連成一條線，就能把災害看成世界的變化，而不是一次性的事件。",
+        "ko": "재난은 ‘발생했다’에서 끝나지 않고 그 뒤로 영향이 이어집니다. 공개 `transaction.natural-disaster-cascade` 설계는 source hazard, fact, consequence 사이의 일관성을 다루는 것을 의도합니다. 원인과 실제 발생, 이후의 영향을 한 흐름으로 남기면 재난을 단발성 이벤트가 아니라 세계 변화로 추적할 수 있습니다."
+      },
+      "tags": [
+        "MachiVerse",
+        "DESIGN",
+        "TRANSACTION",
+        "DISASTER",
+        "MIO DEVLOG"
+      ]
+    },
+    {
       "id": "2026-09-18-border-request-crossing-fact",
       "date": "2026-09-18T11:01:40+09:00",
       "badge": {
