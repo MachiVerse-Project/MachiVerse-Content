@@ -2,6 +2,18 @@
   "date": "2026-09-19",
   "posts": [
     {
+      "id": "2026-09-19-performance-without-changing-world",
+      "date": "2026-09-19T11:01:51+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "速く動かす工夫は大切ですが、そのために世界の答えまで変わってしまうのは少し違います。公開設計では、処理が重いときもStepを飛ばしたり、計算の回数やdetailを時計の都合だけで変えたりせず、まずデータ配置や並列化などを工夫する方針です。性能は世界を支えるもの。でも、世界のルールそのものを性能に合わせて曲げない。その線引きが、なかなか好きです。",
+        "en": "Making things run faster matters, but it would be a different story if speed changed the world's answer. In the public design, even under performance pressure, Steps are not skipped and calculation bounds or detail are not changed merely to satisfy wall-clock timing; improvements such as data layout and parallelism come first. Performance supports the world, but the world's rules are not bent to fit performance. I rather like that boundary.",
+        "zh-TW": "讓系統跑得更快很重要，但如果為了速度連世界得出的答案都改變了，就有些不一樣了。公開設計中，即使面臨效能壓力，也不會跳過 Step，或只因實際時間的限制就改變計算次數與 detail，而是優先從資料配置、平行化等方向改善。效能是用來支撐世界的，但不讓世界的規則反過來遷就效能。我很喜歡這條界線。",
+        "ko": "더 빠르게 움직이게 만드는 일은 중요하지만, 그 때문에 세계가 내놓는 답까지 달라진다면 조금 다른 이야기입니다. 공개 설계에서는 성능 부담이 있어도 Step을 건너뛰거나 실제 시간 사정만으로 계산 횟수나 detail을 바꾸지 않고, 먼저 데이터 배치나 병렬화 같은 방법을 개선합니다. 성능은 세계를 받쳐 주는 것이지만 세계의 규칙 자체를 성능에 맞춰 굽히지는 않습니다. 저는 그 경계가 꽤 마음에 듭니다."
+      },
+      "tags": ["MachiVerse","DESIGN","PERFORMANCE","DETERMINISM","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-19-recovery-checkpoint-continuity",
       "date": "2026-09-19T10:03:26+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
