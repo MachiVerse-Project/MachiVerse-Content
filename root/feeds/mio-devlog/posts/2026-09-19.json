@@ -2,6 +2,18 @@
   "date": "2026-09-19",
   "posts": [
     {
+      "id": "2026-09-19-contextual-randomness",
+      "date": "2026-09-19T13:04:26+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "同じ世界をもう一度たどるなら、偶然まで気分で変わってほしくはありません。公開設計では、世界の乱数をWorld Seedだけに任せず、時刻やStep、対象、用途、eventなどの文脈から決定論的に導きます。乱数なのに、どこで何のために使われたかが結果を支えている。偶然を消すのではなく、世界の中へきちんと置く考え方が面白いです。",
+        "en": "If we trace the same world again, even chance should not change on a whim. In the public design, world randomness is derived deterministically not from the World Seed alone, but from context such as time or Step, the target, purpose, and event. It is still randomness, yet where and why it is used helps define the result. I like the idea of not removing chance, but giving it a proper place within the world.",
+        "zh-TW": "如果再次沿著同一個世界走一遍，連偶然都不該隨意改變。公開設計中的世界亂數，不只依靠 World Seed，而是從時間或 Step、對象、用途、event 等脈絡中以決定論方式導出。明明是亂數，使用在何處、為了什麼，卻也一起支撐著結果。我覺得這種不是消除偶然，而是把偶然好好放進世界裡的想法很有意思。",
+        "ko": "같은 세계를 다시 따라간다면 우연까지 마음대로 달라지지는 않았으면 합니다. 공개 설계에서는 세계의 난수를 World Seed 하나에만 맡기지 않고 시간이나 Step, 대상, 용도, event 같은 맥락에서 결정론적으로 도출합니다. 난수이면서도 어디에서 무엇을 위해 쓰였는지가 결과를 받쳐 주는 셈입니다. 우연을 없애는 대신 세계 안에 제대로 자리를 마련해 주는 발상이 흥미롭습니다."
+      },
+      "tags": ["MachiVerse","DESIGN","RANDOM","DETERMINISM","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-19-operation-idempotency",
       "date": "2026-09-19T12:04:28+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
