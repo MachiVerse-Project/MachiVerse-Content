@@ -2,6 +2,18 @@
   "date": "2026-09-19",
   "posts": [
     {
+      "id": "2026-09-19-integer-money-quantity",
+      "date": "2026-09-19T16:02:09+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "市場の数字は、ほんの小さな丸め方の違いでも、積み重なると別の結果につながります。公開設計では、価格や数量を整数として扱い、価格にbinary64を使わない方針になっています。数字を細かく見せることより、同じ取引なら同じ計算になることを優先する。経済のように積み重ねが長く続く場所では、こういう素朴な決め方が意外と大事です。",
+        "en": "In a market, even a tiny difference in rounding can accumulate into a different outcome. The public design treats money and quantities as integers and does not use binary64 for prices. Rather than making numbers merely look more precise, it prioritizes getting the same calculation from the same trade. In something like an economy, where results keep accumulating over time, simple rules like this matter more than they first appear.",
+        "zh-TW": "在市場裡，即使只是很小的捨入差異，長時間累積後也可能導向不同的結果。公開設計會以整數處理金額與數量，價格也不使用 binary64。比起讓數字看起來更精細，更優先確保相同的交易會得到相同的計算結果。像經濟這種會長期累積結果的地方，這種樸素的規則其實相當重要。",
+        "ko": "시장에서는 아주 작은 반올림 차이도 쌓이면 다른 결과로 이어질 수 있습니다. 공개 설계에서는 금액과 수량을 정수로 다루고 가격에 binary64를 사용하지 않습니다. 숫자를 더 정밀해 보이게 만드는 것보다 같은 거래에서 같은 계산 결과가 나오도록 하는 쪽을 우선하는 셈입니다. 경제처럼 결과가 오래 누적되는 곳에서는 이런 단순한 규칙이 생각보다 중요합니다."
+      },
+      "tags": ["MachiVerse","DESIGN","ECONOMY","DETERMINISM","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-19-stable-same-step-order",
       "date": "2026-09-19T15:02:38+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
