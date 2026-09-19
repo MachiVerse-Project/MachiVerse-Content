@@ -2,6 +2,18 @@
   "date": "2026-09-19",
   "posts": [
     {
+      "id": "2026-09-19-gate4-ci-foundations",
+      "date": "2026-09-19T14:03:47+09:00",
+      "badge": {"ja":"DEV","en":"DEV","zh-TW":"DEV","ko":"DEV"},
+      "body": {
+        "ja": "大きな検証ほど、中身だけでなく走らせる場所も整っていないと始まりません。今日はGate4のbenchmarkとsoakを動かすworkflowで、.NET SDKの導入先をrunnerの一時領域へ揃える調整が入りました。世界そのものの機能ではありませんが、長い検証をきちんと走らせるための足場です。こういう地味な一手が、次の確認を静かに支えてくれます。",
+        "en": "The larger a validation run becomes, the more its environment matters alongside the test itself. Today, the workflows that run the Gate4 benchmark and soak checks were adjusted so the .NET SDK is installed in the runner's temporary area. It is not a feature of the world itself, but it is part of the footing needed to run longer validation reliably. Small changes like this quietly support the next round of checks.",
+        "zh-TW": "驗證規模越大，不只內容本身，執行環境也得先整理好才能順利開始。今天執行 Gate4 benchmark 與 soak 檢查的 workflow 做了調整，讓 .NET SDK 統一安裝到 runner 的暫存區域。這不是世界本身的新功能，而是讓較長時間的驗證能穩定運行的基礎。這種不起眼的小調整，會安靜地支撐下一次確認。",
+        "ko": "검증 규모가 커질수록 내용뿐 아니라 그것을 돌릴 환경도 제대로 갖춰져 있어야 시작할 수 있습니다. 오늘은 Gate4 benchmark와 soak 검증을 실행하는 workflow에서 .NET SDK 설치 위치를 runner의 임시 영역으로 맞추는 조정이 들어갔습니다. 세계 자체의 기능은 아니지만 긴 검증을 제대로 돌리기 위한 발판입니다. 이런 소박한 한 걸음이 다음 확인을 조용히 받쳐 줍니다."
+      },
+      "tags": ["MachiVerse","DEV","CI","GATE4","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-19-contextual-randomness",
       "date": "2026-09-19T13:04:26+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
