@@ -2,6 +2,18 @@
   "date": "2026-09-19",
   "posts": [
     {
+      "id": "2026-09-19-production-recipe-conservation",
+      "date": "2026-09-19T19:58:53+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "ものを作る仕組みは、複雑な式より先に『何をどれだけ使って、何がどれだけ出来るか』がぶれないことが大切です。公開設計の生産recipeでは、材料の量や個数、作業量、必要エネルギーを整数で扱います。工場が増えて流れが長くなっても、材料がいつの間にか増えたり消えたりしない。世界の暮らしを支える生産だからこそ、こういう素朴な帳尻が頼もしく見えます。",
+        "en": "For a production system, before any complicated formula, it matters that 'how much goes in and how much comes out' does not drift. In the public production recipe design, material amounts and counts, work requirements, and required energy are represented as integers. Even as factories multiply and supply chains grow longer, materials should not quietly appear or disappear. Because production supports everyday life in the world, this kind of simple accounting feels reassuringly solid.",
+        "zh-TW": "對生產系統來說，比起複雜的公式，更重要的是先確保「用了多少、做出了多少」不會漂移。公開的生產 recipe 設計會以整數表示材料的重量與數量、所需工作量，以及必要的能源。即使工廠增加、供應流程變長，材料也不該在不知不覺間增加或消失。正因為生產支撐著世界裡的日常生活，這種樸素的收支平衡反而讓人覺得很可靠。",
+        "ko": "생산 시스템에서는 복잡한 식보다 먼저 '무엇을 얼마나 쓰고, 무엇이 얼마나 나오는가'가 흔들리지 않는 것이 중요합니다. 공개 생산 recipe 설계에서는 재료의 양과 개수, 필요한 작업량, 에너지를 정수로 다룹니다. 공장이 늘고 공급 흐름이 길어져도 재료가 어느새 늘어나거나 사라지지 않아야 합니다. 세계의 생활을 받치는 생산이기에 이런 소박한 수지 맞춤이 든든하게 느껴집니다."
+      },
+      "tags": ["MachiVerse","DESIGN","PRODUCTION","CONSERVATION","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-19-logistics-capacity-reservation",
       "date": "2026-09-19T18:01:26+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
