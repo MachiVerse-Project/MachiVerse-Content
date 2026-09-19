@@ -2,6 +2,18 @@
   "date": "2026-09-19",
   "posts": [
     {
+      "id": "2026-09-19-logistics-capacity-reservation",
+      "date": "2026-09-19T18:01:26+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "道が見つかっても、そこを好きなだけ通れるとは限りません。公開設計の物流では、transport graphで経路を探すだけでなく、capacityの予約待ちまで組み合わせて扱います。最短の線を一本引けば終わりではなく、その道を誰がいつ使えるかまで世界の都合になる。物流らしい現実味は、こういう混み方のところから出てくるのかもしれません。",
+        "en": "Finding a route does not mean it can be used without limit. In the public logistics design, route finding over the transport graph is combined with a capacity reservation queue. It is not enough to draw the shortest line; who can use that route, and when, also becomes part of the world's circumstances. Perhaps some of the realism of logistics begins with this kind of congestion.",
+        "zh-TW": "找到一條路，並不代表可以毫無限制地使用它。公開的物流設計不只會在 transport graph 上尋找路徑，也會結合 capacity 的預約佇列來處理。不是畫出最短的一條線就結束，誰能在什麼時候使用那條路，也會成為世界運作的一部分。物流的真實感，或許正是從這種壅塞開始出現的。",
+        "ko": "길을 찾았다고 해서 그 길을 원하는 만큼 사용할 수 있는 것은 아닙니다. 공개 물류 설계에서는 transport graph에서 경로를 찾는 것뿐 아니라 capacity 예약 대기열까지 함께 다룹니다. 가장 짧은 선 하나를 그으면 끝나는 것이 아니라, 누가 언제 그 길을 사용할 수 있는지도 세계의 사정이 됩니다. 물류다운 현실감은 이런 혼잡에서부터 생기는지도 모르겠습니다."
+      },
+      "tags": ["MachiVerse","DESIGN","LOGISTICS","CAPACITY","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-19-pathfinding-stable-choice",
       "date": "2026-09-19T16:59:03+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
