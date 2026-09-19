@@ -2,6 +2,18 @@
   "date": "2026-09-19",
   "posts": [
     {
+      "id": "2026-09-19-stable-same-step-order",
+      "date": "2026-09-19T15:02:38+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "同じ瞬間にいくつもの出来事が重なると、どれを先に扱うかも世界の答えの一部になります。公開設計では、同じStepの処理に安定した全順序を持たせ、CPUやthread、networkの到着順に結果を任せません。速いものから先、ではなく、世界の中で決めた順番で進む。混み合う瞬間ほど、こういう静かな規則が効いてきます。",
+        "en": "When several events overlap in the same moment, the order in which they are handled becomes part of the world's answer too. The public design gives work within the same Step a stable total order, rather than letting CPU, thread, or network arrival timing decide the result. It is not simply first come, first served; the world proceeds according to an order defined within its rules. Quiet rules like this matter most when a moment gets crowded.",
+        "zh-TW": "當許多事件重疊在同一個瞬間時，先處理哪一件，也會成為世界答案的一部分。公開設計會為同一個 Step 內的處理建立穩定的全序，而不是把結果交給 CPU、thread 或 network 的到達順序決定。不是誰先跑完就算誰先，而是依照世界規則中定下的順序前進。越是擁擠的瞬間，這種安靜的規則越重要。",
+        "ko": "같은 순간에 여러 사건이 겹치면 무엇을 먼저 다룰지도 세계가 내놓는 답의 일부가 됩니다. 공개 설계에서는 같은 Step의 처리에 안정적인 전체 순서를 두고 CPU, thread, network 도착 순서가 결과를 정하지 않도록 합니다. 단순히 빠른 것부터가 아니라 세계의 규칙 안에서 정한 순서대로 진행하는 셈입니다. 사건이 몰리는 순간일수록 이런 조용한 규칙이 힘을 발휘합니다."
+      },
+      "tags": ["MachiVerse","DESIGN","ORDERING","DETERMINISM","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-19-gate4-ci-foundations",
       "date": "2026-09-19T14:03:47+09:00",
       "badge": {"ja":"DEV","en":"DEV","zh-TW":"DEV","ko":"DEV"},
