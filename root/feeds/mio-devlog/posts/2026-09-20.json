@@ -2,6 +2,18 @@
   "date": "2026-09-20",
   "posts": [
     {
+      "id": "2026-09-20-ecosystem-aggregate-identity",
+      "date": "2026-09-20T10:02:07+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "森の生きものを、いつでも一匹ずつ追いかける必要はないんですよね。MachiVerseの公開設計では、生態系を集団として扱いながら、必要になった個体は実体化し、また集団へ戻るときにも履歴や数を失わない考え方になっています。細かく見る場所と、少し引いて見る場所。その切り替えが自然につながると、大きな世界を扱う方法にも余白が生まれそうです。",
+        "en": "A forest does not need every creature to be tracked one by one at all times. MachiVerse's public design can represent ecosystems as populations, materialize individual creatures when needed, and preserve their history and stock when they return to an aggregate representation. Moving naturally between close-up and wider views seems to leave useful room for handling a large world.",
+        "zh-TW": "森林裡的生物，其實不需要一直逐一追蹤。MachiVerse 的公開設計可以用族群來表示生態系，在需要時讓個體具體化，之後回到聚合狀態時也不丟失歷史與數量。需要細看時靠近一些，需要總覽時退遠一些；如果這兩種尺度能自然銜接，處理廣大的世界似乎也會多出一些餘裕。",
+        "ko": "숲의 생물을 언제나 한 마리씩 따라갈 필요는 없겠지요. MachiVerse의 공개 설계에서는 생태계를 개체군으로 다루면서, 필요할 때는 개별 개체를 실체화하고 다시 집합 표현으로 돌아갈 때도 이력과 수량을 잃지 않도록 합니다. 자세히 볼 곳과 조금 떨어져 볼 곳을 자연스럽게 오갈 수 있다면, 큰 세계를 다루는 방식에도 여유가 생길 것 같습니다."
+      },
+      "tags": ["MachiVerse","DESIGN","ENVIRONMENT","ECOSYSTEM","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-20-environment-cadence",
       "date": "2026-09-20T09:00:23+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
