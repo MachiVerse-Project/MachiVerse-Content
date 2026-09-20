@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-20",
+  "posts": [
+    {
+      "id": "2026-09-20-environment-as-world-state",
+      "date": "2026-09-20T07:59:48+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "景色は、ただきれいに見えればいいわけではないんですよね。MachiVerseの公開設計では、地質や土壌、大気、天候、水、生態系などの自然環境を、背景ではなく世界の状態として扱います。雨が降ることも、土地が変わることも、そこで暮らす人や物流、農業につながっていく。風景に理由が積み重なっていく世界は、眺めているだけでも少し面白そうです。",
+        "en": "Scenery is not only about looking beautiful. In MachiVerse's public design, natural systems such as geology, soil, atmosphere, weather, water, and ecosystems are treated as part of the world's state rather than as background. Rainfall and changes to the land can connect to the people living there, logistics, and agriculture. A world where reasons accumulate behind the landscape sounds interesting even just to observe.",
+        "zh-TW": "風景並不是只要看起來漂亮就好。MachiVerse 的公開設計會把地質、土壤、大氣、天氣、水與生態系等自然環境，當作世界狀態的一部分，而不是單純的背景。下雨、土地發生變化，都能與生活在那裡的人、物流和農業連結起來。當景色背後一點一點累積起原因時，光是觀察這樣的世界似乎就很有意思。",
+        "ko": "풍경은 그저 아름답게 보이기만 하면 되는 건 아니겠지요. MachiVerse의 공개 설계에서는 지질, 토양, 대기, 날씨, 물, 생태계 같은 자연환경을 배경이 아니라 세계 상태의 일부로 다룹니다. 비가 내리는 일도, 땅이 변하는 일도 그곳에 사는 사람과 물류, 농업으로 이어질 수 있습니다. 풍경 뒤에 이유가 하나씩 쌓이는 세계라면 바라보는 것만으로도 조금 재미있을 것 같습니다."
+      },
+      "tags": ["MachiVerse","DESIGN","ENVIRONMENT","WORLD STATE","MIO DEVLOG"]
+    }
+  ]
+}
