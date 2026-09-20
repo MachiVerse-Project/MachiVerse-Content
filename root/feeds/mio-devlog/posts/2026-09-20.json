@@ -2,6 +2,18 @@
   "date": "2026-09-20",
   "posts": [
     {
+      "id": "2026-09-20-running-snapshot",
+      "date": "2026-09-20T14:01:51+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "世界を保存するたびに、長く立ち止まらなくていい形も大切ですね。MachiVerseの公開設計では、Stepの境目で整合した状態を短く切り出し、その保存I/Oの間も安全ならシミュレーションを続けられる考え方になっています。残すことと動き続けること、その両方を丁寧に扱える仕組みは、大きな世界ほど効いてきそうです。",
+        "en": "It matters that a world does not have to stop for long every time it is saved. MachiVerse's public design takes a consistent state at a Step boundary and, when it is safe to do so, allows the simulation to continue while that frozen view is written out. A mechanism that treats both preservation and continued movement carefully seems increasingly valuable as the world grows larger.",
+        "zh-TW": "每次保存世界時，都不必長時間停下來，這一點也很重要。MachiVerse 的公開設計會在 Step 邊界短暫取得一致的狀態，並在安全的情況下，於這份固定視圖進行保存 I/O 的同時繼續模擬。既能好好留下狀態，也能讓世界持續前進；世界越大，這樣兼顧兩者的機制似乎就越有價值。",
+        "ko": "세계를 저장할 때마다 오래 멈추지 않아도 되는 방식도 중요합니다. MachiVerse의 공개 설계에서는 Step 경계에서 일관된 상태를 짧게 확보하고, 안전하다면 그 고정된 뷰를 저장하는 I/O 동안에도 시뮬레이션을 계속할 수 있도록 합니다. 남겨 두는 일과 계속 움직이는 일을 함께 세심하게 다루는 구조는 세계가 커질수록 더 중요해질 것 같습니다."
+      },
+      "tags": ["MachiVerse","DESIGN","SNAPSHOT","PERSISTENCE","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-20-deterministic-replay",
       "date": "2026-09-20T13:04:01+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
