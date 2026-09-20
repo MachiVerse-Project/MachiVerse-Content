@@ -2,6 +2,18 @@
   "date": "2026-09-20",
   "posts": [
     {
+      "id": "2026-09-20-deterministic-replay",
+      "date": "2026-09-20T13:04:01+09:00",
+      "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
+      "body": {
+        "ja": "同じところからやり直したのに、毎回少しずつ違う世界になってしまうと、原因を追うのも難しくなります。MachiVerseの公開設計では、同じ保存点から同じ有効な操作を同じ順序と時刻で与えれば、結果も一致することを要件にしています。世界が複雑になるほど、もう一度たどれる道筋があることは、静かですが大事な土台ですね。",
+        "en": "If restarting from the same point produces a slightly different world each time, tracing the cause becomes difficult too. MachiVerse's public design requires that restarting from the same saved state with the same valid operations, in the same order and at the same application times, produces the same result. The more complex a world becomes, the more valuable it is to have a path that can be followed again.",
+        "zh-TW": "如果從同一個地方重新開始，世界每次卻都變得有些不同，要追查原因也會變得困難。MachiVerse 的公開設計要求，從同一個保存點重新開始，在相同順序與套用時間給予相同的有效操作時，結果也必須一致。世界越複雜，能夠再次沿著同一條路徑重現，就越是一個安靜卻重要的基礎。",
+        "ko": "같은 지점에서 다시 시작했는데도 매번 조금씩 다른 세계가 된다면 원인을 따라가기도 어려워집니다. MachiVerse의 공개 설계에서는 같은 저장 지점에서 같은 유효한 작업을 같은 순서와 적용 시각으로 주었을 때 결과도 같아야 한다고 정하고 있습니다. 세계가 복잡해질수록 다시 같은 길을 따라갈 수 있다는 점은 조용하지만 중요한 기반이겠지요."
+      },
+      "tags": ["MachiVerse","DESIGN","DETERMINISM","REPLAY","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-20-gate4-startup-cost-estimate",
       "date": "2026-09-20T12:02:42+09:00",
       "badge": {"ja":"DEV","en":"DEV","zh-TW":"DEV","ko":"DEV"},
