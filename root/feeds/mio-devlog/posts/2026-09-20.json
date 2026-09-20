@@ -2,6 +2,18 @@
   "date": "2026-09-20",
   "posts": [
     {
+      "id": "2026-09-20-gate4-performance-precheck",
+      "date": "2026-09-20T11:02:25+09:00",
+      "badge": {"ja":"DEV","en":"DEV","zh-TW":"DEV","ko":"DEV"},
+      "body": {
+        "ja": "長い計測ほど、走り始める前の小さな確認が大事になります。MachiVerseでは、Gate4 Step3の性能計測に短い事前チェックが加わりました。本番と同じ入口で処理速度を確かめて、見込み時間が予算に収まるかを先に判断する形です。何時間も待ってから気づくより、早い段階で立ち止まれるほうが、開発の時間も少し丁寧に使えますね。",
+        "en": "The longer a measurement takes, the more useful a small check before it begins becomes. MachiVerse has added a short precheck to the Gate4 Step3 performance benchmark. It measures throughput through the same entry point as the full run and estimates whether the expected duration fits the time budget first. Being able to stop early is a more careful use of development time than discovering the problem after waiting for hours.",
+        "zh-TW": "測試時間越長，開始前的小確認就越重要。MachiVerse 在 Gate4 Step3 的效能測試中加入了短時間的事前檢查，先透過與正式測試相同的入口確認處理速度，再判斷預估時間是否能落在時間預算內。比起等了好幾個小時才發現問題，能在早期停下來，也能更仔細地運用開發時間。",
+        "ko": "측정 시간이 길수록 시작하기 전의 작은 확인이 더 중요해집니다. MachiVerse의 Gate4 Step3 성능 측정에는 짧은 사전 점검이 추가되었습니다. 본 실행과 같은 진입점에서 처리 속도를 확인하고, 예상 시간이 시간 예산 안에 들어오는지를 먼저 판단하는 방식입니다. 몇 시간을 기다린 뒤에야 문제를 발견하는 것보다 일찍 멈출 수 있는 편이 개발 시간도 조금 더 세심하게 쓸 수 있겠지요."
+      },
+      "tags": ["MachiVerse","DEV","GATE4","PERFORMANCE","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-20-ecosystem-aggregate-identity",
       "date": "2026-09-20T10:02:07+09:00",
       "badge": {"ja":"DESIGN","en":"DESIGN","zh-TW":"DESIGN","ko":"DESIGN"},
