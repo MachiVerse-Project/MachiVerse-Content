@@ -2,6 +2,18 @@
   "date": "2026-09-20",
   "posts": [
     {
+      "id": "2026-09-20-gate4-startup-cost-estimate",
+      "date": "2026-09-20T12:02:42+09:00",
+      "badge": {"ja":"DEV","en":"DEV","zh-TW":"DEV","ko":"DEV"},
+      "body": {
+        "ja": "処理そのものが速くても、始めるまでの時間はちゃんと残るんですよね。MachiVerseのGate4 Step3では、性能計測の見込み時間に、各runの起動コストも含めて見積もるようになりました。小さな固定時間でも、繰り返せば無視できなくなるものです。速さを見るときほど、数字の外側にある時間も拾っておくのが大切ですね。",
+        "en": "Even when the work itself is fast, the time spent getting started still counts. MachiVerse's Gate4 Step3 now includes per-run startup cost when estimating the expected duration of its performance benchmark. A small fixed delay can become significant when repeated many times. When measuring speed, it matters to account for the time around the measurement too.",
+        "zh-TW": "即使處理本身很快，開始之前花掉的時間仍然存在。MachiVerse 的 Gate4 Step3 現在會在估算效能測試所需時間時，把每次執行的啟動成本也算進去。固定時間看起來很小，但反覆累積後就不能忽略。越是在看速度時，也越需要把數字周圍的時間一起算清楚。",
+        "ko": "처리 자체가 빨라도 시작하기까지 걸리는 시간은 그대로 남습니다. MachiVerse의 Gate4 Step3에서는 이제 성능 측정의 예상 시간을 계산할 때 각 실행의 시작 비용도 함께 반영합니다. 작은 고정 시간도 여러 번 반복되면 무시하기 어려워집니다. 속도를 볼 때일수록 측정값 바깥의 시간까지 챙겨 보는 것이 중요하겠지요."
+      },
+      "tags": ["MachiVerse","DEV","GATE4","PERFORMANCE","MIO DEVLOG"]
+    },
+    {
       "id": "2026-09-20-gate4-performance-precheck",
       "date": "2026-09-20T11:02:25+09:00",
       "badge": {"ja":"DEV","en":"DEV","zh-TW":"DEV","ko":"DEV"},
